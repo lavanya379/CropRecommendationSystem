@@ -13,10 +13,10 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
 
         @media print {
-            nav, .no-print, button { display: none !important; }
-            body { background: #ffffff !important; }
-            main { padding: 0 !important; max-width: 100% !important; }
-            .rounded-2xl, .rounded-3xl { page-break-inside: avoid !important; break-inside: avoid !important; }
+            nav, .no-print, button, #loading-state, #error-state { display: none !important; }
+            body { background: #ffffff !important; margin: 0 !important; padding: 0 !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            main { padding: 0 !important; max-width: 100% !important; margin: 0 !important; }
+            .rounded-2xl, .rounded-3xl, #result-content > div { page-break-inside: avoid !important; break-inside: avoid !important; margin-bottom: 12px !important; }
         }
     </style>
 </head>
@@ -325,7 +325,7 @@
         </div>
     </main>
 
-    <script src="../js/api.js?v=2.1"></script>
-    <script src="../js/result.js?v=2.1"></script>
+    <script src="../js/api.js?v=2.3"></script>
+    <script src="../js/result.js?v=2.3"></script>
 </body>
 </html>

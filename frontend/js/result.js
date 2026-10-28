@@ -1064,20 +1064,35 @@ async function renderResult(data) {
             pagebreak:    { mode: ['css', 'legacy'] }
         };
 
-        try {
-            await html2pdf().set(opt).from(pdfContainer).save();
-        } catch (err) {
-            console.error('PDF Generation Error:', err);
-            alert('PDF generation encountered an error. Please try using the Print button as an alternative.');
-        } finally {
-            if (pdfContainer.parentNode) {
+        html2pdf().set(opt).from(pdfContainer).outputPdf('blob').then(function(blob) {
+            const blobUrl = URL.createObjectURL(blob);
+            const downloadLink = document.createElement('a');
+            downloadLink.href = blobUrl;
+            downloadLink.download = `CropAI_Report_${cropName}_${new Date().toISOString().slice(0,10)}.pdf`;
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            document.body.removeChild(downloadLink);
+            setTimeout(() => URL.revokeObjectURL(blobUrl), 2000);
+
+            // Clean up container ONLY after PDF blob is completely compiled
+            if (pdfContainer && pdfContainer.parentNode) {
                 pdfContainer.parentNode.removeChild(pdfContainer);
             }
             if (btn) {
                 btn.disabled = false;
                 btn.innerHTML = origBtnHtml;
             }
-        }
+        }).catch(function(err) {
+            console.error('PDF Generation Error:', err);
+            if (pdfContainer && pdfContainer.parentNode) {
+                pdfContainer.parentNode.removeChild(pdfContainer);
+            }
+            if (btn) {
+                btn.disabled = false;
+                btn.innerHTML = origBtnHtml;
+            }
+            window.print();
+        });
     };
 }
 
