@@ -188,6 +188,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (res.success) {
             document.getElementById('result-content')?.classList.remove('hidden');
             await renderResult(res);
+            if (urlParams.get('download') === 'pdf' || urlParams.get('download') === '1') {
+                setTimeout(() => {
+                    if (window.downloadReportPDF) window.downloadReportPDF();
+                }, 800);
+            }
         } else {
             showError(res.message || 'Failed to load result details.');
         }
@@ -608,19 +613,245 @@ async function renderResult(data) {
     } catch(e) {}
     renderProfitEstimate(rec.recommended_crop, mPrices, rec.farm, yoyTrends, futurePrediction);
 
-    // ── 8. PDF Download Function ──────────────────────────────────────────────
-    window.downloadReportPDF = function() {
+    // ── 8. PDF Download Function (Zero Blank Pages / Multi-Page Dossier) ───────
+    window.downloadReportPDF = async function() {
         const el = document.getElementById('result-content');
-        if (!el || typeof html2pdf === 'undefined') { alert('PDF download engine not ready.'); return; }
-        
+        if (!el) {
+            alert('Report content is not loaded yet.');
+            return;
+        }
+        if (typeof html2pdf === 'undefined') {
+            alert('PDF download engine is loading, please try again in a moment.');
+            return;
+        }
+
+        const btn = document.querySelector('button[onclick="downloadReportPDF()"]');
+        const origBtnHtml = btn ? btn.innerHTML : '';
+        if (btn) {
+            btn.disabled = true;
+            btn.innerHTML = '<i class="fas fa-circle-notch fa-spin mr-2"></i> Generating PDF...';
+        }
+
+        // Retrieve farmer & farm profile metadata
+        let farmerName = 'Farmer';
+        try {
+            const storedUser = JSON.parse(localStorage.getItem('user') || '{}');
+            if (storedUser && storedUser.name) farmerName = storedUser.name;
+        } catch(e) {}
+
+        const cropName = capitalize(rec.recommended_crop || 'Crop');
+        const farmName = rec.farm?.farm_name || 'Primary Farm';
+        const acres = rec.farm?.area ? `${parseFloat(rec.farm.area)} Acres` : 'Standard Landholding';
+        const district = rec.farm?.district ? `${capitalize(rec.farm.district)}, ` : '';
+        const state = rec.farm?.state ? capitalize(rec.farm.state) : 'Telangana / Andhra Pradesh';
+        const soilType = rec.farm?.soil_type || rec.soil?.soil_type || 'Regional Soil Profile';
+        const reportDateStr = new Date(rec.created_at || Date.now()).toLocaleString('en-IN', {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+        });
+        const reportId = `CR-${new Date(rec.created_at || Date.now()).getFullYear()}-${String(rec.id || '001').padStart(4, '0')}`;
+
+        // Create an isolated export container with fixed desktop width (820px) to prevent mobile layout distortion
+        const pdfContainer = document.createElement('div');
+        pdfContainer.id = 'cropai-pdf-export-render';
+        pdfContainer.style.width = '820px';
+        pdfContainer.style.maxWidth = '820px';
+        pdfContainer.style.background = '#ffffff';
+        pdfContainer.style.color = '#0f172a';
+        pdfContainer.style.fontFamily = "'Plus Jakarta Sans', system-ui, -apple-system, sans-serif";
+        pdfContainer.style.position = 'absolute';
+        pdfContainer.style.left = '-9999px';
+        pdfContainer.style.top = '0';
+        pdfContainer.style.zIndex = '-1000';
+        pdfContainer.style.boxSizing = 'border-box';
+        pdfContainer.style.padding = '0';
+        pdfContainer.style.margin = '0';
+
+        // Helper to clone a card and sanitize it for html2canvas
+        function cloneAndSanitize(sourceEl) {
+            if (!sourceEl) return document.createElement('div');
+            const clone = sourceEl.cloneNode(true);
+            
+            // Remove backdrop-blur which crashes or turns white in html2canvas
+            clone.querySelectorAll('.backdrop-blur-md, .backdrop-blur').forEach(n => {
+                n.style.backdropFilter = 'none';
+                n.style.webkitBackdropFilter = 'none';
+                n.style.backgroundColor = 'rgba(255, 255, 255, 0.15)';
+            });
+
+            // Replace space-y-* classes with direct bottom margins
+            clone.querySelectorAll('.space-y-8, .space-y-6, .space-y-4').forEach(n => {
+                n.classList.remove('space-y-8', 'space-y-6', 'space-y-4');
+            });
+
+            // Ensure grid layouts maintain 2 columns on PDF
+            clone.querySelectorAll('.lg\\:grid-cols-2, .md\\:grid-cols-3').forEach(n => {
+                n.style.display = 'grid';
+                if (n.classList.contains('md:grid-cols-3')) {
+                    n.style.gridTemplateColumns = 'repeat(3, 1fr)';
+                } else {
+                    n.style.gridTemplateColumns = 'repeat(2, 1fr)';
+                }
+                n.style.gap = '12px';
+            });
+
+            clone.style.boxSizing = 'border-box';
+            return clone;
+        }
+
+        // Get live rendered sections from result-content
+        const children = el.children;
+        const heroSection = cloneAndSanitize(children[0]);
+        const timelineSection = cloneAndSanitize(children[1]);
+        const shapAndAltsSection = cloneAndSanitize(children[2]);
+        const snapshotsSection = cloneAndSanitize(children[3]);
+        const fertilizerAndIrrigationSection = cloneAndSanitize(children[4]);
+        const pestSection = cloneAndSanitize(children[5]);
+        const profitSection = cloneAndSanitize(children[6]);
+        const disclaimerSection = cloneAndSanitize(children[7]);
+
+        // Compact spacing for PDF sections
+        [heroSection, timelineSection, shapAndAltsSection, snapshotsSection, fertilizerAndIrrigationSection, pestSection, profitSection, disclaimerSection].forEach(card => {
+            card.style.marginBottom = '12px';
+            card.style.pageBreakInside = 'avoid';
+            card.style.breakInside = 'avoid';
+        });
+
+        // PAGE 1: Executive Crop Recommendation & Agro-Climatic Timeline
+        const page1 = document.createElement('div');
+        page1.className = 'pdf-page';
+        page1.style.padding = '20px 24px';
+        page1.style.boxSizing = 'border-box';
+        page1.style.minHeight = '1110px';
+        page1.style.position = 'relative';
+
+        page1.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:2px solid #10b981; padding-bottom:12px; margin-bottom:14px;">
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <div style="width:36px; height:36px; background:#059669; border-radius:10px; display:flex; align-items:center; justify-content:center; color:#fff; font-size:18px;">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div>
+                        <h1 style="font-size:20px; font-weight:800; color:#0f172a; margin:0; line-height:1.2;">CropAI Intelligence Dossier</h1>
+                        <p style="font-size:11px; color:#64748b; margin:2px 0 0 0;">Multi-Source Agronomic & Machine Learning Advisory</p>
+                    </div>
+                </div>
+                <div style="text-align:right;">
+                    <span style="display:inline-block; font-size:10px; font-weight:700; background:#ecfdf5; color:#047857; padding:3px 8px; border-radius:9999px; border:1px solid #a7f3d0; margin-bottom:4px;">
+                        Verified ML Analysis • #${reportId}
+                    </span>
+                    <p style="font-size:10px; color:#64748b; margin:0;">${reportDateStr}</p>
+                </div>
+            </div>
+
+            <div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:10px 14px; margin-bottom:14px; display:flex; justify-content:space-between; align-items:center; font-size:11px;">
+                <div>
+                    <span style="color:#64748b; font-weight:600;">Farmer:</span> <strong style="color:#0f172a;">${farmerName}</strong> &nbsp;|&nbsp; 
+                    <span style="color:#64748b; font-weight:600;">Farm:</span> <strong style="color:#0f172a;">${farmName} (${acres})</strong>
+                </div>
+                <div>
+                    <span style="color:#64748b; font-weight:600;">Location:</span> <strong style="color:#0f172a;">${district}${state}</strong> &nbsp;|&nbsp; 
+                    <span style="color:#64748b; font-weight:600;">Soil:</span> <strong style="color:#0f172a;">${soilType}</strong>
+                </div>
+            </div>
+        `;
+        page1.appendChild(heroSection);
+        page1.appendChild(timelineSection);
+        page1.appendChild(snapshotsSection);
+
+        // PAGE 2: Technical Agronomic Insights & Crop Management
+        const page2 = document.createElement('div');
+        page2.className = 'pdf-page';
+        page2.style.padding = '20px 24px';
+        page2.style.boxSizing = 'border-box';
+        page2.style.minHeight = '1110px';
+        page2.style.position = 'relative';
+
+        page2.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e2e8f0; padding-bottom:8px; margin-bottom:14px;">
+                <span style="font-size:11px; font-weight:700; color:#059669; text-transform:uppercase; letter-spacing:0.5px;">
+                    <i class="fas fa-brain mr-1"></i> Part II: Explainable AI & Agronomic Inputs
+                </span>
+                <span style="font-size:10px; color:#94a3b8;">${reportId} • ${cropName}</span>
+            </div>
+        `;
+        page2.appendChild(shapAndAltsSection);
+        page2.appendChild(fertilizerAndIrrigationSection);
+
+        // PAGE 3: Financial Profitability & Crop Protection
+        const page3 = document.createElement('div');
+        page3.className = 'pdf-page';
+        page3.style.padding = '20px 24px';
+        page3.style.boxSizing = 'border-box';
+        page3.style.minHeight = '1110px';
+        page3.style.position = 'relative';
+
+        page3.innerHTML = `
+            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #e2e8f0; padding-bottom:8px; margin-bottom:14px;">
+                <span style="font-size:11px; font-weight:700; color:#059669; text-transform:uppercase; letter-spacing:0.5px;">
+                    <i class="fas fa-sack-dollar mr-1"></i> Part III: Market Economics & Crop Protection
+                </span>
+                <span style="font-size:10px; color:#94a3b8;">${reportId} • ${cropName}</span>
+            </div>
+        `;
+        page3.appendChild(profitSection);
+        page3.appendChild(pestSection);
+        page3.appendChild(disclaimerSection);
+
+        // Explicit page breaks for html2pdf
+        const break1 = document.createElement('div');
+        break1.className = 'html2pdf__page-break';
+        break1.style.pageBreakAfter = 'always';
+        break1.style.breakAfter = 'page';
+        break1.style.height = '0';
+        break1.style.lineHeight = '0';
+
+        const break2 = document.createElement('div');
+        break2.className = 'html2pdf__page-break';
+        break2.style.pageBreakAfter = 'always';
+        break2.style.breakAfter = 'page';
+        break2.style.height = '0';
+        break2.style.lineHeight = '0';
+
+        pdfContainer.appendChild(page1);
+        pdfContainer.appendChild(break1);
+        pdfContainer.appendChild(page2);
+        pdfContainer.appendChild(break2);
+        pdfContainer.appendChild(page3);
+
+        document.body.appendChild(pdfContainer);
+
         const opt = {
-            margin:       0.4,
-            filename:     `CropAI_Report_${rec.recommended_crop}_${new Date().toISOString().slice(0,10)}.pdf`,
+            margin:       [8, 8, 8, 8],
+            filename:     `CropAI_Report_${cropName}_${new Date().toISOString().slice(0,10)}.pdf`,
             image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2, useCORS: true, logging: false },
-            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            html2canvas:  { 
+                scale: 2, 
+                useCORS: true, 
+                logging: false,
+                scrollY: 0,
+                scrollX: 0,
+                windowWidth: 840,
+                backgroundColor: '#ffffff'
+            },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+            pagebreak:    { mode: ['css', 'legacy'] }
         };
-        html2pdf().set(opt).from(el).save();
+
+        try {
+            await html2pdf().set(opt).from(pdfContainer).save();
+        } catch (err) {
+            console.error('PDF Generation Error:', err);
+            alert('PDF generation encountered an error. Please try using the Print button as an alternative.');
+        } finally {
+            if (pdfContainer.parentNode) {
+                pdfContainer.parentNode.removeChild(pdfContainer);
+            }
+            if (btn) {
+                btn.disabled = false;
+                btn.innerHTML = origBtnHtml;
+            }
+        }
     };
 }
 

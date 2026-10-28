@@ -11,6 +11,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+        @media print {
+            nav, .no-print, button { display: none !important; }
+            body { background: #ffffff !important; }
+            main { padding: 0 !important; max-width: 100% !important; }
+            .rounded-2xl, .rounded-3xl { page-break-inside: avoid !important; break-inside: avoid !important; }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
