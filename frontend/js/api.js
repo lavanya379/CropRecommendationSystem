@@ -1,6 +1,12 @@
 // api.js - Centralized API Service for CropAI Application
 
-const API_BASE_URL = 'http://localhost:5000/api';
+// Dynamically resolve API URL:
+// 1. If explicit window.CROP_API_URL is set, use it.
+// 2. If running locally on port 3000, fallback to port 5000 backend.
+// 3. In production (e.g. Vercel), route directly to /api on the same origin.
+const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const API_BASE_URL = window.CROP_API_URL 
+    || (isLocalDev && window.location.port !== '5000' ? 'http://localhost:5000/api' : `${window.location.origin}/api`);
 
 // Helper to get auth token
 const getToken = () => localStorage.getItem('token');

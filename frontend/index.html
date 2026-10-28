@@ -71,6 +71,24 @@
                     Start Analysis <i class="fas fa-arrow-right ml-1.5"></i>
                 </a>
             </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-nav-toggle" class="md:hidden w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:bg-slate-200 transition" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-lg"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-nav-menu" class="hidden md:hidden bg-white border-b border-slate-200/80 px-4 py-4 space-y-3 shadow-lg">
+            <a href="#interactive-plant" class="mobile-nav-link block py-2 text-sm font-bold text-slate-700 hover:text-emerald-700 flex items-center">
+                <i class="fas fa-seedling text-emerald-500 mr-2"></i> Interactive Plant
+            </a>
+            <a href="#how-it-works" class="mobile-nav-link block py-2 text-sm font-bold text-slate-700 hover:text-emerald-700">How It Works</a>
+            <a href="#features" class="mobile-nav-link block py-2 text-sm font-bold text-slate-700 hover:text-emerald-700">Features</a>
+            <div class="pt-3 border-t border-slate-100 flex flex-col gap-2">
+                <a href="login.html" class="w-full text-center py-2.5 bg-slate-100 text-slate-800 rounded-xl font-bold text-sm hover:bg-slate-200 transition">Log In</a>
+                <a href="register.html" class="w-full text-center py-2.5 bg-emerald-600 text-white rounded-xl font-bold text-sm shadow-md shadow-emerald-200 hover:bg-emerald-700 transition">Start Analysis</a>
+            </div>
         </div>
     </nav>
 
@@ -440,9 +458,20 @@
             }
         }
 
-        // Initialize default view
+        // Initialize default view & mobile navigation toggle
         document.addEventListener('DOMContentLoaded', () => {
             selectPlantPart('roots');
+
+            const navToggle = document.getElementById('mobile-nav-toggle');
+            const navMenu = document.getElementById('mobile-nav-menu');
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', () => {
+                    navMenu.classList.toggle('hidden');
+                });
+                document.querySelectorAll('.mobile-nav-link').forEach(link => {
+                    link.addEventListener('click', () => navMenu.classList.add('hidden'));
+                });
+            }
         });
     </script>
 </body>
