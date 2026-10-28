@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Interactive Plant Agricultural Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        .bg-grid-pattern {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
+        /* Plant Node Pulse Animation */
+        @keyframes pulse-glow {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.18); opacity: 1; filter: drop-shadow(0 0 12px rgba(16, 185, 129, 0.8)); }
+        }
+        .animate-pulse-glow { animation: pulse-glow 2.5s infinite ease-in-out; }
+
+        @keyframes float-leaf {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-6px) rotate(2deg); }
+        }
+        .animate-float { animation: float-leaf 4s infinite ease-in-out; }
+
+        .plant-node {
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .plant-node:hover {
+            transform: scale(1.15);
+            filter: drop-shadow(0 0 14px rgba(16, 185, 129, 0.9));
+        }
+
+        .active-feature-card {
+            border-color: #10b981 !important;
+            background-color: #f0fdf4 !important;
+            box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.2) !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- Top Navigation -->
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 border-b border-slate-200/80 shadow-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+            <!-- App Logo -->
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl flex items-center justify-center text-white shadow-md shadow-emerald-200">
+                    <i class="fas fa-leaf text-lg"></i>
+                </div>
+                <div>
+                    <h1 class="font-extrabold text-xl text-slate-900 tracking-tight leading-none">CropAI</h1>
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-emerald-600">Smart Farming Intelligence</span>
+                </div>
+            </a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-xs font-bold text-slate-600">
+                <a href="#interactive-plant" class="hover:text-emerald-700 transition flex items-center">
+                    <i class="fas fa-seedling text-emerald-500 mr-1.5"></i> Interactive Plant
+                </a>
+                <a href="#how-it-works" class="hover:text-emerald-700 transition">How It Works</a>
+                <a href="#features" class="hover:text-emerald-700 transition">Features</a>
+                <a href="login.html" class="px-4 py-2 text-slate-700 hover:text-emerald-700 font-extrabold transition">Log In</a>
+                <a href="register.html" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl font-extrabold shadow-md shadow-emerald-200 transition">
+                    Start Analysis <i class="fas fa-arrow-right ml-1.5"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative pt-28 pb-20 lg:pt-36 lg:pb-28 bg-grid-pattern overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <div class="inline-flex items-center space-x-2 text-xs font-extrabold text-emerald-800 bg-emerald-100 px-4 py-1.5 rounded-full mb-6 border border-emerald-300">
+                <i class="fas fa-wand-magic-sparkles text-emerald-600"></i>
+                <span>Smart Agricultural Intelligence Platform</span>
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight leading-tight max-w-4xl mx-auto">
+                Explainable Climate-Aware <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 via-teal-600 to-blue-600">
+                    Crop Recommendation System
+                </span>
+            </h1>
+            
+            <p class="text-slate-600 text-base sm:text-lg lg:text-xl mt-6 max-w-3xl mx-auto font-medium leading-relaxed">
+                Empowering farmers in Andhra Pradesh & Telangana with real-time soil chemical analysis, live weather metrics, Agmarknet mandi market prices, and 99%+ accurate Ensemble Machine Learning recommendations.
+            </p>
+
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="register.html" class="w-full sm:w-auto px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-extrabold text-sm shadow-xl shadow-emerald-200 transition flex items-center justify-center">
+                    Start Free AI Analysis <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="#how-it-works" class="w-full sm:w-auto px-7 py-4 bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 rounded-2xl font-bold text-sm transition flex items-center justify-center">
+                    How It Works <i class="fas fa-chevron-down ml-2 text-xs text-slate-400"></i>
+                </a>
+            </div>
+
+            <!-- Key Feature Badges Row -->
+            <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto text-left">
+                <div class="p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg font-bold flex-shrink-0">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-extrabold text-slate-900">Soil Chemical NPK</h4>
+                        <p class="text-[10px] text-slate-500">AP & TS Benchmarks</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center text-lg font-bold flex-shrink-0">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-extrabold text-slate-900">Live Weather API</h4>
+                        <p class="text-[10px] text-slate-500">5-Day Rainfall Forecast</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center text-lg font-bold flex-shrink-0">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-extrabold text-slate-900">Mandi Market Prices</h4>
+                        <p class="text-[10px] text-slate-500">2,120+ Agmarknet Rates</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-white rounded-2xl border border-slate-200/80 shadow-sm flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center text-lg font-bold flex-shrink-0">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-extrabold text-slate-900">SHAP Explainable AI</h4>
+                        <p class="text-[10px] text-slate-500">Visual Impact Factors</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS STEP-BY-STEP PIPELINE -->
+    <section id="how-it-works" class="py-20 bg-white border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase text-emerald-600 tracking-wider">Step-by-Step Workflow</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">From Soil Input to High-Yield Harvest</h2>
+                <p class="text-slate-500 text-sm mt-2">A seamless 4-step execution model connecting your farm directly to AI crop intelligence.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center relative">
+                
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 shadow-sm relative">
+                    <div class="w-14 h-14 mx-auto bg-emerald-100 text-emerald-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 shadow-sm">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+                    <span class="text-[10px] font-extrabold text-emerald-700 uppercase bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">Step 1</span>
+                    <h4 class="font-extrabold text-base text-slate-900 mt-2 mb-1">Register Farm</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Enter your district (e.g., Guntur, Vijayawada) and land area in acres.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 shadow-sm relative">
+                    <div class="w-14 h-14 mx-auto bg-amber-100 text-amber-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 shadow-sm">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <span class="text-[10px] font-extrabold text-amber-700 uppercase bg-amber-50 px-2.5 py-0.5 rounded-full border border-amber-200">Step 2</span>
+                    <h4 class="font-extrabold text-base text-slate-900 mt-2 mb-1">Input Soil Data</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Enter N, P, K, pH values or upload your field soil test lab image.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 shadow-sm relative">
+                    <div class="w-14 h-14 mx-auto bg-blue-100 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 shadow-sm">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <span class="text-[10px] font-extrabold text-blue-700 uppercase bg-blue-50 px-2.5 py-0.5 rounded-full border border-blue-200">Step 3</span>
+                    <h4 class="font-extrabold text-base text-slate-900 mt-2 mb-1">Fetch Live Weather</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">OpenWeatherMap API fetches live district weather and 5-day daily rainfall rail.</p>
+                </div>
+
+                <div class="p-6 bg-slate-50 rounded-3xl border border-slate-200/80 shadow-sm relative">
+                    <div class="w-14 h-14 mx-auto bg-purple-100 text-purple-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-4 shadow-sm">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="text-[10px] font-extrabold text-purple-700 uppercase bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">Step 4</span>
+                    <h4 class="font-extrabold text-base text-slate-900 mt-2 mb-1">Ensemble & SHAP</h4>
+                    <p class="text-xs text-slate-500 leading-relaxed">Voting classifier outputs top crop, probability scores, SHAP chart & mandi price.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAILED FEATURES GRID -->
+    <section id="features" class="py-24 bg-slate-50 border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-extrabold uppercase text-emerald-600 tracking-wider">All Website Features</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-1">Complete Agricultural Feature Set</h2>
+                <p class="text-slate-500 text-sm mt-2">Every tool built to maximize yield, transparency, and profitability for Indian farmers.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-emerald-50 text-emerald-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">Soil NPK & pH Benchmark</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Accepts Nitrogen, Phosphorus, Potassium ratios, and soil pH. Compares values against benchmark AP & TS soil survey datasets.</p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-cloud-sun-rain"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">Live Weather & 5-Day Rail</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Queries OpenWeatherMap API by district name for real-time temperature, humidity, wind speed, and upcoming 5-day daily rainfall rail.</p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-amber-50 text-amber-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">Agmarknet Mandi Intelligence</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Grounded in 2,120+ Agmarknet AP & TS mandi price records. Displays modal prices per quintal, market yards, and price trends.</p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-rose-50 text-rose-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">Ensemble Voting Machine Learning</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Simultaneously executes Random Forest, XGBoost, and LightGBM models via a soft voting classifier for peak 99%+ accuracy.</p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-purple-50 text-purple-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">SHAP Model Explainability</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">No black box. Generates visual SHAP impact bars showing exactly how each soil and weather parameter contributed to the recommendation.</p>
+                </div>
+
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 bg-teal-50 text-teal-700 rounded-2xl flex items-center justify-center font-bold text-xl mb-5">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mb-2">Multi-Plot & PDF Advisory</h3>
+                    <p class="text-xs text-slate-500 leading-relaxed">Register multiple field plots across districts, view recommendation history, and download print-ready PDF advisory reports.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- LIVE DATA STATS -->
+    <section class="py-16 bg-white border-t border-slate-200/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <h4 class="text-3xl sm:text-4xl font-extrabold text-emerald-600">3</h4>
+                    <p class="text-xs font-bold text-slate-600 mt-1">Ensemble ML Models</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <h4 class="text-3xl sm:text-4xl font-extrabold text-blue-600">2,120+</h4>
+                    <p class="text-xs font-bold text-slate-600 mt-1">Agmarknet Mandi Records</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <h4 class="text-3xl sm:text-4xl font-extrabold text-amber-600">22</h4>
+                    <p class="text-xs font-bold text-slate-600 mt-1">Target Crop Species</p>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                    <h4 class="text-3xl sm:text-4xl font-extrabold text-purple-600">AP & TS</h4>
+                    <p class="text-xs font-bold text-slate-600 mt-1">District Specific Coverage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-16 bg-gradient-to-r from-emerald-900 to-slate-900 text-white">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to Boost Your Harvest Yield?</h2>
+            <p class="text-emerald-200 text-xs sm:text-sm mt-3 max-w-xl mx-auto">
+                Join CropAI today to get real-time soil, weather, mandi prices, and AI ensemble recommendations tailored for your farm.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <a href="register.html" class="px-7 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-extrabold text-xs shadow-lg shadow-emerald-900/50 transition">
+                    Create Free Farmer Account <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+                <a href="login.html" class="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white rounded-xl font-bold text-xs border border-white/20 transition">
+                    Farmer Login
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 py-10 text-xs text-center border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center space-x-2 mb-3">
+                <div class="w-7 h-7 bg-emerald-600 rounded-lg flex items-center justify-center text-white font-bold text-xs">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <span class="font-extrabold text-base text-white">CropAI</span>
+            </div>
+            <p class="text-slate-400 font-medium">An Explainable Climate-Aware Crop Recommendation System</p>
+            <p class="text-slate-500 text-[11px] mt-2">&copy; 2026 CropAI Platform. All rights reserved. Andhra Pradesh & Telangana Agricultural Division.</p>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE PLANT JAVASCRIPT -->
+    <script>
+        const plantData = {
+            roots: {
+                title: "Soil Chemical Balance & Root Nutrients",
+                badge: "SOIL & ROOT SYSTEM",
+                icon: "fa-seedling",
+                desc: "Roots absorb vital NPK nutrients (Nitrogen, Phosphorus, Potassium) and soil moisture. CropAI analyzes soil chemical parameters and pH levels to determine ideal soil-crop compatibility for AP & TS districts.",
+                metrics: [
+                    { label: "Nitrogen Ratio (N)", detail: "Essential for vegetative leaf growth", code: "N" },
+                    { label: "Phosphorus & Potassium (P & K)", detail: "Deep root formation & stress tolerance", code: "P/K" },
+                    { label: "Soil pH & Organic Carbon", detail: "Benchmark comparison across AP/TS soil datasets", code: "pH" }
+                ],
+                btnText: "Test Your Soil"
+            },
+            stem: {
+                title: "Ensemble Machine Learning Stem",
+                badge: "ENSEMBLE ML STEM",
+                icon: "fa-network-wired",
+                desc: "The stem acts as the central vascular pipeline carrying data inputs to the ML engine. CropAI runs Random Forest, XGBoost, and LightGBM simultaneously using a soft voting classifier for 99%+ recommendation accuracy.",
+                metrics: [
+                    { label: "Random Forest Classifier", detail: "Multi-decision tree ensemble for robust feature splits", code: "RF" },
+                    { label: "XGBoost & LightGBM", detail: "Gradient boosting algorithms for non-linear pattern learning", code: "XGB" },
+                    { label: "Voting Classifier", detail: "Weighted soft probability scoring across models", code: "ML" }
+                ],
+                btnText: "Run ML Engine"
+            },
+            leaves: {
+                title: "Sunlight & Live Weather Leaves",
+                badge: "CLIMATE & WEATHER LEAVES",
+                icon: "fa-cloud-sun-rain",
+                desc: "Plant leaves interact with sunlight, rain, and humidity. CropAI integrates live OpenWeatherMap API metrics with location search and a 5-day daily rainfall forecast rail for precise agricultural planning.",
+                metrics: [
+                    { label: "Live Temperature & Humidity", detail: "Real-time atmospheric heat & relative humidity", code: "TMP" },
+                    { label: "Precipitation & Rainfall Rate", detail: "Hourly precipitation and seasonal water index", code: "RAIN" },
+                    { label: "5-Day Daily Forecast Rail", detail: "Upcoming daily min/max temp and expected rainfall mm", code: "5DAY" }
+                ],
+                btnText: "View Weather Rail"
+            },
+            flower: {
+                title: "Mandi Market Head & Harvest Flower",
+                badge: "MANDI MARKET FLOWER",
+                icon: "fa-chart-line",
+                desc: "The blooming flower represents harvest yield and economic return. CropAI is grounded in 2,120+ Agmarknet mandi price records from Andhra Pradesh and Telangana to recommend crops with high market profitability.",
+                metrics: [
+                    { label: "2,120+ Mandi Price Records", detail: "AP & TS Agmarknet arrival prices per quintal", code: "₹" },
+                    { label: "District Mandi Matching", detail: "Matches prices to nearby markets in Guntur, Vijayawada, etc.", code: "MKT" },
+                    { label: "Historical Price Trends", detail: "Evaluates crop economic feasibility before planting", code: "TREND" }
+                ],
+                btnText: "Check Mandi Prices"
+            },
+            shap: {
+                title: "Explainable AI (SHAP) Microscopic Lens",
+                badge: "SHAP AI LENS",
+                icon: "fa-brain",
+                desc: "Like an X-ray lens inspecting plant DNA, SHAP (SHapley Additive exPlanations) visualizes exact decision factors, showing farmers *why* the AI recommended a specific crop over others.",
+                metrics: [
+                    { label: "Feature Importance Bars", detail: "Quantifies impact of N, P, K, temp, and rainfall", code: "SHAP" },
+                    { label: "Transparent AI Reasoning", detail: "No black box — complete visibility into model decisions", code: "AI" },
+                    { label: "Alternative Crops Breakdown", detail: "Top secondary crop alternatives with probability scores", code: "ALT" }
+                ],
+                btnText: "View SHAP Model"
+            },
+            reports: {
+                title: "Farm Management & Exportable PDF Reports",
+                badge: "FARM ADVISORY REPORT",
+                icon: "fa-file-pdf",
+                desc: "Tracks multiple farm plots across AP & TS districts, maintains historical analysis logs, and generates clean, print-ready PDF advisory reports for farmers and agricultural officers.",
+                metrics: [
+                    { label: "Multi-Plot Farm Tracking", detail: "Manage multiple field holdings in one dashboard", code: "FARM" },
+                    { label: "Historical Analysis Logs", detail: "Review previous recommendations and yield outcomes", code: "LOG" },
+                    { label: "Printable PDF Advisory", detail: "Export complete analysis with soil & weather breakdown", code: "PDF" }
+                ],
+                btnText: "Manage My Farms"
+            }
+        };
+
+        function selectPlantPart(partKey) {
+            const data = plantData[partKey];
+            if (!data) return;
+
+            // 1. Update Left Panel Title & Description
+            document.getElementById('feature-display-title').textContent = data.title;
+            document.getElementById('feature-display-desc').textContent = data.desc;
+            
+            // 2. Update Badge
+            const badgeText = document.getElementById('feature-title-badge');
+            const badgeIcon = document.getElementById('feature-icon-badge');
+            if (badgeText) badgeText.textContent = data.badge;
+            if (badgeIcon) badgeIcon.className = `fas ${data.icon}`;
+
+            // 3. Update Metrics
+            const metricsContainer = document.getElementById('feature-display-metrics');
+            if (metricsContainer) {
+                metricsContainer.innerHTML = data.metrics.map(m => `
+                    <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-2xl border border-slate-100 transition hover:bg-slate-100/80">
+                        <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-extrabold text-[11px]">${m.code}</div>
+                        <div>
+                            <span class="text-xs font-extrabold text-slate-800">${m.label}</span>
+                            <p class="text-[10px] text-slate-500">${m.detail}</p>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // 4. Update Tabs
+            document.querySelectorAll('.plant-tab').forEach(tab => {
+                tab.className = 'plant-tab px-4 py-2 rounded-xl text-xs font-bold transition bg-white text-slate-700 border border-slate-200 hover:bg-slate-100';
+            });
+            const activeTab = document.getElementById(`tab-${partKey}`);
+            if (activeTab) {
+                activeTab.className = 'plant-tab px-4 py-2 rounded-xl text-xs font-bold transition bg-emerald-600 text-white shadow-md';
+            }
+
+            // 5. Update Right Side Cards
+            document.querySelectorAll('.feature-side-card').forEach(card => {
+                card.classList.remove('active-feature-card');
+            });
+            const activeCard = document.getElementById(`card-${partKey}`);
+            if (activeCard) {
+                activeCard.classList.add('active-feature-card');
+            }
+        }
+
+        // Initialize default view
+        document.addEventListener('DOMContentLoaded', () => {
+            selectPlantPart('roots');
+        });
+    </script>
+</body>
+</html>

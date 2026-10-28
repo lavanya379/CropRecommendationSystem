@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Data Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .tab-btn.active { background: #059669; color: white; border-color: #059669; }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <div class="flex h-screen overflow-hidden">
+        <div id="sidebar-container"></div>
+
+        <main class="flex-1 overflow-y-auto pt-16 lg:pt-0 lg:pl-72 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+
+                <!-- Header -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-max mb-2 border border-emerald-200">
+                            <i class="fas fa-database"></i>
+                            <span>Real Dataset Intelligence</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Data Insights Hub</h1>
+                        <p class="text-slate-500 text-sm mt-1">Live insights from 16,000+ records — crop benchmarks, climate trends, soil properties & market data.</p>
+                    </div>
+                    <a href="recommendation.html" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-extrabold shadow-md shadow-emerald-200 transition flex items-center">
+                        <i class="fas fa-wand-magic-sparkles mr-2"></i> Run AI Analysis
+                    </a>
+                </div>
+
+                <!-- Dataset Stats Banner -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="dataset-stats">
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center"><i class="fas fa-spinner fa-spin text-slate-400"></i></div>
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center"><i class="fas fa-spinner fa-spin text-slate-400"></i></div>
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center"><i class="fas fa-spinner fa-spin text-slate-400"></i></div>
+                    <div class="bg-white p-4 rounded-2xl border border-slate-200 text-center"><i class="fas fa-spinner fa-spin text-slate-400"></i></div>
+                </div>
+
+                <!-- Tabs -->
+                <div class="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
+                    <div class="flex flex-wrap gap-2 p-4 border-b border-slate-100">
+                        <button class="tab-btn active px-4 py-2 text-xs font-extrabold rounded-xl border border-emerald-200 transition" onclick="switchTab('crops')">
+                            <i class="fas fa-seedling mr-1"></i> 22 Crop Benchmarks
+                        </button>
+                        <button class="tab-btn px-4 py-2 text-xs font-extrabold rounded-xl border border-slate-200 text-slate-600 transition hover:bg-slate-50" onclick="switchTab('climate')">
+                            <i class="fas fa-temperature-half mr-1"></i> Climate Trends
+                        </button>
+                        <button class="tab-btn px-4 py-2 text-xs font-extrabold rounded-xl border border-slate-200 text-slate-600 transition hover:bg-slate-50" onclick="switchTab('soil')">
+                            <i class="fas fa-layer-group mr-1"></i> Soil Benchmarks
+                        </button>
+                        <button class="tab-btn px-4 py-2 text-xs font-extrabold rounded-xl border border-slate-200 text-slate-600 transition hover:bg-slate-50" onclick="switchTab('market')">
+                            <i class="fas fa-chart-line mr-1"></i> Market Prices
+                        </button>
+                    </div>
+
+                    <!-- Tab: Crops -->
+                    <div id="tab-crops" class="tab-pane active p-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="insights-grid">
+                            <div class="col-span-full text-center py-12 text-slate-400 text-xs">
+                                <i class="fas fa-spinner fa-spin text-xl mb-2"></i><br>Loading crop benchmarks...
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Climate -->
+                    <div id="tab-climate" class="tab-pane p-6 space-y-6">
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <select id="climate-crop-filter" onchange="loadClimateData()" class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-xs font-bold text-slate-700">
+                                <option value="">All Crops</option>
+                            </select>
+                            <select id="climate-region-filter" onchange="loadClimateData()" class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-xs font-bold text-slate-700">
+                                <option value="">All Regions</option>
+                            </select>
+                            <span class="text-xs text-slate-400 font-medium">From 10,000 climate records (2001–2024)</span>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                                <h4 class="text-sm font-extrabold text-slate-800 mb-3"><i class="fas fa-temperature-high text-amber-500 mr-1"></i> Avg Temperature Trend</h4>
+                                <div class="h-56"><canvas id="climateTempChart"></canvas></div>
+                            </div>
+                            <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100">
+                                <h4 class="text-sm font-extrabold text-slate-800 mb-3"><i class="fas fa-wheat-awn text-emerald-600 mr-1"></i> Crop Yield Trend (MT/HA)</h4>
+                                <div class="h-56"><canvas id="climateYieldChart"></canvas></div>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-extrabold text-slate-800 mb-3"><i class="fas fa-trophy text-amber-500 mr-1"></i> Top Crops by Average Yield</h4>
+                            <div id="climate-top-crops" class="grid grid-cols-2 md:grid-cols-5 gap-3"></div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Soil -->
+                    <div id="tab-soil" class="tab-pane p-6 space-y-4">
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <select id="soil-district-filter" onchange="loadSoilData()" class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-xs font-bold text-slate-700">
+                                <option value="">All Districts</option>
+                            </select>
+                            <select id="soil-type-filter" onchange="loadSoilData()" class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-xs font-bold text-slate-700">
+                                <option value="">All Soil Types</option>
+                            </select>
+                            <span class="text-xs text-slate-400 font-medium">From 1,992 AP & TS soil samples</span>
+                        </div>
+                        <div id="soil-table" class="overflow-x-auto rounded-2xl border border-slate-200">
+                            <div class="p-8 text-center text-slate-400 text-xs"><i class="fas fa-spinner fa-spin text-xl mb-2"></i><br>Loading soil data...</div>
+                        </div>
+                    </div>
+
+                    <!-- Tab: Market -->
+                    <div id="tab-market" class="tab-pane p-6 space-y-4">
+                        <div class="flex flex-wrap gap-3 items-center">
+                            <input type="text" id="market-search" placeholder="Search commodity..." oninput="filterMarketTable()" class="px-3 py-2 bg-slate-100 border border-slate-200 rounded-xl text-xs font-bold text-slate-700 w-48">
+                            <span class="text-xs text-slate-400 font-medium">2,120 Andhra Pradesh market price records</span>
+                        </div>
+                        <div id="market-table" class="overflow-x-auto rounded-2xl border border-slate-200">
+                            <div class="p-8 text-center text-slate-400 text-xs"><i class="fas fa-spinner fa-spin text-xl mb-2"></i><br>Loading market data...</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>
+        let climateChartT = null, climateChartY = null;
+        let allMarketRows = [];
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            initCropAINavigation('insights');
+            if (!getToken()) { window.location.href = '../login.html'; return; }
+
+            loadDatasetStats();
+            loadCropInsights();
+            loadClimateData();
+            loadSoilData();
+            loadMarketData();
+        });
+
+        // ── Tab switching
+        function switchTab(name) {
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            document.getElementById(`tab-${name}`).classList.add('active');
+        }
+
+        // ── Dataset Stats Banner
+        async function loadDatasetStats() {
+            const box = document.getElementById('dataset-stats');
+            try {
+                const r = await apiCall('/insights/datasets');
+                if (!r.success) throw new Error();
+                const d = r.datasets;
+                box.innerHTML = `
+                  <div class="bg-gradient-to-br from-emerald-50 to-white p-4 rounded-2xl border border-emerald-200">
+                    <div class="flex items-center space-x-2 mb-1">
+                      <div class="w-7 h-7 bg-emerald-100 text-emerald-700 rounded-lg flex items-center justify-center"><i class="fas fa-store text-xs"></i></div>
+                      <span class="text-[10px] font-extrabold text-emerald-700 uppercase">Market Prices</span>
+                    </div>
+                    <p class="text-2xl font-extrabold text-slate-900">${d.market_prices.rows.toLocaleString()}</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">${d.market_prices.date_range}</p>
+                  </div>
+                  <div class="bg-gradient-to-br from-amber-50 to-white p-4 rounded-2xl border border-amber-200">
+                    <div class="flex items-center space-x-2 mb-1">
+                      <div class="w-7 h-7 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center"><i class="fas fa-layer-group text-xs"></i></div>
+                      <span class="text-[10px] font-extrabold text-amber-700 uppercase">Soil Samples</span>
+                    </div>
+                    <p class="text-2xl font-extrabold text-slate-900">${d.soil_benchmarks.rows.toLocaleString()}</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">${d.soil_benchmarks.districts} districts · ${d.soil_benchmarks.soil_types} soil types</p>
+                  </div>
+                  <div class="bg-gradient-to-br from-blue-50 to-white p-4 rounded-2xl border border-blue-200">
+                    <div class="flex items-center space-x-2 mb-1">
+                      <div class="w-7 h-7 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center"><i class="fas fa-cloud-rain text-xs"></i></div>
+                      <span class="text-[10px] font-extrabold text-blue-700 uppercase">Rainfall Records</span>
+                    </div>
+                    <p class="text-2xl font-extrabold text-slate-900">${d.rainfall_records.rows.toLocaleString()}</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">${d.rainfall_records.states} states · IMD data</p>
+                  </div>
+                  <div class="bg-gradient-to-br from-purple-50 to-white p-4 rounded-2xl border border-purple-200">
+                    <div class="flex items-center space-x-2 mb-1">
+                      <div class="w-7 h-7 bg-purple-100 text-purple-700 rounded-lg flex items-center justify-center"><i class="fas fa-globe text-xs"></i></div>
+                      <span class="text-[10px] font-extrabold text-purple-700 uppercase">Climate Impact</span>
+                    </div>
+                    <p class="text-2xl font-extrabold text-slate-900">${d.climate_impact.rows.toLocaleString()}</p>
+                    <p class="text-[10px] text-slate-400 mt-0.5">${d.climate_impact.year_range} · ${d.climate_impact.crops} crops</p>
+                  </div>`;
+            } catch (e) {
+                box.innerHTML = `<div class="col-span-4 text-center text-xs text-slate-400 py-4">Dataset stats unavailable</div>`;
+            }
+        }
+
+        // ── Crop Benchmarks
+        const CROP_CATALOG = [
+            { name: 'rice', N: '80-120', P: '35-60', K: '35-45', pH: '5.0-7.8', temp: '20-27°C', rain: '175-300mm', season: 'Kharif', category: 'Cereal' },
+            { name: 'maize', N: '60-100', P: '35-60', K: '15-25', pH: '5.5-7.3', temp: '18-27°C', rain: '60-110mm', season: 'Kharif/Rabi', category: 'Cereal' },
+            { name: 'chickpea', N: '20-50', P: '55-80', K: '75-85', pH: '6.0-8.8', temp: '17-21°C', rain: '60-95mm', season: 'Rabi', category: 'Pulses' },
+            { name: 'cotton', N: '100-140', P: '35-60', K: '15-25', pH: '5.8-8.0', temp: '22-26°C', rain: '60-110mm', season: 'Kharif', category: 'Commercial' },
+            { name: 'jute', N: '60-90', P: '35-55', K: '35-45', pH: '6.0-7.4', temp: '23-26°C', rain: '150-200mm', season: 'Kharif', category: 'Commercial' },
+            { name: 'coffee', N: '80-120', P: '15-35', K: '25-35', pH: '6.0-7.2', temp: '23-28°C', rain: '115-190mm', season: 'Perennial', category: 'Plantation' },
+            { name: 'banana', N: '80-120', P: '70-95', K: '45-55', pH: '5.5-6.5', temp: '25-30°C', rain: '90-120mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'mango', N: '0-40', P: '15-40', K: '25-35', pH: '4.5-7.0', temp: '27-36°C', rain: '80-100mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'grapes', N: '0-40', P: '120-145', K: '195-205', pH: '5.5-7.0', temp: '8-42°C', rain: '65-75mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'watermelon', N: '80-120', P: '5-30', K: '45-55', pH: '6.0-7.0', temp: '24-27°C', rain: '40-60mm', season: 'Zaid', category: 'Fruit' },
+            { name: 'muskmelon', N: '80-120', P: '5-30', K: '45-55', pH: '6.0-6.8', temp: '27-29°C', rain: '20-30mm', season: 'Zaid', category: 'Fruit' },
+            { name: 'apple', N: '0-40', P: '120-145', K: '195-205', pH: '5.5-6.5', temp: '21-24°C', rain: '100-125mm', season: 'Temperate', category: 'Fruit' },
+            { name: 'orange', N: '0-40', P: '5-30', K: '5-15', pH: '6.0-8.0', temp: '10-35°C', rain: '100-120mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'papaya', N: '30-70', P: '45-70', K: '45-55', pH: '6.0-7.0', temp: '23-44°C', rain: '40-250mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'coconut', N: '15-40', P: '5-30', K: '25-35', pH: '5.0-6.5', temp: '25-28°C', rain: '130-225mm', season: 'Perennial', category: 'Plantation' },
+            { name: 'pomegranate', N: '0-40', P: '5-30', K: '35-45', pH: '5.5-7.2', temp: '18-25°C', rain: '35-50mm', season: 'Perennial', category: 'Fruit' },
+            { name: 'lentil', N: '0-40', P: '55-80', K: '15-25', pH: '5.9-7.8', temp: '18-30°C', rain: '35-55mm', season: 'Rabi', category: 'Pulses' },
+            { name: 'blackgram', N: '30-60', P: '55-80', K: '25-35', pH: '6.5-7.8', temp: '25-35°C', rain: '60-75mm', season: 'Kharif', category: 'Pulses' },
+            { name: 'mungbean', N: '0-40', P: '35-60', K: '15-25', pH: '6.2-7.2', temp: '27-29°C', rain: '35-60mm', season: 'Kharif/Zaid', category: 'Pulses' },
+            { name: 'mothbeans', N: '0-40', P: '35-60', K: '15-25', pH: '3.5-10.0', temp: '24-32°C', rain: '35-75mm', season: 'Kharif', category: 'Pulses' },
+            { name: 'pigeonpeas', N: '0-40', P: '55-80', K: '15-25', pH: '4.8-7.5', temp: '18-38°C', rain: '90-190mm', season: 'Kharif', category: 'Pulses' },
+            { name: 'kidneybeans', N: '0-40', P: '55-80', K: '15-25', pH: '5.5-5.8', temp: '15-25°C', rain: '60-150mm', season: 'Rabi', category: 'Pulses' }
+        ];
+
+        const CAT_COLORS = { Cereal: 'emerald', Pulses: 'blue', Commercial: 'amber', Plantation: 'purple', Fruit: 'rose', Temperate: 'cyan' };
+
+        function loadCropInsights() {
+            const grid = document.getElementById('insights-grid');
+            grid.innerHTML = CROP_CATALOG.map(c => {
+                const col = CAT_COLORS[c.category] || 'slate';
+                return `
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                  <div>
+                    <div class="flex items-center justify-between mb-2">
+                      <span class="text-[10px] font-extrabold uppercase text-${col}-700 bg-${col}-50 px-2 py-0.5 rounded-full border border-${col}-200">${c.category}</span>
+                      <span class="text-[10px] font-bold text-slate-400"><i class="fas fa-calendar-days mr-1"></i>${c.season}</span>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 capitalize flex items-center mt-1">
+                      <i class="fas fa-seedling text-emerald-600 mr-2 text-sm"></i>${c.name}
+                    </h3>
+                    <div class="grid grid-cols-2 gap-2 mt-3 text-xs">
+                      <div class="p-2 bg-slate-50 rounded-xl border border-slate-100"><span class="text-[9px] text-slate-400 font-bold uppercase block">Nitrogen</span><span class="font-extrabold text-slate-800">${c.N} kg/ha</span></div>
+                      <div class="p-2 bg-slate-50 rounded-xl border border-slate-100"><span class="text-[9px] text-slate-400 font-bold uppercase block">Phosphorus</span><span class="font-extrabold text-slate-800">${c.P} kg/ha</span></div>
+                      <div class="p-2 bg-slate-50 rounded-xl border border-slate-100"><span class="text-[9px] text-slate-400 font-bold uppercase block">Potassium</span><span class="font-extrabold text-slate-800">${c.K} kg/ha</span></div>
+                      <div class="p-2 bg-slate-50 rounded-xl border border-slate-100"><span class="text-[9px] text-slate-400 font-bold uppercase block">pH Range</span><span class="font-extrabold text-slate-800">${c.pH}</span></div>
+                    </div>
+                  </div>
+                  <div class="pt-3 mt-3 border-t border-slate-100 flex justify-between text-xs text-slate-500 font-medium">
+                    <span><i class="fas fa-temperature-high text-amber-500 mr-1"></i>${c.temp}</span>
+                    <span><i class="fas fa-cloud-rain text-blue-500 mr-1"></i>${c.rain}</span>
+                  </div>
+                </div>`;
+            }).join('');
+        }
+
+        // ── Climate Trends
+        async function loadClimateData() {
+            const cropFilter   = document.getElementById('climate-crop-filter')?.value;
+            const regionFilter = document.getElementById('climate-region-filter')?.value;
+            try {
+                let url = '/insights/climate?year_from=2001&year_to=2024';
+                if (cropFilter)   url += `&crop_type=${encodeURIComponent(cropFilter)}`;
+                if (regionFilter) url += `&region=${encodeURIComponent(regionFilter)}`;
+
+                const r = await apiCall(url);
+                if (!r.success) return;
+
+                // Populate filter dropdowns (first load only)
+                const cropSel   = document.getElementById('climate-crop-filter');
+                const regionSel = document.getElementById('climate-region-filter');
+                if (cropSel.options.length <= 1) {
+                    r.filters.cropTypes.forEach(c => { const o = new Option(c, c); cropSel.add(o); });
+                }
+                if (regionSel.options.length <= 1) {
+                    r.filters.regions.forEach(rg => { const o = new Option(rg.replace(/_/g,' '), rg); regionSel.add(o); });
+                }
+
+                // Charts
+                const years  = r.trend.map(t => t.year);
+                const temps  = r.trend.map(t => parseFloat(t.avg_temp));
+                const yields = r.trend.map(t => parseFloat(t.avg_yield));
+
+                if (climateChartT) climateChartT.destroy();
+                if (climateChartY) climateChartY.destroy();
+
+                const ctx1 = document.getElementById('climateTempChart')?.getContext('2d');
+                if (ctx1) climateChartT = new Chart(ctx1, {
+                    type: 'line',
+                    data: { labels: years, datasets: [{ label: 'Avg Temp (°C)', data: temps, borderColor: '#f59e0b', backgroundColor: 'rgba(245,158,11,0.08)', fill: true, tension: 0.4, pointRadius: 2 }] },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { title: { display: true, text: '°C' } } } }
+                });
+
+                const ctx2 = document.getElementById('climateYieldChart')?.getContext('2d');
+                if (ctx2) climateChartY = new Chart(ctx2, {
+                    type: 'line',
+                    data: { labels: years, datasets: [{ label: 'Avg Yield (MT/HA)', data: yields, borderColor: '#10b981', backgroundColor: 'rgba(16,185,129,0.08)', fill: true, tension: 0.4, pointRadius: 2 }] },
+                    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { title: { display: true, text: 'MT/HA' } } } }
+                });
+
+                // Top crops
+                const topBox = document.getElementById('climate-top-crops');
+                topBox.innerHTML = r.topCrops.map((c, i) => `
+                  <div class="bg-slate-50 border border-slate-200 p-3 rounded-xl text-center">
+                    <span class="text-[10px] font-extrabold text-slate-400">#${i+1}</span>
+                    <p class="font-extrabold text-slate-800 text-xs mt-0.5 capitalize">${c.crop_type}</p>
+                    <p class="text-emerald-700 font-extrabold text-sm mt-1">${parseFloat(c.avg_yield).toFixed(2)}</p>
+                    <p class="text-[9px] text-slate-400">MT/HA avg</p>
+                  </div>`).join('');
+
+            } catch (e) { console.error('Climate data error', e); }
+        }
+
+        // ── Soil Benchmarks
+        async function loadSoilData() {
+            const district  = document.getElementById('soil-district-filter')?.value;
+            const soilType  = document.getElementById('soil-type-filter')?.value;
+            const tableBox  = document.getElementById('soil-table');
+            tableBox.innerHTML = `<div class="p-6 text-center text-slate-400 text-xs"><i class="fas fa-spinner fa-spin mr-1"></i> Loading...</div>`;
+            try {
+                let url = '/insights/soil';
+                const params = [];
+                if (district) params.push(`district=${encodeURIComponent(district)}`);
+                if (soilType) params.push(`soil_type=${encodeURIComponent(soilType)}`);
+                if (params.length) url += '?' + params.join('&');
+
+                const r = await apiCall(url);
+                if (!r.success) throw new Error();
+
+                // Populate filters
+                const distSel = document.getElementById('soil-district-filter');
+                const typeSel = document.getElementById('soil-type-filter');
+                if (distSel.options.length <= 1) r.filters.districts.forEach(d => distSel.add(new Option(d, d)));
+                if (typeSel.options.length <= 1) r.filters.soilTypes.forEach(s => typeSel.add(new Option(s, s)));
+
+                if (!r.benchmarks.length) {
+                    tableBox.innerHTML = `<div class="p-6 text-center text-slate-400 text-xs">No soil data found for filters.</div>`;
+                    return;
+                }
+
+                tableBox.innerHTML = `
+                  <table class="w-full text-xs">
+                    <thead class="bg-slate-50 border-b border-slate-200">
+                      <tr class="text-left">
+                        <th class="px-4 py-3 font-extrabold text-slate-600">District</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">Soil Type</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">N (kg/ha)</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">P (kg/ha)</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">K (kg/ha)</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">pH</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">Organic C%</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">Moisture%</th>
+                        <th class="px-4 py-3 font-extrabold text-slate-600">Samples</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                      ${r.benchmarks.map(b => `
+                        <tr class="hover:bg-slate-50 transition">
+                          <td class="px-4 py-3 font-bold text-slate-800">${b.district}</td>
+                          <td class="px-4 py-3"><span class="bg-amber-50 text-amber-700 border border-amber-200 px-2 py-0.5 rounded-full font-bold">${b.soil_type}</span></td>
+                          <td class="px-4 py-3 font-bold">${b.avg_nitrogen}</td>
+                          <td class="px-4 py-3 font-bold">${b.avg_phosphorus}</td>
+                          <td class="px-4 py-3 font-bold">${b.avg_potassium}</td>
+                          <td class="px-4 py-3 font-bold">${b.avg_ph}</td>
+                          <td class="px-4 py-3 font-bold">${b.avg_organic_carbon}</td>
+                          <td class="px-4 py-3 font-bold">${b.avg_moisture}%</td>
+                          <td class="px-4 py-3 text-slate-400">${b.samples}</td>
+                        </tr>`).join('')}
+                    </tbody>
+                  </table>`;
+            } catch (e) {
+                tableBox.innerHTML = `<div class="p-6 text-center text-red-400 text-xs">Failed to load soil data.</div>`;
+            }
+        }
+
+        // ── Market Prices
+        async function loadMarketData() {
+            const tableBox = document.getElementById('market-table');
+            try {
+                const r = await apiCall('/market/prices?limit=200');
+                if (!r.success || !r.prices) throw new Error();
+                allMarketRows = r.prices;
+                renderMarketTable(allMarketRows);
+            } catch (e) {
+                tableBox.innerHTML = `<div class="p-6 text-center text-slate-400 text-xs">Market data unavailable.</div>`;
+            }
+        }
+
+        function filterMarketTable() {
+            const q = document.getElementById('market-search').value.toLowerCase();
+            renderMarketTable(allMarketRows.filter(r =>
+                (r.commodity || '').toLowerCase().includes(q) ||
+                (r.district  || '').toLowerCase().includes(q)
+            ));
+        }
+
+        function renderMarketTable(rows) {
+            const tableBox = document.getElementById('market-table');
+            if (!rows.length) { tableBox.innerHTML = `<div class="p-6 text-center text-slate-400 text-xs">No records found.</div>`; return; }
+            tableBox.innerHTML = `
+              <table class="w-full text-xs">
+                <thead class="bg-slate-50 border-b border-slate-200">
+                  <tr class="text-left">
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Commodity</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">District</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Market</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Variety</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Min ₹</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Max ₹</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Modal ₹</th>
+                    <th class="px-4 py-3 font-extrabold text-slate-600">Date</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                  ${rows.slice(0,100).map(r => `
+                    <tr class="hover:bg-slate-50 transition">
+                      <td class="px-4 py-3 font-bold text-slate-800">${r.commodity || '-'}</td>
+                      <td class="px-4 py-3 text-slate-600">${r.district || '-'}</td>
+                      <td class="px-4 py-3 text-slate-600">${r.market || '-'}</td>
+                      <td class="px-4 py-3 text-slate-500">${r.variety || '-'}</td>
+                      <td class="px-4 py-3 font-bold text-red-600">₹${Number(r.min_price || 0).toLocaleString()}</td>
+                      <td class="px-4 py-3 font-bold text-emerald-600">₹${Number(r.max_price || 0).toLocaleString()}</td>
+                      <td class="px-4 py-3 font-extrabold text-blue-700">₹${Number(r.modal_price || 0).toLocaleString()}</td>
+                      <td class="px-4 py-3 text-slate-400">${r.arrival_date || '-'}</td>
+                    </tr>`).join('')}
+                </tbody>
+              </table>
+              ${rows.length > 100 ? `<p class="text-center text-xs text-slate-400 py-3">Showing 100 of ${rows.length} records. Use search to filter.</p>` : ''}`;
+        }
+    </script>
+</body>
+</html>

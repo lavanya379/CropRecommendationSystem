@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "ip_address": "::1",
+    "created_at": "2026-10-03T07:59:09.663Z",
+    "updated_at": "2026-10-03T07:59:09.663Z",
+    "status": "active",
+    "role": "user"
+  },
+  {
+    "id": 2,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "ip_address": "::1",
+    "created_at": "2026-10-03T08:10:39.754Z",
+    "updated_at": "2026-10-03T08:10:39.754Z",
+    "status": "active",
+    "role": "user"
+  },
+  {
+    "id": 3,
+    "user_id": 1,
+    "action": "USER_LOGIN",
+    "ip_address": "::1",
+    "created_at": "2026-10-04T15:59:31.572Z",
+    "updated_at": "2026-10-04T15:59:31.572Z",
+    "status": "active",
+    "role": "user"
+  }
+]

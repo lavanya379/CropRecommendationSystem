@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | My Farms</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar Navigation Container -->
+        <div id="sidebar-container"></div>
+
+        <!-- Main Workspace -->
+        <main class="flex-1 overflow-y-auto pt-16 lg:pt-0 lg:pl-72 bg-slate-50 custom-scrollbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+                
+                <!-- Page Header -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-max mb-2 border border-emerald-200">
+                            <i class="fas fa-seedling"></i>
+                            <span>Agricultural Land Holdings</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">My Farms</h1>
+                        <p class="text-slate-500 text-sm mt-1">Manage registered fields, soil types, and irrigation profiles.</p>
+                    </div>
+
+                    <button id="open-add-farm-modal" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-extrabold shadow-md shadow-emerald-200 transition flex items-center">
+                        <i class="fas fa-plus mr-2"></i> Register New Farm
+                    </button>
+                </div>
+
+                <!-- Farms Grid -->
+                <div id="farms-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="col-span-full text-center py-16 bg-white rounded-3xl border border-slate-200 text-slate-400">
+                        <i class="fas fa-spinner fa-spin text-2xl mb-2"></i>
+                        <p class="text-xs">Loading farm holdings...</p>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Add/Edit Farm Modal -->
+    <div id="farm-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 border border-slate-200 shadow-2xl relative">
+            <button id="close-farm-modal" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600">
+                <i class="fas fa-xmark text-lg"></i>
+            </button>
+            <h3 class="text-xl font-extrabold text-slate-900 mb-1" id="modal-title">Register New Farm</h3>
+            <p class="text-xs text-slate-400 mb-6">Enter field location details for precise AI recommendation matching.</p>
+
+            <form id="farm-form" class="space-y-4">
+                <input type="hidden" id="farm-id">
+                
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Farm Name *</label>
+                    <input type="text" id="farm-name" required placeholder="e.g. North Acre Field" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">State</label>
+                        <input type="text" id="farm-state" placeholder="Andhra Pradesh" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">District</label>
+                        <input type="text" id="farm-district" placeholder="Nandyal" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Area (Acres)</label>
+                        <input type="number" id="farm-area" step="0.1" placeholder="e.g. 5.0" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Irrigation Type</label>
+                        <select id="farm-irrigation" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                            <option value="Borewell">Borewell</option>
+                            <option value="Canal">Canal</option>
+                            <option value="Rainfed">Rainfed</option>
+                            <option value="Drip Irrigation">Drip Irrigation</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 mb-1">Soil Type</label>
+                    <select id="farm-soil" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:ring-2 focus:ring-emerald-500 outline-none">
+                        <option value="Black Cotton Soil">Black Cotton Soil</option>
+                        <option value="Red Sandy Loam">Red Sandy Loam</option>
+                        <option value="Alluvial Soil">Alluvial Soil</option>
+                        <option value="Clayey Loam">Clayey Loam</option>
+                    </select>
+                </div>
+
+                <div class="pt-4 flex justify-end space-x-3">
+                    <button type="button" id="cancel-farm-btn" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold rounded-xl transition">Cancel</button>
+                    <button type="submit" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-extrabold rounded-xl shadow-md transition">Save Farm</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Page Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/farm.js"></script>
+</body>
+</html>

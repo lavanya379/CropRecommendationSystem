@@ -1,0 +1,2121 @@
+State,District,Market,Commodity,Variety,Grade,Arrival_Date,Min Price,Max Price,Modal Price
+Andhra Pradesh,Chittor,Palamaner,Green Chilli,Green Chilly,FAQ,28-07-2023,8000.0,10000.0,9000.0
+Andhra Pradesh,Cuddapah,Cuddapah,Groundnut,Local,FAQ,28-07-2023,6269.0,7416.0,7036.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Bulb,FAQ,28-07-2023,4888.0,9745.0,8650.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Finger,FAQ,28-07-2023,5748.0,10025.0,9665.0
+Andhra Pradesh,East Godavari,Karapa,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2040.0,2060.0,2050.0
+Andhra Pradesh,East Godavari,Rajahmundry,Paddy(Dhan)(Common),Paddy,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Andhra Pradesh,East Godavari,Rajahmundry,Paddy(Dhan)(Common),Swarna Masuri (New),FAQ,28-07-2023,2060.0,2060.0,2060.0
+Andhra Pradesh,East Godavari,Sampara,Paddy(Dhan)(Common),Swarna Masuri (New),FAQ,28-07-2023,2000.0,2080.0,2040.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),Black Gram (Whole),FAQ,28-07-2023,8100.0,8300.0,8200.0
+Andhra Pradesh,Guntur,Tenali,Lemon,Lemon,FAQ,28-07-2023,1500.0,3500.0,2500.0
+Andhra Pradesh,Kurnool,Alur,Jowar(Sorghum),Jowar ( White),FAQ,28-07-2023,3030.0,3090.0,3060.0
+Andhra Pradesh,Kurnool,Atmakur,Maize,Hybrid/Local,FAQ,28-07-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Atmakur,Paddy(Dhan)(Common),Sona Mahsuri,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Andhra Pradesh,Kurnool,Nandikotkur,Bengal Gram(Gram)(Whole),Gulabi,FAQ,28-07-2023,5335.0,5335.0,5335.0
+Andhra Pradesh,Kurnool,Nandikotkur,Maize,Hybrid,FAQ,28-07-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Nandikotkur,Paddy(Dhan)(Common),Sona,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Andhra Pradesh,Visakhapatnam,Anakapally,Gur(Jaggery),NO 2,FAQ,28-07-2023,3850.0,3850.0,3850.0
+Andhra Pradesh,Visakhapatnam,Anakapally,Gur(Jaggery),NO 3,FAQ,28-07-2023,3750.0,3750.0,3750.0
+Telangana,Adilabad,Adilabad,Cotton,Cotton (Unginned),FAQ,28-07-2023,6850.0,6900.0,6900.0
+Telangana,Adilabad,Adilabad(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,9000.0,9200.0,9000.0
+Telangana,Adilabad,Boath,Jowar(Sorghum),Jowar ( White),FAQ,28-07-2023,3000.0,3000.0,3000.0
+Telangana,Adilabad,Ichoda,Cotton,Bramha,FAQ,28-07-2023,7200.0,7650.0,7450.0
+Telangana,Adilabad,Kuber,Cotton,Cotton (Unginned),FAQ,28-07-2023,7320.0,7320.0,7320.0
+Telangana,Adilabad,Laxettipet,Carrot,Carrot,FAQ,28-07-2023,5000.0,5000.0,5000.0
+Telangana,Adilabad,Nirmal,Cotton,Bramha,FAQ,28-07-2023,7200.0,7650.0,7450.0
+Telangana,Hyderabad,Bowenpally,Amla(Nelli Kai),Amla,FAQ,28-07-2023,3000.0,4500.0,4000.0
+Telangana,Hyderabad,Bowenpally,Beetroot,Beetroot,FAQ,28-07-2023,600.0,1200.0,1000.0
+Telangana,Hyderabad,Bowenpally,Bhindi(Ladies Finger),Bhindi,FAQ,28-07-2023,1000.0,4000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Bitter gourd,Bitter Gourd,FAQ,28-07-2023,1000.0,4700.0,3500.0
+Telangana,Hyderabad,Bowenpally,Bottle gourd,Bottle Gourd,FAQ,28-07-2023,400.0,1200.0,1000.0
+Telangana,Hyderabad,Bowenpally,Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,1000.0,3000.0,2500.0
+Telangana,Hyderabad,Bowenpally,Cabbage,Cabbage,FAQ,28-07-2023,600.0,1300.0,1100.0
+Telangana,Hyderabad,Bowenpally,Capsicum,Capsicum,FAQ,28-07-2023,3000.0,7000.0,6000.0
+Telangana,Hyderabad,Bowenpally,Carrot,Carrot,FAQ,28-07-2023,600.0,4000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Cauliflower,African Sarson,FAQ,28-07-2023,500.0,2000.0,1600.0
+Telangana,Hyderabad,Bowenpally,Cluster beans,Cluster Beans,FAQ,28-07-2023,1000.0,2500.0,2000.0
+Telangana,Hyderabad,Bowenpally,Colacasia,Colacasia,FAQ,28-07-2023,1500.0,3800.0,3000.0
+Telangana,Hyderabad,Bowenpally,Cucumbar(Kheera),Cucumbar,FAQ,28-07-2023,500.0,1800.0,1500.0
+Telangana,Hyderabad,Bowenpally,Drumstick,Drumstick,FAQ,28-07-2023,1000.0,2500.0,2000.0
+Telangana,Hyderabad,Bowenpally,Field Pea,Field Pea,FAQ,28-07-2023,2000.0,6000.0,5000.0
+Telangana,Hyderabad,Bowenpally,French Beans (Frasbean),French Beans (Frasbean),FAQ,28-07-2023,2000.0,7500.0,6000.0
+Telangana,Hyderabad,Bowenpally,Green Chilli,Green Chilly,FAQ,28-07-2023,3000.0,7000.0,6000.0
+Telangana,Hyderabad,Bowenpally,Onion,1st Sort,FAQ,28-07-2023,600.0,1500.0,1300.0
+Telangana,Hyderabad,Bowenpally,Onion Green,Onion Green,FAQ,28-07-2023,3000.0,7000.0,6000.0
+Telangana,Hyderabad,Bowenpally,Potato,(Red Nanital),FAQ,28-07-2023,800.0,1800.0,1600.0
+Telangana,Hyderabad,Bowenpally,Pumpkin,Other,FAQ,28-07-2023,600.0,1400.0,1200.0
+Telangana,Hyderabad,Bowenpally,Ridgeguard(Tori),Other,FAQ,28-07-2023,1000.0,4000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Snakeguard,Other,FAQ,28-07-2023,500.0,1000.0,900.0
+Telangana,Hyderabad,Bowenpally,Sweet Potato,Hosur Green,FAQ,28-07-2023,500.0,2800.0,2000.0
+Telangana,Hyderabad,Bowenpally,White Pumpkin,Other,FAQ,28-07-2023,600.0,1400.0,1200.0
+Telangana,Hyderabad,Bowenpally,Yam (Ratalu),Other,FAQ,28-07-2023,1000.0,5000.0,4000.0
+Telangana,Hyderabad,Gudimalkapur,Banana - Green,Banana - Green,FAQ,28-07-2023,2500.0,3000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Beetroot,Beetroot,FAQ,28-07-2023,1000.0,2000.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Bhindi(Ladies Finger),Bhindi,FAQ,28-07-2023,2000.0,4000.0,2800.0
+Telangana,Hyderabad,Gudimalkapur,Bitter gourd,Bitter Gourd,FAQ,28-07-2023,2000.0,3500.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,1500.0,2000.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Cabbage,Cabbage,FAQ,28-07-2023,800.0,1200.0,1000.0
+Telangana,Hyderabad,Gudimalkapur,Capsicum,Capsicum,FAQ,28-07-2023,3500.0,8000.0,6000.0
+Telangana,Hyderabad,Gudimalkapur,Carrot,Carrot,FAQ,28-07-2023,1800.0,3500.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Cauliflower,African Sarson,FAQ,28-07-2023,2000.0,4000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Cluster beans,Cluster Beans,FAQ,28-07-2023,1500.0,2500.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Cucumbar(Kheera),Cucumbar,FAQ,28-07-2023,1200.0,1600.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Drumstick,Drumstick,FAQ,28-07-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Field Pea,Field Pea,FAQ,28-07-2023,2000.0,4000.0,3000.0
+Telangana,Hyderabad,Gudimalkapur,French Beans (Frasbean),French Beans (Frasbean),FAQ,28-07-2023,3500.0,8000.0,6000.0
+Telangana,Hyderabad,Gudimalkapur,Green Chilli,Green Chilly,FAQ,28-07-2023,3500.0,8000.0,6000.0
+Telangana,Hyderabad,Gudimalkapur,Onion,1st Sort,FAQ,28-07-2023,700.0,2000.0,1300.0
+Telangana,Hyderabad,Gudimalkapur,Onion Green,Onion Green,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Potato,(Red Nanital),FAQ,28-07-2023,800.0,2000.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Pumpkin,Other,FAQ,28-07-2023,1600.0,1600.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Ridgeguard(Tori),Other,FAQ,28-07-2023,2000.0,3500.0,3000.0
+Telangana,Hyderabad,Mahboob Manison,Beetroot,Beetroot,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,Mahboob Manison,Bitter gourd,Bitter Gourd,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,Mahboob Manison,Bottle gourd,Bottle Gourd,FAQ,28-07-2023,400.0,400.0,400.0
+Telangana,Hyderabad,Mahboob Manison,Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,1750.0,1750.0,1750.0
+Telangana,Hyderabad,Mahboob Manison,Cabbage,Cabbage,FAQ,28-07-2023,1100.0,1300.0,1200.0
+Telangana,Hyderabad,Mahboob Manison,Capsicum,Capsicum,FAQ,28-07-2023,5800.0,6000.0,5900.0
+Telangana,Hyderabad,Mahboob Manison,Carrot,Carrot,FAQ,28-07-2023,3000.0,3000.0,3000.0
+Telangana,Hyderabad,Mahboob Manison,Cluster beans,Cluster Beans,FAQ,28-07-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,Mahboob Manison,Garlic,Average,FAQ,28-07-2023,10000.0,15000.0,12000.0
+Telangana,Hyderabad,Mahboob Manison,Green Chilli,Green Chilly,FAQ,28-07-2023,6000.0,7500.0,6750.0
+Telangana,Hyderabad,Mahboob Manison,Onion,1st Sort,FAQ,28-07-2023,1400.0,2000.0,1600.0
+Telangana,Hyderabad,Mahboob Manison,Onion,2nd Sort,FAQ,28-07-2023,300.0,1300.0,700.0
+Telangana,Hyderabad,Mahboob Manison,Tamarind Fruit,Chapathi,FAQ,28-07-2023,7000.0,10000.0,8000.0
+Telangana,Hyderabad,Mahboob Manison,Tomato,Deshi,FAQ,28-07-2023,9600.0,11200.0,10400.0
+Telangana,Jagityal,Mallapur,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Dharmapuri,Paddy(Dhan)(Common),Paddy,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Dharmaram,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Gangadhara,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Husnabad,Maize,Hybrid/Local,FAQ,28-07-2023,2000.0,2100.0,2050.0
+Telangana,Karimnagar,Huzzurabad,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Huzzurabad,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Ibrahimpatnam,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Karimnagar,Beetroot,Beetroot,FAQ,28-07-2023,3000.0,3000.0,3000.0
+Telangana,Karimnagar,Karimnagar,Bitter gourd,Bitter Gourd,FAQ,28-07-2023,6500.0,6500.0,6500.0
+Telangana,Karimnagar,Karimnagar,Cabbage,Cabbage,FAQ,28-07-2023,1400.0,1400.0,1400.0
+Telangana,Karimnagar,Karimnagar,Capsicum,Capsicum,FAQ,28-07-2023,7000.0,7000.0,7000.0
+Telangana,Karimnagar,Karimnagar,Carrot,Carrot,FAQ,28-07-2023,3000.0,3000.0,3000.0
+Telangana,Karimnagar,Karimnagar,Coriander(Leaves),Coriander,FAQ,28-07-2023,300.0,400.0,350.0
+Telangana,Karimnagar,Karimnagar,Green Chilli,Green Chilly,FAQ,28-07-2023,5000.0,5500.0,5250.0
+Telangana,Karimnagar,Karimnagar,Ridgeguard(Tori),Other,FAQ,28-07-2023,5500.0,6500.0,6000.0
+Telangana,Karimnagar,Karimnagar,Thondekai,Other,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Beetroot,Beetroot,FAQ,28-07-2023,3000.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,28-07-2023,4000.0,6000.0,5000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,28-07-2023,7000.0,8000.0,7500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,28-07-2023,2000.0,3000.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,5000.0,7000.0,6000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,28-07-2023,2000.0,2500.0,2000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Carrot,Carrot,FAQ,28-07-2023,3000.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cauliflower,African Sarson,FAQ,28-07-2023,6000.0,8000.0,7000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,28-07-2023,2000.0,3000.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Drumstick,Drumstick,FAQ,28-07-2023,4000.0,6000.0,5000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,28-07-2023,6000.0,7500.0,6500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,28-07-2023,6500.0,8500.0,7500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Tomato,Deshi,FAQ,28-07-2023,10009.0,12000.0,11000.0
+Telangana,Karimnagar,Kathalapur,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2203.0,2203.0,2203.0
+Telangana,Karimnagar,Koratla,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2100.0,2100.0,2100.0
+Telangana,Karimnagar,Mallial(Cheppial),Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Manakodur,Paddy(Dhan)(Common),I.R.-64,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Manakodur,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Metpally,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2203.0,2203.0,2203.0
+Telangana,Karimnagar,Peddapalli,Cotton,Cotton (Unginned),FAQ,28-07-2023,6380.0,6380.0,6380.0
+Telangana,Karimnagar,Pudur,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Sircilla,Cotton,RCH-2,FAQ,28-07-2023,6080.0,6380.0,6380.0
+Telangana,Karimnagar,Sircilla,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2040.0,2060.0,2060.0
+Telangana,Karimnagar,Sultanabad,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Vemulawada,Paddy(Dhan)(Common),I.R. 64,FAQ,28-07-2023,2040.0,2060.0,2060.0
+Telangana,Khammam,Bhadrachalam,Paddy(Dhan)(Common),Samba Masuri,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Khammam,Burgampadu,Paddy(Dhan)(Common),Samba Masuri,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Khammam,Charla,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2030.0,2060.0,2040.0
+Telangana,Khammam,Enkoor,Cotton,Cotton (Unginned),FAQ,28-07-2023,6500.0,7000.0,6800.0
+Telangana,Khammam,Madhira,Wood,Subabul,FAQ,28-07-2023,360.0,380.0,370.0
+Telangana,Mahbubnagar,Amangal,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2050.0,2050.0,2050.0
+Telangana,Mahbubnagar,Wanaparthy Road(Prbbair),Paddy(Dhan)(Common),B P T,FAQ,28-07-2023,2020.0,2060.0,2040.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Medak,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Sangareddy,Brinjal,Brinjal,FAQ,28-07-2023,1800.0,2000.0,1900.0
+Telangana,Medak,Sangareddy,Cabbage,Cabbage,FAQ,28-07-2023,1200.0,1200.0,1200.0
+Telangana,Medak,Sangareddy,Green Chilli,Green Chilly,FAQ,28-07-2023,7000.0,8000.0,7500.0
+Telangana,Nalgonda,Aler,Arhar (Tur/Red Gram)(Whole),777 New Ind,FAQ,28-07-2023,6600.0,6600.0,6600.0
+Telangana,Nalgonda,Chandur,Paddy(Dhan)(Basmati),1121,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Chandur(Mungodu),Paddy(Dhan)(Common),I.R. 64,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Chityal,Cotton,Bramha,FAQ,28-07-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Cotton,RCH-2,FAQ,28-07-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,1940.0,2060.0,2040.0
+Telangana,Nalgonda,Choutuppal,Paddy(Dhan)(Common),I.R. 64,FAQ,28-07-2023,2000.0,2060.0,2040.0
+Telangana,Nalgonda,Devarakonda,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Dindi),Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Mallepalli),Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Halia,Cotton,Cotton (Unginned),FAQ,28-07-2023,6380.0,6380.0,6380.0
+Telangana,Nalgonda,Halia,Maize,Deshi Red,FAQ,28-07-2023,1930.0,1930.0,1930.0
+Telangana,Nalgonda,Halia,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Kodad,Paddy(Dhan)(Common),B P T,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Miryalaguda,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Mothkur,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Nakrekal,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2203.0,2203.0,2203.0
+Telangana,Nalgonda,Nalgonda,Cotton,RCH-2,FAQ,28-07-2023,7150.0,7150.0,7150.0
+Telangana,Nizamabad,Bichkunda,Maize,Deshi Red,FAQ,28-07-2023,1962.0,1962.0,1962.0
+Telangana,Nizamabad,Bichkunda,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Nizamabad,Bichkunda,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Nizamabad,Bichkunda,Soyabean,Soyabeen,FAQ,28-07-2023,4300.0,4300.0,4300.0
+Telangana,Nizamabad,Bodhan,Paddy(Dhan)(Common),MTU-1010,FAQ,28-07-2023,2040.0,2040.0,2040.0
+Telangana,Nizamabad,Gandhari,Maize,Deshi Red,FAQ,28-07-2023,1962.0,1962.0,1962.0
+Telangana,Ranga Reddy,Chevella,Brinjal,Other,FAQ,28-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Chevella,Cabbage,Cabbage,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Chevella,Cauliflower,African Sarson,FAQ,28-07-2023,3000.0,3000.0,3000.0
+Telangana,Ranga Reddy,Chevella,Green Chilli,Green Chilly,FAQ,28-07-2023,8000.0,8000.0,8000.0
+Telangana,Ranga Reddy,Chevella,Tomato,Deshi,FAQ,28-07-2023,9000.0,9000.0,9000.0
+Telangana,Ranga Reddy,Medchal,Maize,Hybrid,FAQ,28-07-2023,1962.0,1962.0,1962.0
+Telangana,Ranga Reddy,Medchal,Paddy(Dhan)(Common),I.R. 64,FAQ,28-07-2023,2060.0,2060.0,2060.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Banana - Green,Banana - Green,FAQ,28-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Beetroot,Beetroot,FAQ,28-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,28-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,28-07-2023,5200.0,5200.0,5200.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,28-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,28-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cabbage,Cabbage,FAQ,28-07-2023,1600.0,1600.0,1600.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Carrot,Carrot,FAQ,28-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cauliflower,African Sarson,FAQ,28-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,28-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Colacasia,Colacasia,FAQ,28-07-2023,4300.0,4300.0,4300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,28-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Drumstick,Drumstick,FAQ,28-07-2023,500.0,500.0,500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Field Pea,Field Pea,FAQ,28-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,28-07-2023,8000.0,8000.0,8000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Green Chilli,Green Chilly,FAQ,28-07-2023,7500.0,7500.0,7500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,28-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Onion,1st Sort,FAQ,28-07-2023,1900.0,1900.0,1900.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Potato,(Red Nanital),FAQ,28-07-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,28-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Snakeguard,Other,FAQ,28-07-2023,1300.0,1300.0,1300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Yam (Ratalu),Other,FAQ,28-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Sardarnagar,Paddy(Dhan)(Common),1001,FAQ,28-07-2023,1900.0,2100.0,2000.0
+Telangana,Warangal,Narsampet(Nekonda),Cotton,Bramha,FAQ,28-07-2023,6100.0,6300.0,6200.0
+Telangana,Warangal,Parkal,Cotton,Cotton (Unginned),FAQ,28-07-2023,6600.0,6600.0,6600.0
+Telangana,Warangal,Warangal,Apple,Delicious,Medium,28-07-2023,15000.0,15000.0,15000.0
+Telangana,Warangal,Warangal,Beetroot,Beetroot,FAQ,28-07-2023,3200.0,3600.0,3400.0
+Telangana,Warangal,Warangal,Bhindi(Ladies Finger),Bhindi,FAQ,28-07-2023,2000.0,2400.0,2200.0
+Telangana,Warangal,Warangal,Bitter gourd,Bitter Gourd,FAQ,28-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Brinjal,Brinjal,FAQ,28-07-2023,2200.0,2400.0,2300.0
+Telangana,Warangal,Warangal,Cabbage,Cabbage,FAQ,28-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Capsicum,Capsicum,FAQ,28-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Carrot,Carrot,FAQ,28-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cauliflower,Cauliflower,FAQ,28-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cluster beans,Cluster Beans,FAQ,28-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Colacasia,Colacasia,FAQ,28-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Cucumbar(Kheera),Cucumbar,FAQ,28-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Field Pea,Field Pea,FAQ,28-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,French Beans (Frasbean),French Beans (Frasbean),FAQ,28-07-2023,11500.0,12000.0,11750.0
+Telangana,Warangal,Warangal,Green Chilli,Green Chilly,FAQ,28-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Plum,Plum,Medium,28-07-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Medium,28-07-2023,15000.0,15000.0,15000.0
+Telangana,Warangal,Warangal,Potato,Potato,FAQ,28-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Ridgeguard(Tori),Ridgeguard(Tori),FAQ,28-07-2023,4000.0,4500.0,4250.0
+Telangana,Warangal,Warangal,Yam (Ratalu),Yam (Ratalu),FAQ,28-07-2023,4500.0,5000.0,4750.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),Black Gram (Whole),FAQ,29-07-2023,8100.0,8300.0,8200.0
+Andhra Pradesh,Guntur,Tenali,Lemon,Lemon,FAQ,29-07-2023,1400.0,2500.0,1800.0
+Andhra Pradesh,Kurnool,Atmakur,Maize,Hybrid/Local,FAQ,29-07-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Atmakur,Paddy(Dhan)(Common),Sona Mahsuri,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Adilabad,Khanapur,Paddy(Dhan)(Common),MTU-1010,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Adilabad,Sarangapur,Paddy(Dhan)(Common),1001,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Hyderabad,Bowenpally,Amla(Nelli Kai),Amla,FAQ,29-07-2023,3000.0,5000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Beetroot,Beetroot,FAQ,29-07-2023,600.0,3000.0,1200.0
+Telangana,Hyderabad,Bowenpally,Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,2000.0,5000.0,3200.0
+Telangana,Hyderabad,Bowenpally,Bitter gourd,Bitter Gourd,FAQ,29-07-2023,1000.0,4000.0,2800.0
+Telangana,Hyderabad,Bowenpally,Bottle gourd,Bottle Gourd,FAQ,29-07-2023,400.0,1200.0,900.0
+Telangana,Hyderabad,Bowenpally,Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,800.0,3000.0,2000.0
+Telangana,Hyderabad,Bowenpally,Cabbage,Cabbage,FAQ,29-07-2023,600.0,1500.0,1000.0
+Telangana,Hyderabad,Bowenpally,Capsicum,Capsicum,FAQ,29-07-2023,3000.0,7500.0,4500.0
+Telangana,Hyderabad,Bowenpally,Carrot,Carrot,FAQ,29-07-2023,600.0,4000.0,2600.0
+Telangana,Hyderabad,Bowenpally,Cauliflower,African Sarson,FAQ,29-07-2023,500.0,2000.0,1000.0
+Telangana,Hyderabad,Bowenpally,Chow Chow,Chow Chow,FAQ,29-07-2023,1000.0,2000.0,1600.0
+Telangana,Hyderabad,Bowenpally,Cluster beans,Cluster Beans,FAQ,29-07-2023,1000.0,2500.0,2000.0
+Telangana,Hyderabad,Bowenpally,Colacasia,Colacasia,FAQ,29-07-2023,1500.0,3600.0,2200.0
+Telangana,Hyderabad,Bowenpally,Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,500.0,2000.0,1300.0
+Telangana,Hyderabad,Bowenpally,Drumstick,Drumstick,FAQ,29-07-2023,1000.0,3000.0,2500.0
+Telangana,Hyderabad,Bowenpally,Field Pea,Field Pea,FAQ,29-07-2023,3000.0,6500.0,5000.0
+Telangana,Hyderabad,Bowenpally,French Beans (Frasbean),French Beans (Frasbean),FAQ,29-07-2023,2500.0,8000.0,5000.0
+Telangana,Hyderabad,Bowenpally,Green Chilli,Green Chilly,FAQ,29-07-2023,3000.0,7000.0,5000.0
+Telangana,Hyderabad,Bowenpally,Groundnut pods (raw),Groundnut pods (raw),FAQ,29-07-2023,4000.0,6000.0,5500.0
+Telangana,Hyderabad,Bowenpally,Onion,1st Sort,FAQ,29-07-2023,600.0,2000.0,1500.0
+Telangana,Hyderabad,Bowenpally,Onion Green,Onion Green,FAQ,29-07-2023,4000.0,7000.0,5200.0
+Telangana,Hyderabad,Bowenpally,Potato,(Red Nanital),FAQ,29-07-2023,800.0,1800.0,1400.0
+Telangana,Hyderabad,Bowenpally,Pumpkin,Other,FAQ,29-07-2023,600.0,1500.0,900.0
+Telangana,Hyderabad,Bowenpally,Raddish,Other,FAQ,29-07-2023,300.0,400.0,380.0
+Telangana,Hyderabad,Bowenpally,Ridgeguard(Tori),Other,FAQ,29-07-2023,1500.0,4000.0,2800.0
+Telangana,Hyderabad,Bowenpally,Snakeguard,Other,FAQ,29-07-2023,600.0,1500.0,900.0
+Telangana,Hyderabad,Bowenpally,Sweet Potato,Hosur Green,FAQ,29-07-2023,500.0,1000.0,900.0
+Telangana,Hyderabad,Bowenpally,White Pumpkin,Other,FAQ,29-07-2023,500.0,1400.0,800.0
+Telangana,Hyderabad,Bowenpally,Yam (Ratalu),Other,FAQ,29-07-2023,2000.0,4000.0,3500.0
+Telangana,Hyderabad,Gudimalkapur,Banana - Green,Banana - Green,FAQ,29-07-2023,1500.0,3500.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Beetroot,Beetroot,FAQ,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,2000.0,4000.0,3000.0
+Telangana,Hyderabad,Gudimalkapur,Bitter gourd,Bitter Gourd,FAQ,29-07-2023,1300.0,5000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Bottle gourd,Bottle Gourd,FAQ,29-07-2023,1000.0,2000.0,1200.0
+Telangana,Hyderabad,Gudimalkapur,Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,1000.0,2000.0,1200.0
+Telangana,Hyderabad,Gudimalkapur,Cabbage,Cabbage,FAQ,29-07-2023,1000.0,1500.0,1100.0
+Telangana,Hyderabad,Gudimalkapur,Capsicum,Capsicum,FAQ,29-07-2023,2500.0,6000.0,4000.0
+Telangana,Hyderabad,Gudimalkapur,Carrot,Carrot,FAQ,29-07-2023,2000.0,4500.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Cauliflower,African Sarson,FAQ,29-07-2023,700.0,4000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Cluster beans,Cluster Beans,FAQ,29-07-2023,1300.0,2000.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,800.0,2000.0,1200.0
+Telangana,Hyderabad,Gudimalkapur,Drumstick,Drumstick,FAQ,29-07-2023,2500.0,3000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Field Pea,Field Pea,FAQ,29-07-2023,1000.0,4000.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,French Beans (Frasbean),French Beans (Frasbean),FAQ,29-07-2023,3000.0,9000.0,8000.0
+Telangana,Hyderabad,Gudimalkapur,Green Chilli,Green Chilly,FAQ,29-07-2023,2000.0,9000.0,5000.0
+Telangana,Hyderabad,Gudimalkapur,Onion,1st Sort,FAQ,29-07-2023,700.0,2000.0,1300.0
+Telangana,Hyderabad,Gudimalkapur,Onion Green,Onion Green,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Hyderabad,Gudimalkapur,Potato,(Red Nanital),FAQ,29-07-2023,800.0,2000.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Pumpkin,Other,FAQ,29-07-2023,1000.0,1000.0,1000.0
+Telangana,Hyderabad,Gudimalkapur,Raddish,Other,FAQ,29-07-2023,500.0,800.0,600.0
+Telangana,Hyderabad,Gudimalkapur,Ridgeguard(Tori),Other,FAQ,29-07-2023,2000.0,3500.0,2800.0
+Telangana,Hyderabad,Gudimalkapur,Snakeguard,Other,FAQ,29-07-2023,1500.0,1500.0,1500.0
+Telangana,Karimnagar,Gangadhara,Paddy(Dhan)(Common),1001,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Beetroot,Beetroot,FAQ,29-07-2023,12000.0,14000.0,13000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,4500.0,6000.0,5500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,29-07-2023,6500.0,8500.0,7500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,29-07-2023,2000.0,3500.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,2500.0,4000.0,3000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,29-07-2023,2000.0,3500.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Carrot,Carrot,FAQ,29-07-2023,3000.0,4500.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cauliflower,African Sarson,FAQ,29-07-2023,6000.0,8000.0,7000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,29-07-2023,4000.0,6000.0,5000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,2000.0,3000.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Drumstick,Drumstick,FAQ,29-07-2023,4000.0,5500.0,4500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,29-07-2023,6500.0,8000.0,7000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,29-07-2023,7000.0,9000.0,8000.0
+Telangana,Khammam,Charla,Paddy(Dhan)(Common),MTU-1010,FAQ,29-07-2023,2030.0,2060.0,2040.0
+Telangana,Khammam,Sattupalli,Wood,Eucalyptus,FAQ,29-07-2023,400.0,420.0,420.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,29-07-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Gajwel,Bottle gourd,Bottle Gourd,FAQ,29-07-2023,7000.0,8000.0,8000.0
+Telangana,Medak,Vantamamidi,Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,2000.0,3000.0,2500.0
+Telangana,Medak,Vantamamidi,Bitter gourd,Bitter Gourd,FAQ,29-07-2023,1500.0,3000.0,2250.0
+Telangana,Medak,Vantamamidi,Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,1000.0,1500.0,1250.0
+Telangana,Medak,Vantamamidi,Cabbage,Cabbage,FAQ,29-07-2023,500.0,800.0,650.0
+Telangana,Medak,Vantamamidi,Cluster beans,Cluster Beans,FAQ,29-07-2023,2000.0,3000.0,2500.0
+Telangana,Medak,Vantamamidi,Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,600.0,1000.0,800.0
+Telangana,Medak,Vantamamidi,Field Pea,Field Pea,FAQ,29-07-2023,2000.0,4000.0,3000.0
+Telangana,Medak,Vantamamidi,Green Chilli,Green Chilly,FAQ,29-07-2023,3000.0,4000.0,3500.0
+Telangana,Medak,Vantamamidi,Groundnut pods (raw),Groundnut pods (raw),FAQ,29-07-2023,4000.0,4000.0,4000.0
+Telangana,Medak,Vantamamidi,Onion Green,Onion Green,FAQ,29-07-2023,1500.0,2000.0,1750.0
+Telangana,Medak,Vantamamidi,Potato,Local,FAQ,29-07-2023,1200.0,1500.0,1350.0
+Telangana,Medak,Vantamamidi,Pumpkin,Other,FAQ,29-07-2023,600.0,800.0,700.0
+Telangana,Medak,Vantamamidi,Ridgeguard(Tori),Other,FAQ,29-07-2023,2500.0,3500.0,3000.0
+Telangana,Nalgonda,Huzurnagar,Paddy(Dhan)(Common),B P T,FAQ,29-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Suryapeta,Arhar (Tur/Red Gram)(Whole),Local,FAQ,29-07-2023,8973.0,8973.0,8973.0
+Telangana,Nizamabad,Nizamabad,Paddy(Dhan)(Common),B P T,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Nizamabad,Pitlam,Paddy(Dhan)(Common),Common,FAQ,29-07-2023,2040.0,2040.0,2040.0
+Telangana,Ranga Reddy,Chevella,Brinjal,Other,FAQ,29-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Chevella,Cabbage,Cabbage,FAQ,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Chevella,Cauliflower,African Sarson,FAQ,29-07-2023,3000.0,3000.0,3000.0
+Telangana,Ranga Reddy,Chevella,Green Chilli,Green Chilly,FAQ,29-07-2023,8000.0,8000.0,8000.0
+Telangana,Ranga Reddy,Chevella,Tomato,Deshi,FAQ,29-07-2023,9000.0,9000.0,9000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Banana - Green,Banana - Green,FAQ,29-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Beetroot,Beetroot,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,29-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cabbage,Cabbage,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Capsicum,Capsicum,FAQ,29-07-2023,8000.0,8000.0,8000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Carrot,Carrot,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cauliflower,African Sarson,FAQ,29-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,29-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Colacasia,Colacasia,FAQ,29-07-2023,4100.0,4100.0,4100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Drumstick,Drumstick,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Field Pea,Field Pea,FAQ,29-07-2023,7000.0,7000.0,7000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,29-07-2023,8500.0,8500.0,8500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Green Chilli,Green Chilly,FAQ,29-07-2023,7500.0,7500.0,7500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Onion,1st Sort,FAQ,29-07-2023,2400.0,2400.0,2400.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Potato,(Red Nanital),FAQ,29-07-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Pumpkin,Other,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Snakeguard,Other,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Sweet Potato,Hosur Green,FAQ,29-07-2023,1300.0,1300.0,1300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Yam (Ratalu),Other,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Banana - Green,Banana - Green,FAQ,29-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Beetroot,Beetroot,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,29-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cabbage,Cabbage,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Carrot,Carrot,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cauliflower,African Sarson,FAQ,29-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,29-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Colacasia,Colacasia,FAQ,29-07-2023,4100.0,4100.0,4100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,1300.0,1300.0,1300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Drumstick,Drumstick,FAQ,29-07-2023,500.0,500.0,500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Field Pea,Field Pea,FAQ,29-07-2023,7000.0,7000.0,7000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,29-07-2023,8500.0,8500.0,8500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Green Chilli,Green Chilly,FAQ,29-07-2023,7500.0,7500.0,7500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Onion,1st Sort,FAQ,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Potato,(Red Nanital),FAQ,29-07-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Snakeguard,Other,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Yam (Ratalu),Other,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Banana - Green,Banana - Green,FAQ,29-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Beetroot,Beetroot,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bitter gourd,Bitter Gourd,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bottle gourd,Bottle Gourd,FAQ,29-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Brinjal,Arkasheela Mattigulla,FAQ,29-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cabbage,Cabbage,FAQ,29-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Carrot,Carrot,FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cauliflower,African Sarson,FAQ,29-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cluster beans,Cluster Beans,FAQ,29-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Colacasia,Colacasia,FAQ,29-07-2023,4100.0,4100.0,4100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Green Chilli,Green Chilly,FAQ,29-07-2023,7500.0,7500.0,7500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Leafy Vegetable,Leafy Vegetables,FAQ,29-07-2023,1600.0,1600.0,1600.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Onion,1st Sort,FAQ,29-07-2023,2400.0,2400.0,2400.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Potato,Potato,FAQ,29-07-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Ridgeguard(Tori),Ridgeguard(Tori),FAQ,29-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Tomato,Deshi,FAQ,29-07-2023,9300.0,9300.0,9300.0
+Telangana,Warangal,Jangaon,Paddy(Dhan)(Common),I.R. 64,FAQ,29-07-2023,206.0,206.0,206.0
+Telangana,Warangal,Narsampet(Nekonda),Cotton,Bramha,FAQ,29-07-2023,6100.0,6300.0,6200.0
+Telangana,Warangal,Warangal,Apple,Delicious,Large,29-07-2023,17000.0,17000.0,17000.0
+Telangana,Warangal,Warangal,Apple,Delicious,Medium,29-07-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Apple,Delicious,Small,29-07-2023,8000.0,8000.0,8000.0
+Telangana,Warangal,Warangal,Beetroot,Beetroot,FAQ,29-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Bhindi(Ladies Finger),Bhindi,FAQ,29-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Bitter gourd,Bitter Gourd,FAQ,29-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Brinjal,Brinjal,FAQ,29-07-2023,2800.0,3000.0,2900.0
+Telangana,Warangal,Warangal,Cabbage,Cabbage,FAQ,29-07-2023,1200.0,1400.0,1300.0
+Telangana,Warangal,Warangal,Capsicum,Capsicum,FAQ,29-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Carrot,Carrot,FAQ,29-07-2023,3500.0,4000.0,3750.0
+Telangana,Warangal,Warangal,Cauliflower,Cauliflower,FAQ,29-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Cluster beans,Cluster Beans,FAQ,29-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Colacasia,Colacasia,FAQ,29-07-2023,3500.0,4000.0,3750.0
+Telangana,Warangal,Warangal,Cucumbar(Kheera),Cucumbar,FAQ,29-07-2023,2400.0,2600.0,2500.0
+Telangana,Warangal,Warangal,Field Pea,Field Pea,FAQ,29-07-2023,5000.0,6000.0,5500.0
+Telangana,Warangal,Warangal,French Beans (Frasbean),French Beans (Frasbean),FAQ,29-07-2023,11000.0,12000.0,11500.0
+Telangana,Warangal,Warangal,Green Chilli,Green Chilly,FAQ,29-07-2023,7000.0,8000.0,7500.0
+Telangana,Warangal,Warangal,Karbuja(Musk Melon),Karbhuja,Medium,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Warangal,Warangal,Papaya,Papaya,Medium,29-07-2023,2000.0,2000.0,2000.0
+Telangana,Warangal,Warangal,Pineapple,Pine Apple,Large,29-07-2023,3000.0,3000.0,3000.0
+Telangana,Warangal,Warangal,Plum,Plum,Large,29-07-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Plum,Plum,Medium,29-07-2023,6500.0,6500.0,6500.0
+Telangana,Warangal,Warangal,Plum,Plum,Small,29-07-2023,6000.0,6000.0,6000.0
+Telangana,Warangal,Warangal,Potato,Potato,FAQ,29-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Ridgeguard(Tori),Ridgeguard(Tori),FAQ,29-07-2023,4800.0,5000.0,4900.0
+Telangana,Warangal,Warangal,Yam (Ratalu),Yam (Ratalu),FAQ,29-07-2023,3200.0,3500.0,3350.0
+Telangana,Khammam,Dammapet,Paddy(Dhan)(Common),1001,FAQ,30-07-2023,2040.0,2040.0,2040.0
+Telangana,Mahbubnagar,Amangal,Paddy(Dhan)(Common),1001,FAQ,30-07-2023,2100.0,2100.0,2100.0
+Telangana,Mahbubnagar,Wanaparthy town,Groundnut,Local,FAQ,30-07-2023,5850.0,5850.0,5850.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,30-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Halia,Cotton,Cotton (Unginned),FAQ,30-07-2023,6380.0,6380.0,6380.0
+Telangana,Nalgonda,Halia,Maize,Deshi Red,FAQ,30-07-2023,1930.0,1930.0,1930.0
+Telangana,Nalgonda,Halia,Paddy(Dhan)(Common),MTU-1010,FAQ,30-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Kodad,Paddy(Dhan)(Common),B P T,FAQ,30-07-2023,2060.0,2060.0,2060.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Banana - Green,Banana - Green,FAQ,30-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Beetroot,Beetroot,FAQ,30-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,30-07-2023,6000.0,6000.0,6000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,30-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,30-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,30-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cabbage,Cabbage,FAQ,30-07-2023,1700.0,1700.0,1700.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Carrot,Carrot,FAQ,30-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cauliflower,African Sarson,FAQ,30-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,30-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Colacasia,Colacasia,FAQ,30-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,30-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Drumstick,Drumstick,FAQ,30-07-2023,500.0,500.0,500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Field Pea,Field Pea,FAQ,30-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,30-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Green Chilli,Green Chilly,FAQ,30-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,30-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Onion,1st Sort,FAQ,30-07-2023,1900.0,1900.0,1900.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Potato,(Red Nanital),FAQ,30-07-2023,2300.0,2300.0,2300.0
+Telangana,Warangal,Narsampet(Nekonda),Cotton,Bramha,FAQ,30-07-2023,6100.0,6300.0,6200.0
+Telangana,Warangal,Parkal,Cotton,Cotton (Unginned),FAQ,30-07-2023,6600.0,6600.0,6600.0
+Telangana,Warangal,Warangal,Beetroot,Beetroot,FAQ,30-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Bhindi(Ladies Finger),Bhindi,FAQ,30-07-2023,4000.0,4200.0,4100.0
+Telangana,Warangal,Warangal,Bitter gourd,Bitter Gourd,FAQ,30-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Brinjal,Brinjal,FAQ,30-07-2023,3400.0,3600.0,3500.0
+Telangana,Warangal,Warangal,Cabbage,Cabbage,FAQ,30-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Capsicum,Capsicum,FAQ,30-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Carrot,Carrot,FAQ,30-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cauliflower,Cauliflower,FAQ,30-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cluster beans,Cluster Beans,FAQ,30-07-2023,3500.0,4000.0,3750.0
+Telangana,Warangal,Warangal,Colacasia,Colacasia,FAQ,30-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Cucumbar(Kheera),Cucumbar,FAQ,30-07-2023,3200.0,3500.0,3350.0
+Telangana,Warangal,Warangal,Field Pea,Field Pea,FAQ,30-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,French Beans (Frasbean),French Beans (Frasbean),FAQ,30-07-2023,11500.0,12000.0,11750.0
+Telangana,Warangal,Warangal,Green Chilli,Green Chilly,FAQ,30-07-2023,9500.0,10000.0,9750.0
+Telangana,Warangal,Warangal,Papaya,Papaya,Medium,30-07-2023,1500.0,1500.0,1500.0
+Telangana,Warangal,Warangal,Plum,Plum,Medium,30-07-2023,8000.0,8000.0,8000.0
+Telangana,Warangal,Warangal,Potato,Potato,FAQ,30-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Ridgeguard(Tori),Ridgeguard(Tori),FAQ,30-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Yam (Ratalu),Yam (Ratalu),FAQ,30-07-2023,5500.0,6000.0,5750.0
+Andhra Pradesh,Chittor,Madanapalli,Tomato,Local,FAQ,31-07-2023,15800.0,18400.0,17600.0
+Andhra Pradesh,Chittor,Madanapalli,Tomato,Other,FAQ,31-07-2023,12000.0,15600.0,14000.0
+Andhra Pradesh,Cuddapah,Cuddapah,Groundnut,Local,FAQ,31-07-2023,5100.0,7589.0,6889.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Bulb,FAQ,31-07-2023,5799.0,9919.0,8712.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Finger,FAQ,31-07-2023,5689.0,9942.0,8675.0
+Andhra Pradesh,East Godavari,Karapa,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2060.0,2050.0
+Andhra Pradesh,East Godavari,Pithapuram,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2060.0,2050.0
+Andhra Pradesh,East Godavari,Sampara,Paddy(Dhan)(Common),Swarna Masuri (New),FAQ,31-07-2023,2000.0,2080.0,2040.0
+Andhra Pradesh,Guntur,Duggirala,Turmeric,Bulb,FAQ,31-07-2023,7000.0,10511.0,9500.0
+Andhra Pradesh,Guntur,Duggirala,Turmeric,Finger,FAQ,31-07-2023,7000.0,10511.0,9500.0
+Andhra Pradesh,Guntur,Pidugurala(Palnadu),Dry Chillies,1st Sort,FAQ,31-07-2023,12000.0,22000.0,17000.0
+Andhra Pradesh,Guntur,Pidugurala(Palnadu),Dry Chillies,Red,FAQ,31-07-2023,13000.0,23000.0,18000.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),Black Gram (Whole),FAQ,31-07-2023,8100.0,8300.0,8200.0
+Andhra Pradesh,Guntur,Tenali,Lemon,Lemon,FAQ,31-07-2023,800.0,2200.0,1400.0
+Andhra Pradesh,Kurnool,Alur,Jowar(Sorghum),Jowar ( White),FAQ,31-07-2023,3030.0,3090.0,3060.0
+Andhra Pradesh,Kurnool,Atmakur,Maize,Hybrid/Local,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Atmakur,Paddy(Dhan)(Common),Sona Mahsuri,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Andhra Pradesh,Kurnool,Nandikotkur,Bengal Gram(Gram)(Whole),Gulabi,FAQ,31-07-2023,5335.0,5335.0,5335.0
+Andhra Pradesh,Kurnool,Nandikotkur,Maize,Hybrid,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Nandikotkur,Paddy(Dhan)(Common),Sona,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Adilabad,Adilabad(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,31-07-2023,7000.0,7200.0,7000.0
+Telangana,Adilabad,Boath,Jowar(Sorghum),Jowar ( White),FAQ,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Adilabad,Indravelly(Utnoor),Maize,Hybrid,FAQ,31-07-2023,1950.0,2100.0,2050.0
+Telangana,Adilabad,Laxettipet,Alsandikai,Alsandikai,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Hyderabad,Mahboob Manison,Dry Chillies,1st Sort,FAQ,31-07-2023,14000.0,18000.0,15000.0
+Telangana,Hyderabad,Mahboob Manison,Dry Chillies,2nd Sort,FAQ,31-07-2023,5000.0,12000.0,10000.0
+Telangana,Hyderabad,Mahboob Manison,Garlic,Average,FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Hyderabad,Mahboob Manison,Onion,1st Sort,FAQ,31-07-2023,1300.0,1800.0,1500.0
+Telangana,Hyderabad,Mahboob Manison,Onion,2nd Sort,FAQ,31-07-2023,200.0,1000.0,800.0
+Telangana,Hyderabad,Mahboob Manison,Potato,(Red Nanital),FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Jagityal,Mallapur,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Choppadandi,Maize,Hybrid,FAQ,31-07-2023,2025.0,2223.0,2223.0
+Telangana,Karimnagar,Choppadandi,Paddy(Dhan)(Common),I.R.-64,FAQ,31-07-2023,2043.0,2061.0,2061.0
+Telangana,Karimnagar,Dharmapuri,Paddy(Dhan)(Common),Paddy,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Dharmaram,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Gopalraopet,Paddy(Dhan)(Common),I.R. 64,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Husnabad,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Ibrahimpatnam,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Jammikunta,Cotton,Cotton (Unginned),FAQ,31-07-2023,6800.0,7150.0,7100.0
+Telangana,Karimnagar,Karimnagar,Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,3000.0,4600.0,3800.0
+Telangana,Karimnagar,Karimnagar,Brinjal,Brinjal,FAQ,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Karimnagar,Karimnagar,Cabbage,Cabbage,FAQ,31-07-2023,1600.0,1600.0,1600.0
+Telangana,Karimnagar,Karimnagar,Carrot,Carrot,FAQ,31-07-2023,3500.0,3500.0,3500.0
+Telangana,Karimnagar,Karimnagar,Cluster beans,Cluster Beans,FAQ,31-07-2023,3000.0,7000.0,5000.0
+Telangana,Karimnagar,Karimnagar,Cotton,Cotton (Unginned),FAQ,31-07-2023,6201.0,6231.0,6231.0
+Telangana,Karimnagar,Karimnagar,French Beans (Frasbean),French Beans (Frasbean),FAQ,31-07-2023,3000.0,4500.0,3750.0
+Telangana,Karimnagar,Karimnagar,Green Chilli,Green Chilly,FAQ,31-07-2023,7000.0,8500.0,7750.0
+Telangana,Karimnagar,Karimnagar,Thondekai,Other,FAQ,31-07-2023,2500.0,2500.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Beetroot,Beetroot,FAQ,31-07-2023,3000.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,5000.0,6000.0,5500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,31-07-2023,5000.0,7000.0,6000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,31-07-2023,2000.0,3000.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,31-07-2023,3000.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,31-07-2023,2000.0,2500.0,2000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Carrot,Carrot,FAQ,31-07-2023,3500.0,5000.0,4000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cauliflower,African Sarson,FAQ,31-07-2023,6000.0,8000.0,7000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,31-07-2023,4500.0,6000.0,5000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,2000.0,3000.0,2500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Drumstick,Drumstick,FAQ,31-07-2023,4000.0,6000.0,5000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,31-07-2023,8000.0,10500.0,9500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,31-07-2023,8000.0,9500.0,8500.0
+Telangana,Karimnagar,Kathalapur,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2203.0,2203.0,2203.0
+Telangana,Karimnagar,Koratla,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2100.0,2100.0,2100.0
+Telangana,Karimnagar,Mallial(Cheppial),Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Manakodur,Paddy(Dhan)(Common),I.R.-64,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Manakodur,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Manthani,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Metpally,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2203.0,2203.0,2203.0
+Telangana,Karimnagar,Peddapalli,Cotton,Cotton (Unginned),FAQ,31-07-2023,6006.0,6987.0,6867.0
+Telangana,Karimnagar,Pudur,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Sircilla,Cotton,RCH-2,FAQ,31-07-2023,6080.0,6380.0,6380.0
+Telangana,Karimnagar,Sircilla,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2040.0,2060.0,2060.0
+Telangana,Karimnagar,Vemulawada,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2060.0,2060.0
+Telangana,Khammam,Burgampadu,Paddy(Dhan)(Common),Samba Masuri,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Khammam,Charla,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2030.0,2060.0,2040.0
+Telangana,Khammam,Dammapet,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Khammam,Enkoor,Cotton,Cotton (Unginned),FAQ,31-07-2023,6500.0,6800.0,6700.0
+Telangana,Khammam,Khammam,Cotton,Cotton (Unginned),FAQ,31-07-2023,5200.0,7050.0,6900.0
+Telangana,Khammam,Kothagudem,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2020.0,2060.0,2040.0
+Telangana,Khammam,Madhira,Wood,Subabul,FAQ,31-07-2023,360.0,380.0,370.0
+Telangana,Khammam,Nelakondapally,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Khammam,Wyra,Paddy(Dhan)(Common),Samba Masuri,FAQ,31-07-2023,2020.0,2060.0,2040.0
+Telangana,Mahbubnagar,Alampur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2000.0,2060.0,2040.0
+Telangana,Mahbubnagar,Gadwal(Lezza),Paddy(Dhan)(Common),Paddy,FAQ,31-07-2023,2000.0,2060.0,2040.0
+Telangana,Mahbubnagar,Kalwakurthy,Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Mahbubnagar,Kalwakurthy,Bitter gourd,Bitter Gourd,FAQ,31-07-2023,5000.0,6000.0,5500.0
+Telangana,Mahbubnagar,Kalwakurthy,Brinjal,Brinjal,FAQ,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Mahbubnagar,Kalwakurthy,Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,2500.0,3000.0,2750.0
+Telangana,Mahbubnagar,Kalwakurthy,Green Chilli,Green Chilly,FAQ,31-07-2023,6000.0,10000.0,8000.0
+Telangana,Mahbubnagar,Kollapur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Mahbubnagar,Mahbubnagar,Groundnut,Local,FAQ,31-07-2023,6189.0,6189.0,6189.0
+Telangana,Mahbubnagar,Mahbubnagar(Nawabpet),Ragi (Finger Millet),Feeds (Poultry Quality),FAQ,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Mahbubnagar,Nagarkurnool,Maize,Local,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Telangana,Mahbubnagar,Nagarkurnool(Talkapalli),Paddy(Dhan)(Common),Hansa,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Mahbubnagar,Wanaparthy Road,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2049.0,2069.0,2059.0
+Telangana,Mahbubnagar,Wanaparthy Road(Prbbair),Paddy(Dhan)(Common),B P T,FAQ,31-07-2023,2020.0,2060.0,2040.0
+Telangana,Mahbubnagar,Wanaparthy town,Groundnut,Local,FAQ,31-07-2023,5850.0,5850.0,5850.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Medak,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Sangareddy,Brinjal,Brinjal,FAQ,31-07-2023,2500.0,2500.0,2500.0
+Telangana,Medak,Sangareddy,Cabbage,Cabbage,FAQ,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Medak,Sangareddy,Green Chilli,Green Chilly,FAQ,31-07-2023,8000.0,9000.0,8500.0
+Telangana,Medak,Siddipet,Maize,Deshi Red,FAQ,31-07-2023,1966.0,2211.0,2066.0
+Telangana,Medak,Togguta,Paddy(Dhan)(Basmati),1121,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Aler,Arhar (Tur/Red Gram)(Whole),777 New Ind,FAQ,31-07-2023,6600.0,6600.0,6600.0
+Telangana,Nalgonda,Chandur,Paddy(Dhan)(Basmati),1121,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Chandur(Mungodu),Paddy(Dhan)(Common),I.R. 64,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Chityal,Cotton,Bramha,FAQ,31-07-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Cotton,RCH-2,FAQ,31-07-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,1940.0,2060.0,2040.0
+Telangana,Nalgonda,Choutuppal,Paddy(Dhan)(Common),I.R. 64,FAQ,31-07-2023,2000.0,2060.0,2040.0
+Telangana,Nalgonda,Devarakonda,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Dindi),Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Mallepalli),Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Kodad,Paddy(Dhan)(Common),B P T,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Miryalaguda,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Mothkur,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Nakrekal,Lime,Lime,Medium,31-07-2023,250.0,2500.0,1000.0
+Telangana,Nalgonda,Nakrekal,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2203.0,2203.0,2203.0
+Telangana,Nalgonda,Neredcherla,Paddy(Dhan)(Common),B P T,FAQ,31-07-2023,2170.0,2200.0,2180.0
+Telangana,Nalgonda,Nidamanoor,Paddy(Dhan)(Common),Samba Masuri,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Ramannapet,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Voligonda,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nizamabad,Bhiknoor,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2040.0,2060.0,2060.0
+Telangana,Nizamabad,Bichkunda,Maize,Deshi Red,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Telangana,Nizamabad,Bichkunda,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2040.0,2040.0,2040.0
+Telangana,Nizamabad,Bichkunda,Paddy(Dhan)(Common),MTU-1010,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Nizamabad,Bichkunda,Soyabean,Soyabeen,FAQ,31-07-2023,4300.0,4300.0,4300.0
+Telangana,Nizamabad,Gandhari,Maize,Deshi Red,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Telangana,Nizamabad,Kamareddy,Maize,Deshi Red,FAQ,31-07-2023,1962.0,1962.0,1962.0
+Telangana,Nizamabad,Madnoor,Cotton,Bunny,FAQ,31-07-2023,6850.0,6850.0,6850.0
+Telangana,Ranga Reddy,Chevella,Brinjal,Other,FAQ,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Ranga Reddy,Chevella,Cabbage,Cabbage,FAQ,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Chevella,Cauliflower,African Sarson,FAQ,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Ranga Reddy,Chevella,Green Chilli,Green Chilly,FAQ,31-07-2023,8000.0,8000.0,8000.0
+Telangana,Ranga Reddy,Chevella,Tomato,Deshi,FAQ,31-07-2023,9000.0,9000.0,9000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Banana - Green,Banana - Green,FAQ,31-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Beetroot,Beetroot,FAQ,31-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,31-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,31-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cabbage,Cabbage,FAQ,31-07-2023,1700.0,1700.0,1700.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Capsicum,Capsicum,FAQ,31-07-2023,7000.0,7000.0,7000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Carrot,Carrot,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cauliflower,African Sarson,FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Colacasia,Colacasia,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Drumstick,Drumstick,FAQ,31-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Field Pea,Field Pea,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,31-07-2023,9500.0,9500.0,9500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Green Chilli,Green Chilly,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Onion,1st Sort,FAQ,31-07-2023,1400.0,1400.0,1400.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Onion Green,Onion Green,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Potato,(Red Nanital),FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Pumpkin,Other,FAQ,31-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Snakeguard,Other,FAQ,31-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Sweet Potato,Hosur Green,FAQ,31-07-2023,1300.0,1300.0,1300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Yam (Ratalu),Other,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Banana - Green,Banana - Green,FAQ,31-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Beetroot,Beetroot,FAQ,31-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,31-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cabbage,Cabbage,FAQ,31-07-2023,1700.0,1700.0,1700.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Carrot,Carrot,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cauliflower,African Sarson,FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Colacasia,Colacasia,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Drumstick,Drumstick,FAQ,31-07-2023,500.0,500.0,500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Field Pea,Field Pea,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,31-07-2023,9500.0,9500.0,9500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Green Chilli,Green Chilly,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,31-07-2023,2200.0,2200.0,2200.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Onion,1st Sort,FAQ,31-07-2023,1900.0,1900.0,1900.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Potato,(Red Nanital),FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Snakeguard,Other,FAQ,31-07-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Mehndipatnam(Rythu Bazar),Yam (Ratalu),Other,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Banana - Green,Banana - Green,FAQ,31-07-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Beetroot,Beetroot,FAQ,31-07-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bitter gourd,Bitter Gourd,FAQ,31-07-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bottle gourd,Bottle Gourd,FAQ,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Brinjal,Arkasheela Mattigulla,FAQ,31-07-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cabbage,Cabbage,FAQ,31-07-2023,1700.0,1700.0,1700.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Carrot,Carrot,FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cauliflower,African Sarson,FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cluster beans,Cluster Beans,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Colacasia,Colacasia,FAQ,31-07-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Green Chilli,Green Chilly,FAQ,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Leafy Vegetable,Leafy Vegetables,FAQ,31-07-2023,1600.0,1600.0,1600.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Onion,1st Sort,FAQ,31-07-2023,1400.0,1400.0,1400.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Potato,Potato,FAQ,31-07-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Ridgeguard(Tori),Ridgeguard(Tori),FAQ,31-07-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Tomato,Deshi,FAQ,31-07-2023,9900.0,9900.0,9900.0
+Telangana,Ranga Reddy,Sardarnagar,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,1900.0,2100.0,2000.0
+Telangana,Warangal,Cherial,Paddy(Dhan)(Common),1001,FAQ,31-07-2023,2060.0,2060.0,2060.0
+Telangana,Warangal,Jangaon,Paddy(Dhan)(Common),I.R. 64,FAQ,31-07-2023,206.0,206.0,206.0
+Telangana,Warangal,Narsampet(Nekonda),Cotton,Bramha,FAQ,31-07-2023,6100.0,6300.0,6200.0
+Telangana,Warangal,Parkal,Cotton,Cotton (Unginned),FAQ,31-07-2023,6600.0,6600.0,6600.0
+Telangana,Warangal,Warangal,Apple,Delicious,Medium,31-07-2023,15000.0,15000.0,15000.0
+Telangana,Warangal,Warangal,Banana,Banana - Ripe,Large,31-07-2023,3000.0,3000.0,3000.0
+Telangana,Warangal,Warangal,Beetroot,Beetroot,FAQ,31-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Bhindi(Ladies Finger),Bhindi,FAQ,31-07-2023,4000.0,4500.0,4250.0
+Telangana,Warangal,Warangal,Bitter gourd,Bitter Gourd,FAQ,31-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Brinjal,Brinjal,FAQ,31-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Cabbage,Cabbage,FAQ,31-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Capsicum,Capsicum,FAQ,31-07-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Carrot,Carrot,FAQ,31-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Cauliflower,Cauliflower,FAQ,31-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cluster beans,Cluster Beans,FAQ,31-07-2023,3200.0,3500.0,3350.0
+Telangana,Warangal,Warangal,Colacasia,Colacasia,FAQ,31-07-2023,3600.0,4000.0,3800.0
+Telangana,Warangal,Warangal,Cucumbar(Kheera),Cucumbar,FAQ,31-07-2023,3000.0,3200.0,3100.0
+Telangana,Warangal,Warangal,Field Pea,Field Pea,FAQ,31-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,French Beans (Frasbean),French Beans (Frasbean),FAQ,31-07-2023,7500.0,8000.0,7750.0
+Telangana,Warangal,Warangal,Grapes,Black,Large,31-07-2023,6000.0,6000.0,6000.0
+Telangana,Warangal,Warangal,Grapes,White,Large,31-07-2023,8000.0,8000.0,8000.0
+Telangana,Warangal,Warangal,Green Chilli,Green Chilly,FAQ,31-07-2023,8000.0,9000.0,8500.0
+Telangana,Warangal,Warangal,Mousambi(Sweet Lime),Mousambi,Large,31-07-2023,2000.0,2000.0,2000.0
+Telangana,Warangal,Warangal,Mousambi(Sweet Lime),Mousambi,Medium,31-07-2023,1750.0,1750.0,1750.0
+Telangana,Warangal,Warangal,Mousambi(Sweet Lime),Mousambi,Small,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Warangal,Warangal,Papaya,Papaya,Medium,31-07-2023,1500.0,1500.0,1500.0
+Telangana,Warangal,Warangal,Plum,Plum,Large,31-07-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Large,31-07-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Medium,31-07-2023,6500.0,6500.0,6500.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Small,31-07-2023,5000.0,5000.0,5000.0
+Telangana,Warangal,Warangal,Potato,Potato,FAQ,31-07-2023,1800.0,2000.0,1900.0
+Telangana,Warangal,Warangal,Ridgeguard(Tori),Ridgeguard(Tori),FAQ,31-07-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Yam (Ratalu),Yam (Ratalu),FAQ,31-07-2023,4500.0,5000.0,4750.0
+Andhra Pradesh,Chittor,Chittoor,Gur(Jaggery),NO 2,FAQ,01-08-2023,3000.0,3200.0,3200.0
+Andhra Pradesh,Chittor,Chittoor,Gur(Jaggery),NO 3,FAQ,01-08-2023,2500.0,2500.0,2500.0
+Andhra Pradesh,Cuddapah,Cuddapah,Groundnut,Local,FAQ,01-08-2023,5089.0,7389.0,7059.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Bulb,FAQ,01-08-2023,5589.0,10069.0,9600.0
+Andhra Pradesh,Cuddapah,Cuddapah,Turmeric,Finger,FAQ,01-08-2023,6675.0,10312.0,10222.0
+Andhra Pradesh,East Godavari,Ambajipeta,Banana,Banana - Ripe,Medium,01-08-2023,960.0,2720.0,1840.0
+Andhra Pradesh,East Godavari,Peddapuram,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2050.0,2045.0
+Andhra Pradesh,East Godavari,Pithapuram,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2060.0,2050.0
+Andhra Pradesh,East Godavari,Rajahmundry,Paddy(Dhan)(Common),Paddy,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Andhra Pradesh,East Godavari,Rajahmundry,Paddy(Dhan)(Common),Swarna Masuri (New),FAQ,01-08-2023,2060.0,2060.0,2060.0
+Andhra Pradesh,East Godavari,Sampara,Paddy(Dhan)(Common),Swarna Masuri (New),FAQ,01-08-2023,2000.0,2080.0,2040.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Guntur,FAQ,01-08-2023,12000.0,23000.0,20500.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Red,FAQ,01-08-2023,10000.0,23500.0,21000.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Red New,FAQ,01-08-2023,9500.0,26000.0,22000.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Red Top,FAQ,01-08-2023,12900.0,24500.0,21500.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,White,FAQ,01-08-2023,5000.0,14500.0,12500.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),Black Gram (Whole),FAQ,01-08-2023,8100.0,8300.0,8200.0
+Andhra Pradesh,Guntur,Tenali,Lemon,Lemon,FAQ,01-08-2023,800.0,1600.0,1200.0
+Andhra Pradesh,Kurnool,Adoni,Castor Seed,Castor seed,FAQ,01-08-2023,4862.0,6203.0,6123.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Bunny,FAQ,01-08-2023,4489.0,7369.0,7050.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Balli/Habbu,FAQ,01-08-2023,5189.0,8039.0,7007.0
+Andhra Pradesh,Kurnool,Alur,Jowar(Sorghum),Jowar ( White),FAQ,01-08-2023,3040.0,3120.0,3080.0
+Andhra Pradesh,Kurnool,Banaganapalli,Bengal Gram(Gram)(Whole),Desi (Whole),FAQ,01-08-2023,4600.0,5000.0,4800.0
+Andhra Pradesh,Kurnool,Banaganapalli,Jowar(Sorghum),Jowar ( White),FAQ,01-08-2023,3400.0,3800.0,3600.0
+Andhra Pradesh,Kurnool,Banaganapalli,Paddy(Dhan)(Common),Sona Mahsuri,FAQ,01-08-2023,1900.0,2300.0,2100.0
+Andhra Pradesh,Kurnool,Kurnool,Ajwan,Other,FAQ,01-08-2023,4220.0,19688.0,17220.0
+Andhra Pradesh,Kurnool,Kurnool,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,5059.0,9459.0,8600.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Desi (Whole),FAQ,01-08-2023,4805.0,5335.0,5009.0
+Andhra Pradesh,Kurnool,Kurnool,Black Gram (Urd Beans)(Whole),Black Gram (Whole),FAQ,01-08-2023,7811.0,7861.0,7861.0
+Andhra Pradesh,Kurnool,Kurnool,Castor Seed,Other,FAQ,01-08-2023,6019.0,6180.0,6130.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Local,FAQ,01-08-2023,10099.0,17201.0,17201.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,Local,FAQ,01-08-2023,5071.0,8409.0,6832.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Local,FAQ,01-08-2023,2009.0,2009.0,2009.0
+Andhra Pradesh,Kurnool,Kurnool,Sunflower,Bold,FAQ,01-08-2023,4239.0,6400.0,4509.0
+Andhra Pradesh,Kurnool,Nandikotkur,Bengal Gram(Gram)(Whole),Gulabi,FAQ,01-08-2023,5335.0,5335.0,5335.0
+Andhra Pradesh,Kurnool,Nandikotkur,Maize,Hybrid,FAQ,01-08-2023,1962.0,1962.0,1962.0
+Andhra Pradesh,Kurnool,Nandikotkur,Paddy(Dhan)(Common),Sona,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Adilabad,Adilabad,Cotton,Cotton (Unginned),FAQ,01-08-2023,6820.0,6900.0,6900.0
+Telangana,Adilabad,Bhainsa,Arhar (Tur/Red Gram)(Whole),F.A.Q. (Whole),FAQ,01-08-2023,8006.0,8529.0,8529.0
+Telangana,Adilabad,Bhainsa,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2755.0,2777.0,2767.0
+Telangana,Adilabad,Bhainsa,Maize,Hybrid,FAQ,01-08-2023,1889.0,2101.0,2101.0
+Telangana,Adilabad,Bhainsa,"Sesamum(Sesame,Gingelly,Til)",Sesame,FAQ,01-08-2023,16089.0,16891.0,16557.0
+Telangana,Adilabad,Bhainsa,Soyabean,Yellow,FAQ,01-08-2023,4659.0,4707.0,4707.0
+Telangana,Adilabad,Boath,Jowar(Sorghum),Jowar ( White),FAQ,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Adilabad,Chinnoar,Amaranthus,Amaranthus,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Adilabad,Ichoda,Cotton,Bramha,FAQ,01-08-2023,7200.0,7650.0,7450.0
+Telangana,Adilabad,Indravelly(Utnoor),Maize,Hybrid,FAQ,01-08-2023,1950.0,2100.0,2000.0
+Telangana,Adilabad,Jainoor,Cotton,Cotton (Unginned),FAQ,01-08-2023,6450.0,6550.0,6500.0
+Telangana,Adilabad,Laxettipet,Alsandikai,Alsandikai,FAQ,01-08-2023,4200.0,4200.0,4200.0
+Telangana,Adilabad,Nirmal,Cotton,Bramha,FAQ,01-08-2023,7200.0,7650.0,7450.0
+Telangana,Hyderabad,Bowenpally,Amla(Nelli Kai),Amla,FAQ,01-08-2023,3000.0,4500.0,3200.0
+Telangana,Hyderabad,Bowenpally,Beetroot,Beetroot,FAQ,01-08-2023,600.0,2200.0,1200.0
+Telangana,Hyderabad,Bowenpally,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,1500.0,5000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,1500.0,5000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,400.0,1200.0,900.0
+Telangana,Hyderabad,Bowenpally,Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,1500.0,4500.0,3200.0
+Telangana,Hyderabad,Bowenpally,Cabbage,Cabbage,FAQ,01-08-2023,500.0,1800.0,1200.0
+Telangana,Hyderabad,Bowenpally,Capsicum,Capsicum,FAQ,01-08-2023,2000.0,6500.0,4500.0
+Telangana,Hyderabad,Bowenpally,Carrot,Carrot,FAQ,01-08-2023,600.0,4000.0,2500.0
+Telangana,Hyderabad,Bowenpally,Cauliflower,African Sarson,FAQ,01-08-2023,500.0,2000.0,1300.0
+Telangana,Hyderabad,Bowenpally,Cluster beans,Cluster Beans,FAQ,01-08-2023,1500.0,3000.0,2500.0
+Telangana,Hyderabad,Bowenpally,Colacasia,Colacasia,FAQ,01-08-2023,1500.0,3500.0,3000.0
+Telangana,Hyderabad,Bowenpally,Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,500.0,2000.0,1500.0
+Telangana,Hyderabad,Bowenpally,Drumstick,Drumstick,FAQ,01-08-2023,1500.0,3000.0,2500.0
+Telangana,Hyderabad,Bowenpally,Field Pea,Field Pea,FAQ,01-08-2023,2000.0,6000.0,4200.0
+Telangana,Hyderabad,Bowenpally,French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,4000.0,9000.0,6000.0
+Telangana,Hyderabad,Bowenpally,Green Chilli,Green Chilly,FAQ,01-08-2023,3000.0,7000.0,4000.0
+Telangana,Hyderabad,Bowenpally,Groundnut pods (raw),Groundnut pods (raw),FAQ,01-08-2023,3000.0,4500.0,4000.0
+Telangana,Hyderabad,Bowenpally,Onion,1st Sort,FAQ,01-08-2023,600.0,1500.0,1100.0
+Telangana,Hyderabad,Bowenpally,Onion Green,Onion Green,FAQ,01-08-2023,2000.0,4000.0,3500.0
+Telangana,Hyderabad,Bowenpally,Potato,(Red Nanital),FAQ,01-08-2023,800.0,2000.0,1500.0
+Telangana,Hyderabad,Bowenpally,Pumpkin,Other,FAQ,01-08-2023,600.0,1400.0,1100.0
+Telangana,Hyderabad,Bowenpally,Raddish,Other,FAQ,01-08-2023,200.0,300.0,280.0
+Telangana,Hyderabad,Bowenpally,Ridgeguard(Tori),Other,FAQ,01-08-2023,1000.0,4500.0,3000.0
+Telangana,Hyderabad,Bowenpally,Snakeguard,Other,FAQ,01-08-2023,1000.0,2500.0,1800.0
+Telangana,Hyderabad,Bowenpally,Sweet Potato,Hosur Green,FAQ,01-08-2023,1000.0,3000.0,2500.0
+Telangana,Hyderabad,Bowenpally,White Pumpkin,Other,FAQ,01-08-2023,600.0,1500.0,1150.0
+Telangana,Hyderabad,Bowenpally,Yam (Ratalu),Other,FAQ,01-08-2023,2000.0,4000.0,3500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Beetroot,Beetroot,FAQ,01-08-2023,2800.0,2800.0,2800.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2100.0,2100.0,2100.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Carrot,Carrot,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Cauliflower,African Sarson,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Colacasia,Colacasia,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Drumstick,Drumstick,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Field Pea,Field Pea,FAQ,01-08-2023,6500.0,6500.0,6500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,9500.0,9500.0,9500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Green Chilli,Green Chilly,FAQ,01-08-2023,6500.0,6500.0,6500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Onion,1st Sort,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Potato,(Red Nanital),FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,01-08-2023,5000.0,5000.0,5000.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Snakeguard,Other,FAQ,01-08-2023,2800.0,2800.0,2800.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Thondekai,Other,FAQ,01-08-2023,2100.0,2100.0,2100.0
+Telangana,Hyderabad,Erragadda(Rythu Bazar),Yam (Ratalu),Other,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Hyderabad,Gaddiannaram,Apple,Simla,Medium,01-08-2023,5300.0,23300.0,10000.0
+Telangana,Hyderabad,Gaddiannaram,Chikoos(Sapota),Other,Medium,01-08-2023,1600.0,1600.0,1600.0
+Telangana,Hyderabad,Gaddiannaram,Grapes,White,Medium,01-08-2023,10000.0,22500.0,12500.0
+Telangana,Hyderabad,Gaddiannaram,Guava,Guava,Medium,01-08-2023,1500.0,4500.0,2250.0
+Telangana,Hyderabad,Gaddiannaram,Jack Fruit,Jack Fruit,Medium,01-08-2023,2400.0,4800.0,3200.0
+Telangana,Hyderabad,Gaddiannaram,Karbuja(Musk Melon),Karbhuja,Medium,01-08-2023,1100.0,2100.0,1500.0
+Telangana,Hyderabad,Gaddiannaram,Mousambi(Sweet Lime),Mousambi,Medium,01-08-2023,860.0,3500.0,1650.0
+Telangana,Hyderabad,Gaddiannaram,Orange,Darjeeling,Medium,01-08-2023,3500.0,5000.0,4250.0
+Telangana,Hyderabad,Gaddiannaram,Papaya,Other,Medium,01-08-2023,1200.0,2500.0,1800.0
+Telangana,Hyderabad,Gaddiannaram,Pineapple,Other,Medium,01-08-2023,800.0,3200.0,1280.0
+Telangana,Hyderabad,Gaddiannaram,Plum,Other,Medium,01-08-2023,2100.0,5700.0,2700.0
+Telangana,Hyderabad,Gaddiannaram,Pomegranate,Other,Medium,01-08-2023,3000.0,14000.0,4500.0
+Telangana,Hyderabad,Gaddiannaram,Water Melon,Other,Medium,01-08-2023,1000.0,2000.0,1300.0
+Telangana,Hyderabad,Gudimalkapur,Banana - Green,Banana - Green,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Hyderabad,Gudimalkapur,Beetroot,Beetroot,FAQ,01-08-2023,1200.0,2000.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,2000.0,5000.0,3000.0
+Telangana,Hyderabad,Gudimalkapur,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,3000.0,5000.0,3500.0
+Telangana,Hyderabad,Gudimalkapur,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1200.0,2000.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,1500.0,4000.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Cabbage,Cabbage,FAQ,01-08-2023,800.0,1400.0,1000.0
+Telangana,Hyderabad,Gudimalkapur,Capsicum,Capsicum,FAQ,01-08-2023,3000.0,7000.0,5000.0
+Telangana,Hyderabad,Gudimalkapur,Carrot,Carrot,FAQ,01-08-2023,1800.0,4000.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Cauliflower,African Sarson,FAQ,01-08-2023,1000.0,4000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Cluster beans,Cluster Beans,FAQ,01-08-2023,1500.0,3000.0,2200.0
+Telangana,Hyderabad,Gudimalkapur,Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,1000.0,2000.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Drumstick,Drumstick,FAQ,01-08-2023,1500.0,3000.0,2500.0
+Telangana,Hyderabad,Gudimalkapur,Field Pea,Field Pea,FAQ,01-08-2023,2000.0,5000.0,3000.0
+Telangana,Hyderabad,Gudimalkapur,French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,600.0,9000.0,8000.0
+Telangana,Hyderabad,Gudimalkapur,Green Chilli,Green Chilly,FAQ,01-08-2023,1500.0,8000.0,5000.0
+Telangana,Hyderabad,Gudimalkapur,Onion,1st Sort,FAQ,01-08-2023,700.0,2100.0,1200.0
+Telangana,Hyderabad,Gudimalkapur,Onion Green,Onion Green,FAQ,01-08-2023,1500.0,2500.0,2000.0
+Telangana,Hyderabad,Gudimalkapur,Potato,(Red Nanital),FAQ,01-08-2023,800.0,2000.0,1600.0
+Telangana,Hyderabad,Gudimalkapur,Pumpkin,Other,FAQ,01-08-2023,1000.0,1800.0,1500.0
+Telangana,Hyderabad,Gudimalkapur,Raddish,Other,FAQ,01-08-2023,1000.0,1300.0,1000.0
+Telangana,Hyderabad,Gudimalkapur,Ridgeguard(Tori),Other,FAQ,01-08-2023,2500.0,4500.0,3000.0
+Telangana,Hyderabad,Gudimalkapur,Yam,Other,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Hyderabad,L B Nagar,Banana - Green,Banana - Green,FAQ,01-08-2023,3000.0,3500.0,3250.0
+Telangana,Hyderabad,L B Nagar,Beetroot,Beetroot,FAQ,01-08-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,L B Nagar,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,3500.0,4000.0,3750.0
+Telangana,Hyderabad,L B Nagar,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,4000.0,6000.0,5000.0
+Telangana,Hyderabad,L B Nagar,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1500.0,2000.0,1750.0
+Telangana,Hyderabad,L B Nagar,Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,L B Nagar,Cabbage,Cabbage,FAQ,01-08-2023,1000.0,1500.0,1250.0
+Telangana,Hyderabad,L B Nagar,Capsicum,Capsicum,FAQ,01-08-2023,7000.0,8000.0,7500.0
+Telangana,Hyderabad,L B Nagar,Carrot,Carrot,FAQ,01-08-2023,4000.0,6000.0,5000.0
+Telangana,Hyderabad,L B Nagar,Cauliflower,Cauliflower,FAQ,01-08-2023,3000.0,3500.0,3250.0
+Telangana,Hyderabad,L B Nagar,Cluster beans,Cluster Beans,FAQ,01-08-2023,2500.0,3000.0,2750.0
+Telangana,Hyderabad,L B Nagar,Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,1000.0,1500.0,1250.0
+Telangana,Hyderabad,L B Nagar,Drumstick,Drumstick,FAQ,01-08-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,L B Nagar,French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,6000.0,8000.0,7000.0
+Telangana,Hyderabad,L B Nagar,Green Chilli,Green Chilly,FAQ,01-08-2023,5000.0,8000.0,6500.0
+Telangana,Hyderabad,L B Nagar,Onion,1st Sort,FAQ,01-08-2023,1500.0,2000.0,1750.0
+Telangana,Hyderabad,L B Nagar,Potato,(Red Nanital),FAQ,01-08-2023,1500.0,2000.0,1750.0
+Telangana,Hyderabad,Mahboob Manison,Beetroot,Beetroot,FAQ,01-08-2023,2200.0,2200.0,2200.0
+Telangana,Hyderabad,Mahboob Manison,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Hyderabad,Mahboob Manison,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,400.0,500.0,450.0
+Telangana,Hyderabad,Mahboob Manison,Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,1500.0,3000.0,2500.0
+Telangana,Hyderabad,Mahboob Manison,Cabbage,Cabbage,FAQ,01-08-2023,1100.0,1300.0,1200.0
+Telangana,Hyderabad,Mahboob Manison,Carrot,Carrot,FAQ,01-08-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,Mahboob Manison,Cauliflower,African Sarson,FAQ,01-08-2023,2000.0,3000.0,2500.0
+Telangana,Hyderabad,Mahboob Manison,Cluster beans,Cluster Beans,FAQ,01-08-2023,2750.0,2750.0,2750.0
+Telangana,Hyderabad,Mahboob Manison,Dry Chillies,1st Sort,FAQ,01-08-2023,14000.0,20000.0,15000.0
+Telangana,Hyderabad,Mahboob Manison,Dry Chillies,2nd Sort,FAQ,01-08-2023,5000.0,12000.0,10000.0
+Telangana,Hyderabad,Mahboob Manison,French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,8000.0,9500.0,8750.0
+Telangana,Hyderabad,Mahboob Manison,Garlic,Average,FAQ,01-08-2023,10000.0,15000.0,12000.0
+Telangana,Hyderabad,Mahboob Manison,Green Chilli,Green Chilly,FAQ,01-08-2023,5000.0,6000.0,5500.0
+Telangana,Hyderabad,Mahboob Manison,Onion,1st Sort,FAQ,01-08-2023,1400.0,2100.0,1600.0
+Telangana,Hyderabad,Mahboob Manison,Onion,2nd Sort,FAQ,01-08-2023,300.0,1200.0,800.0
+Telangana,Hyderabad,Mahboob Manison,Potato,(Red Nanital),FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Hyderabad,Mahboob Manison,Tamarind Fruit,Chapathi,FAQ,01-08-2023,7000.0,10000.0,8000.0
+Telangana,Karimnagar,Dharmapuri,Paddy(Dhan)(Common),Paddy,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Dharmaram,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Gangadhara,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Husnabad,Maize,Hybrid/Local,FAQ,01-08-2023,2000.0,2100.0,2050.0
+Telangana,Karimnagar,Huzzurabad,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Huzzurabad,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Karimnagar,Karimnagar,Beetroot,Beetroot,FAQ,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Karimnagar,Karimnagar,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,3200.0,4200.0,3700.0
+Telangana,Karimnagar,Karimnagar,Cabbage,Cabbage,FAQ,01-08-2023,1500.0,1700.0,1600.0
+Telangana,Karimnagar,Karimnagar,Carrot,Carrot,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Karimnagar,Karimnagar,Cluster beans,Cluster Beans,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Karimnagar,Karimnagar,Drumstick,Drumstick,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Karimnagar,Karimnagar,Green Chilli,Green Chilly,FAQ,01-08-2023,4000.0,8200.0,6100.0
+Telangana,Karimnagar,Karimnagar,Ridgeguard(Tori),Other,FAQ,01-08-2023,7500.0,8000.0,7750.0
+Telangana,Karimnagar,Karimnagar,Thondekai,Other,FAQ,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Beetroot,Beetroot,FAQ,01-08-2023,3000.0,3500.0,3200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,4000.0,4500.0,4200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,01-08-2023,8000.0,8500.0,8200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,01-08-2023,2000.0,2500.0,2200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,3200.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2000.0,2500.0,2200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Carrot,Carrot,FAQ,01-08-2023,3500.0,4500.0,4000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,01-08-2023,4000.0,4500.0,4300.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Drumstick,Drumstick,FAQ,01-08-2023,4000.0,5000.0,4500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,01-08-2023,8000.0,9000.0,8500.0
+Telangana,Karimnagar,Pothgal,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Karimnagar,Sircilla,Cotton,RCH-2,FAQ,01-08-2023,6080.0,6380.0,6380.0
+Telangana,Karimnagar,Sircilla,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2040.0,2060.0,2060.0
+Telangana,Karimnagar,Vemulawada,Paddy(Dhan)(Common),I.R. 64,FAQ,01-08-2023,2040.0,2060.0,2060.0
+Telangana,Khammam,Burgampadu,Paddy(Dhan)(Common),Samba Masuri,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Khammam,Charla,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2030.0,2060.0,2040.0
+Telangana,Khammam,Dammapet,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Khammam,Enkoor,Cotton,Cotton (Unginned),FAQ,01-08-2023,6400.0,6800.0,6500.0
+Telangana,Khammam,Khammam,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,5000.0,9000.0,9000.0
+Telangana,Khammam,Khammam,Cotton,Cotton (Unginned),FAQ,01-08-2023,5000.0,7075.0,6950.0
+Telangana,Khammam,Khammam,Dry Chillies,Red,FAQ,01-08-2023,13500.0,19600.0,18000.0
+Telangana,Khammam,Khammam,Green Chilli,Green Chilly,FAQ,01-08-2023,7500.0,8000.0,7500.0
+Telangana,Khammam,Khammam,Green Gram (Moong)(Whole),Local,FAQ,01-08-2023,6450.0,7975.0,6550.0
+Telangana,Mahbubnagar,Amangal,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Mahbubnagar,Devarakadra,Paddy(Dhan)(Common),Sona,FAQ,01-08-2023,2100.0,2100.0,2100.0
+Telangana,Mahbubnagar,Gadwal,Castor Seed,Other,FAQ,01-08-2023,5439.0,5439.0,5439.0
+Telangana,Mahbubnagar,Gadwal,Groundnut,Local,FAQ,01-08-2023,3500.0,6699.0,5410.0
+Telangana,Mahbubnagar,Mahabubnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,3800.0,4200.0,4000.0
+Telangana,Mahbubnagar,Mahabubnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2800.0,3200.0,3000.0
+Telangana,Mahbubnagar,Mahabubnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,01-08-2023,9800.0,10200.0,10000.0
+Telangana,Mahbubnagar,Mahabubnagar(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,01-08-2023,3800.0,4200.0,4000.0
+Telangana,Mahbubnagar,Mahbubnagar,Groundnut,Local,FAQ,01-08-2023,7327.0,7629.0,7629.0
+Telangana,Mahbubnagar,Wanaparthy Road,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2045.0,2065.0,2055.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Medak,Jogipet,Maize,Local,FAQ,01-08-2023,1962.0,1962.0,1962.0
+Telangana,Medak,Narayankhed,Cotton,RCH-2,FAQ,01-08-2023,7000.0,7000.0,7000.0
+Telangana,Medak,Sadasivpet,Onion,1st Sort,FAQ,01-08-2023,570.0,1712.0,1413.0
+Telangana,Medak,Siddipet(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,01-08-2023,3000.0,4000.0,3500.0
+Telangana,Medak,Siddipet(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,4000.0,5000.0,4400.0
+Telangana,Medak,Siddipet(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2000.0,3000.0,2400.0
+Telangana,Medak,Siddipet(Rythu Bazar),Capsicum,Capsicum,FAQ,01-08-2023,7000.0,10000.0,8000.0
+Telangana,Medak,Siddipet(Rythu Bazar),Carrot,Carrot,FAQ,01-08-2023,2500.0,3500.0,3000.0
+Telangana,Medak,Siddipet(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,01-08-2023,4000.0,6000.0,4800.0
+Telangana,Medak,Siddipet(Rythu Bazar),Colacasia,Colacasia,FAQ,01-08-2023,4000.0,5000.0,4400.0
+Telangana,Medak,Siddipet(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,1500.0,3000.0,2000.0
+Telangana,Medak,Siddipet(Rythu Bazar),Onion,1st Sort,FAQ,01-08-2023,1700.0,2600.0,2200.0
+Telangana,Medak,Siddipet(Rythu Bazar),Potato,(Red Nanital),FAQ,01-08-2023,2000.0,3000.0,2400.0
+Telangana,Medak,Vantamamidi,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,4000.0,5000.0,4500.0
+Telangana,Medak,Vantamamidi,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,2000.0,2800.0,2400.0
+Telangana,Medak,Vantamamidi,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1000.0,1200.0,1100.0
+Telangana,Medak,Vantamamidi,Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,2000.0,2500.0,2250.0
+Telangana,Medak,Vantamamidi,Cabbage,Cabbage,FAQ,01-08-2023,800.0,1000.0,900.0
+Telangana,Medak,Vantamamidi,Cluster beans,Cluster Beans,FAQ,01-08-2023,2000.0,2600.0,2300.0
+Telangana,Medak,Vantamamidi,Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,600.0,800.0,700.0
+Telangana,Medak,Vantamamidi,Field Pea,Field Pea,FAQ,01-08-2023,2500.0,4500.0,3500.0
+Telangana,Medak,Vantamamidi,Green Chilli,Green Chilly,FAQ,01-08-2023,3000.0,4000.0,3500.0
+Telangana,Medak,Vantamamidi,Groundnut pods (raw),Groundnut pods (raw),FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Medak,Vantamamidi,Onion Green,Onion Green,FAQ,01-08-2023,1000.0,1000.0,1000.0
+Telangana,Medak,Vantamamidi,Ridgeguard(Tori),Other,FAQ,01-08-2023,3500.0,4000.0,3750.0
+Telangana,Nalgonda,Aler,Arhar (Tur/Red Gram)(Whole),777 New Ind,FAQ,01-08-2023,6600.0,6600.0,6600.0
+Telangana,Nalgonda,Chityal,Cotton,Bramha,FAQ,01-08-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Cotton,RCH-2,FAQ,01-08-2023,5980.0,6180.0,6080.0
+Telangana,Nalgonda,Chityal,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,1940.0,2060.0,2040.0
+Telangana,Nalgonda,Choutuppal,Paddy(Dhan)(Common),I.R. 64,FAQ,01-08-2023,2000.0,2060.0,2040.0
+Telangana,Nalgonda,Devarakonda,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Dindi),Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Devarkonda(Mallepalli),Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Halia,Cotton,Cotton (Unginned),FAQ,01-08-2023,6380.0,6380.0,6380.0
+Telangana,Nalgonda,Halia,Maize,Deshi Red,FAQ,01-08-2023,1930.0,1930.0,1930.0
+Telangana,Nalgonda,Halia,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Kodad,Paddy(Dhan)(Common),B P T,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Miryalaguda,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,5500.0,0.0,6000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,01-08-2023,5500.0,0.0,6000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,4000.0,0.0,4500.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2800.0,0.0,3000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,01-08-2023,5500.0,0.0,6000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Green Chilli,Green Chilly,FAQ,01-08-2023,10000.0,11000.0,11000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,01-08-2023,1000.0,1200.0,1100.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Onion,Red,FAQ,01-08-2023,2500.0,2500.0,2500.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Potato,Potato,FAQ,01-08-2023,2800.0,3000.0,3000.0
+Telangana,Nalgonda,Miryalguda(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,01-08-2023,6000.0,6000.0,6000.0
+Telangana,Nalgonda,Mothkur,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Nakrekal,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2203.0,2203.0,2203.0
+Telangana,Nalgonda,Ramannapet,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Suryapeta,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,6018.0,9259.0,8996.0
+Telangana,Nalgonda,Suryapeta,Green Gram (Moong)(Whole),Local,FAQ,01-08-2023,5289.0,8011.0,8011.0
+Telangana,Nalgonda,Suryapeta,Paddy(Dhan)(Common),B P T,FAQ,01-08-2023,2059.0,3069.0,2992.0
+Telangana,Nalgonda,Suryapeta,Paddy(Dhan)(Common),HMT,FAQ,01-08-2023,2019.0,2519.0,2109.0
+Telangana,Nalgonda,Suryapeta,Paddy(Dhan)(Common),I.R. 64,FAQ,01-08-2023,1535.0,2097.0,2089.0
+Telangana,Nalgonda,Venkateswarnagar,Beetroot,Beetroot,FAQ,01-08-2023,2500.0,2500.0,2500.0
+Telangana,Nalgonda,Venkateswarnagar,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Nalgonda,Venkateswarnagar,Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Nalgonda,Venkateswarnagar,Brinjal,Brinjal,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Nalgonda,Venkateswarnagar,Cabbage,Cabbage,FAQ,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Nalgonda,Venkateswarnagar,Cucumbar(Kheera),Other,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Nalgonda,Venkateswarnagar,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Venkateswarnagar,Potato,Local,FAQ,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Nalgonda,Venkateswarnagar,Ridgeguard(Tori),Other,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Nalgonda,Venkateswarnagar(Chintapalli),Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nalgonda,Voligonda,Paddy(Dhan)(Common),1001,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Nizamabad,Armoor,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2040.0,2060.0,2040.0
+Telangana,Nizamabad,Bhiknoor,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2040.0,2060.0,2060.0
+Telangana,Nizamabad,Bodhan,Paddy(Dhan)(Common),MTU-1010,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Nizamabad,Gandhari,Maize,Deshi Red,FAQ,01-08-2023,1962.0,1962.0,1962.0
+Telangana,Nizamabad,Nizamabad,Turmeric,Bulb,FAQ,01-08-2023,7206.0,12666.0,10660.0
+Telangana,Nizamabad,Nizamabad,Turmeric,Finger,FAQ,01-08-2023,5006.0,13348.0,11326.0
+Telangana,Nizamabad,Pitlam,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2040.0,2040.0,2040.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Banana - Green,Banana - Green,FAQ,01-08-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Beetroot,Beetroot,FAQ,01-08-2023,2500.0,2500.0,2500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cabbage,Cabbage,FAQ,01-08-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Capsicum,Capsicum,FAQ,01-08-2023,7000.0,7000.0,7000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Carrot,Carrot,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cauliflower,African Sarson,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Colacasia,Colacasia,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Drumstick,Drumstick,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Field Pea,Field Pea,FAQ,01-08-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,9500.0,9500.0,9500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Green Chilli,Green Chilly,FAQ,01-08-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Leafy Vegetable,Leafy Vegetables,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Onion,1st Sort,FAQ,01-08-2023,1900.0,1900.0,1900.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Onion Green,Onion Green,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Potato,(Red Nanital),FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Pumpkin,Other,FAQ,01-08-2023,1800.0,1800.0,1800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,01-08-2023,5000.0,5000.0,5000.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Snakeguard,Other,FAQ,01-08-2023,2800.0,2800.0,2800.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Sweet Potato,Hosur Green,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,Kukatpally(Rythu Bazar),Yam (Ratalu),Other,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,Medchal,Maize,Hybrid,FAQ,01-08-2023,1962.0,1962.0,1962.0
+Telangana,Ranga Reddy,Medchal,Paddy(Dhan)(Common),I.R. 64,FAQ,01-08-2023,2060.0,2060.0,2060.0
+Telangana,Ranga Reddy,Narsingi,Bull,Bull,FAQ,01-08-2023,10000.0,20000.0,15000.0
+Telangana,Ranga Reddy,Narsingi,Calf,Calf,FAQ,01-08-2023,5000.0,20000.0,15000.0
+Telangana,Ranga Reddy,Narsingi,Cow,Cow,FAQ,01-08-2023,30000.0,50000.0,40000.0
+Telangana,Ranga Reddy,Narsingi,He Buffalo,He Baffelo,FAQ,01-08-2023,15000.0,25000.0,20000.0
+Telangana,Ranga Reddy,Narsingi,Ox,Other,FAQ,01-08-2023,10000.0,20000.0,15000.0
+Telangana,Ranga Reddy,Narsingi,She Buffalo,She Baffelo,FAQ,01-08-2023,20000.0,50000.0,40000.0
+Telangana,Ranga Reddy,Pargi,Maize,Hybrid/Local,FAQ,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Banana - Green,Banana - Green,FAQ,01-08-2023,1100.0,1100.0,1100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Beetroot,Beetroot,FAQ,01-08-2023,2500.0,2500.0,2500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bitter gourd,Bitter Gourd,FAQ,01-08-2023,5500.0,5500.0,5500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Bottle gourd,Bottle Gourd,FAQ,01-08-2023,1500.0,1500.0,1500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Brinjal,Arkasheela Mattigulla,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cabbage,Cabbage,FAQ,01-08-2023,2100.0,2100.0,2100.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Carrot,Carrot,FAQ,01-08-2023,4500.0,4500.0,4500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cauliflower,African Sarson,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cluster beans,Cluster Beans,FAQ,01-08-2023,3500.0,3500.0,3500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Colacasia,Colacasia,FAQ,01-08-2023,4000.0,4000.0,4000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Green Chilli,Green Chilly,FAQ,01-08-2023,6500.0,6500.0,6500.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Leafy Vegetable,Leafy Vegetables,FAQ,01-08-2023,1600.0,1600.0,1600.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Onion,1st Sort,FAQ,01-08-2023,1900.0,1900.0,1900.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Potato,Potato,FAQ,01-08-2023,2300.0,2300.0,2300.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Ridgeguard(Tori),Ridgeguard(Tori),FAQ,01-08-2023,5000.0,5000.0,5000.0
+Telangana,Ranga Reddy,"Ramakrisnapuram,RBZ",Tomato,Deshi,FAQ,01-08-2023,8300.0,8300.0,8300.0
+Telangana,Ranga Reddy,Sardarnagar,Arhar (Tur/Red Gram)(Whole),777 New Ind,FAQ,01-08-2023,1800.0,2000.0,1900.0
+Telangana,Ranga Reddy,Tanduru,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,10025.0,10449.0,10025.0
+Telangana,Warangal,Jangaon,Paddy(Dhan)(Common),I.R. 64,FAQ,01-08-2023,206.0,206.0,206.0
+Telangana,Warangal,Warangal,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,8702.0,8883.0,8863.0
+Telangana,Warangal,Warangal,Banana,Banana - Ripe,Large,01-08-2023,3000.0,3000.0,3000.0
+Telangana,Warangal,Warangal,Beetroot,Beetroot,FAQ,01-08-2023,2800.0,3000.0,2900.0
+Telangana,Warangal,Warangal,Bhindi(Ladies Finger),Bhindi,FAQ,01-08-2023,4200.0,4500.0,4350.0
+Telangana,Warangal,Warangal,Bitter gourd,Bitter Gourd,FAQ,01-08-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Brinjal,Brinjal,FAQ,01-08-2023,3400.0,3600.0,3500.0
+Telangana,Warangal,Warangal,Cabbage,Cabbage,FAQ,01-08-2023,1500.0,1800.0,1650.0
+Telangana,Warangal,Warangal,Capsicum,Capsicum,FAQ,01-08-2023,5500.0,6000.0,5750.0
+Telangana,Warangal,Warangal,Carrot,Carrot,FAQ,01-08-2023,3800.0,4000.0,3900.0
+Telangana,Warangal,Warangal,Cauliflower,Cauliflower,FAQ,01-08-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,Cluster beans,Cluster Beans,FAQ,01-08-2023,4600.0,4800.0,4700.0
+Telangana,Warangal,Warangal,Colacasia,Colacasia,FAQ,01-08-2023,3200.0,3500.0,3350.0
+Telangana,Warangal,Warangal,Cotton,Cotton (Unginned),FAQ,01-08-2023,5000.0,7000.0,6900.0
+Telangana,Warangal,Warangal,Cowpea (Lobia/Karamani),Cowpea (W-S),FAQ,01-08-2023,7922.0,7922.0,7922.0
+Telangana,Warangal,Warangal,Cucumbar(Kheera),Cucumbar,FAQ,01-08-2023,1600.0,1800.0,1700.0
+Telangana,Warangal,Warangal,Dry Chillies,1st Sort,FAQ,01-08-2023,18500.0,24000.0,22000.0
+Telangana,Warangal,Warangal,Dry Chillies,2nd Sort,FAQ,01-08-2023,28000.0,33000.0,31000.0
+Telangana,Warangal,Warangal,Dry Chillies,Talu,FAQ,01-08-2023,5000.0,9000.0,7500.0
+Telangana,Warangal,Warangal,Field Pea,Field Pea,FAQ,01-08-2023,5000.0,6000.0,5500.0
+Telangana,Warangal,Warangal,French Beans (Frasbean),French Beans (Frasbean),FAQ,01-08-2023,7500.0,8000.0,7750.0
+Telangana,Warangal,Warangal,Grapes,Black,Large,01-08-2023,7000.0,7000.0,7000.0
+Telangana,Warangal,Warangal,Green Chilli,Green Chilly,FAQ,01-08-2023,7000.0,8000.0,7500.0
+Telangana,Warangal,Warangal,Groundnut,Gungri (With Shell),FAQ,01-08-2023,8000.0,9520.0,8500.0
+Telangana,Warangal,Warangal,Maize,Local,FAQ,01-08-2023,1700.0,2212.0,1881.0
+Telangana,Warangal,Warangal,Mousambi(Sweet Lime),Mousambi,Medium,01-08-2023,2000.0,2000.0,2000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Small,01-08-2023,7000.0,7000.0,7000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Large,01-08-2023,15000.0,15000.0,15000.0
+Telangana,Warangal,Warangal,Pomegranate,Pomogranate,Medium,01-08-2023,10000.0,10000.0,10000.0
+Telangana,Warangal,Warangal,Potato,Potato,FAQ,01-08-2023,1600.0,1800.0,1700.0
+Telangana,Warangal,Warangal,Ridgeguard(Tori),Ridgeguard(Tori),FAQ,01-08-2023,4500.0,5000.0,4750.0
+Telangana,Warangal,Warangal,"Sesamum(Sesame,Gingelly,Til)",White,FAQ,01-08-2023,15652.0,15722.0,15659.0
+Telangana,Warangal,Warangal,Turmeric,Bulb,FAQ,01-08-2023,8600.0,10600.0,9600.0
+Telangana,Warangal,Warangal,Turmeric,Finger,FAQ,01-08-2023,9000.0,11000.0,10000.0
+Telangana,Warangal,Warangal,Yam (Ratalu),Yam (Ratalu),FAQ,01-08-2023,3600.0,3800.0,3700.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Beetroot,Beetroot,FAQ,02-08-2023,3000.0,3500.0,3200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bhindi(Ladies Finger),Bhindi,FAQ,02-08-2023,3200.0,4000.0,3500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Bitter gourd,Bitter Gourd,FAQ,02-08-2023,6000.0,6500.0,6400.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Brinjal,Arkasheela Mattigulla,FAQ,02-08-2023,4500.0,5000.0,4500.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cabbage,Cabbage,FAQ,02-08-2023,1800.0,2500.0,2000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Carrot,Carrot,FAQ,02-08-2023,3100.0,3500.0,3200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Cluster beans,Cluster Beans,FAQ,02-08-2023,4000.0,4500.0,4000.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Drumstick,Drumstick,FAQ,02-08-2023,4000.0,4500.0,4200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Green Chilli,Green Chilly,FAQ,02-08-2023,6000.0,6500.0,6200.0
+Telangana,Karimnagar,Karimnagar(Rythu Bazar),Ridgeguard(Tori),Other,FAQ,02-08-2023,7000.0,7500.0,7200.0
+Telangana,Medak,Dubbak,Paddy(Dhan)(Common),I.R.-64,FAQ,02-08-2023,2060.0,2060.0,2060.0
+Andhra Pradesh,Kurnool,Adoni,Green Chilli,Green,FAQ,27-07-2023,3097.0,3971.0,3420.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Yellow,FAQ,02-08-2023,1974.0,2232.0,2128.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,4828.0,5370.0,5154.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),FAQ,FAQ,28-07-2023,7486.0,8621.0,8065.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Teja,FAQ,01-08-2023,15695.0,23608.0,21071.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Kagzi,FAQ,02-08-2023,3454.0,5022.0,4093.0
+Andhra Pradesh,Anantapur,Kadiri,Groundnut,Bold,FAQ,27-07-2023,5837.0,6868.0,6583.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Bold,FAQ,27-07-2023,6092.0,7175.0,6944.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Coarse,FAQ,27-07-2023,2062.0,2233.0,2166.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,Bold,FAQ,01-08-2023,5877.0,6849.0,6490.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Local,FAQ,27-07-2023,5057.0,5560.0,5304.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Bunny,FAQ,02-08-2023,6650.0,7265.0,6944.0
+Andhra Pradesh,Kurnool,Kurnool,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2411.0,3073.0,2633.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),Sona Masuri,FAQ,01-08-2023,2069.0,2166.0,2117.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4897.0,5530.0,5105.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,K-6,FAQ,29-07-2023,5960.0,6846.0,6630.0
+Andhra Pradesh,Nandyal,Nandyal,Green Chilli,Local,FAQ,28-07-2023,3062.0,4077.0,3831.0
+Andhra Pradesh,Krishna,Gudivada,Jowar(Sorghum),Yellow,FAQ,28-07-2023,2279.0,2899.0,2639.0
+Andhra Pradesh,Nandyal,Koilkuntla,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4975.0,5569.0,5272.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2060.0,2159.0,2092.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,28-07-2023,2065.0,2229.0,2149.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,31-07-2023,8572.0,14490.0,11913.0
+Andhra Pradesh,Nandyal,Atmakur,Dry Chillies,Guntur,FAQ,02-08-2023,16802.0,23045.0,20351.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2054.0,2179.0,2101.0
+Andhra Pradesh,Kurnool,Alur,Groundnut,K-6,FAQ,02-08-2023,6150.0,6984.0,6609.0
+Andhra Pradesh,Krishna,Gudivada,Turmeric,Finger,FAQ,01-08-2023,7139.0,9806.0,8337.0
+Andhra Pradesh,Krishna,Vijayawada,Tomato,Hybrid,FAQ,28-07-2023,8561.0,12404.0,11546.0
+Andhra Pradesh,Guntur,Guntur,Onion,Nasik,FAQ,27-07-2023,1580.0,2195.0,1799.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Bold,FAQ,29-07-2023,5896.0,6969.0,6522.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,27-07-2023,6620.0,7526.0,7335.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Local,FAQ,28-07-2023,6064.0,7463.0,6599.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Medium Staple,FAQ,01-08-2023,6527.0,7285.0,6959.0
+Andhra Pradesh,Nandyal,Atmakur,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2052.0,2250.0,2176.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),Yellow,FAQ,01-08-2023,2335.0,2899.0,2522.0
+Andhra Pradesh,Nandyal,Nandyal,Arhar (Tur/Red Gram)(Whole),Red,FAQ,01-08-2023,8888.0,10388.0,9343.0
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,K-6,FAQ,28-07-2023,5827.0,6822.0,6290.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),Hybrid,FAQ,28-07-2023,2284.0,2994.0,2688.0
+Andhra Pradesh,Guntur,Piduguralla,Dry Chillies,Teja,FAQ,28-07-2023,16962.0,23422.0,19515.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4929.0,5427.0,5195.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4996.0,5494.0,5160.0
+Andhra Pradesh,Chittor,Madanapalli,Maize,Local,FAQ,29-07-2023,1980.0,2166.0,2054.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4927.0,5384.0,5121.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Hybrid,FAQ,31-07-2023,6642.0,7542.0,6956.0
+Andhra Pradesh,Guntur,Piduguralla,Maize,Local,FAQ,01-08-2023,1984.0,2295.0,2221.0
+Andhra Pradesh,Chittor,Palamaner,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2056.0,2198.0,2160.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Guntur,FAQ,28-07-2023,15947.0,23956.0,19412.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Hybrid,FAQ,29-07-2023,1942.0,2294.0,2223.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Coarse,FAQ,28-07-2023,2048.0,2172.0,2089.0
+Andhra Pradesh,Kurnool,Yemmiganur,Cotton,Medium Staple,FAQ,01-08-2023,6418.0,7325.0,6713.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,5076.0,5459.0,5202.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Local,FAQ,27-07-2023,1985.0,2160.0,2043.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Sona Masuri,FAQ,31-07-2023,2045.0,2239.0,2127.0
+Andhra Pradesh,Chittor,Chittoor,Groundnut,K-6,FAQ,01-08-2023,5833.0,7260.0,6664.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Bulb,FAQ,29-07-2023,6643.0,9574.0,7872.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,5002.0,5390.0,5180.0
+Andhra Pradesh,Nandyal,Koilkuntla,Groundnut,K-6,FAQ,27-07-2023,5983.0,7499.0,7193.0
+Andhra Pradesh,Krishna,Vijayawada,Jowar(Sorghum),White,FAQ,01-08-2023,2264.0,2906.0,2756.0
+Andhra Pradesh,Guntur,Guntur,Tomato,Hybrid,FAQ,28-07-2023,8554.0,12394.0,11307.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Bold,FAQ,01-08-2023,6194.0,7365.0,6855.0
+Andhra Pradesh,Chittor,Palamaner,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2044.0,2238.0,2128.0
+Andhra Pradesh,Anantapur,Kadiri,Tomato,Hybrid,FAQ,02-08-2023,8830.0,12681.0,11150.0
+Andhra Pradesh,Nandyal,Koilkuntla,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,5006.0,5556.0,5310.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Bunny,FAQ,27-07-2023,6428.0,7369.0,6840.0
+Andhra Pradesh,Anantapur,Kadiri,Black Gram (Urd Beans)(Whole),Local,FAQ,29-07-2023,7508.0,8582.0,7971.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2068.0,2206.0,2117.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Local,FAQ,01-08-2023,5814.0,7058.0,6531.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Bunny,FAQ,28-07-2023,6413.0,7346.0,7128.0
+Andhra Pradesh,Krishna,Vijayawada,Cotton,Hybrid,FAQ,29-07-2023,6463.0,7300.0,6757.0
+Andhra Pradesh,Kurnool,Yemmiganur,Dry Chillies,Teja,FAQ,01-08-2023,16874.0,23777.0,19762.0
+Andhra Pradesh,Kurnool,Adoni,Lemon,Kagzi,FAQ,28-07-2023,3729.0,4820.0,4458.0
+Andhra Pradesh,Krishna,Gudivada,Groundnut,Bold,FAQ,31-07-2023,6121.0,7405.0,7027.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Bunny,FAQ,28-07-2023,6636.0,7243.0,7083.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4860.0,5576.0,5200.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2041.0,2169.0,2100.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,29-07-2023,5940.0,7157.0,6719.0
+Andhra Pradesh,Chittor,Chittoor,Groundnut,Bold,FAQ,27-07-2023,5846.0,7479.0,6482.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2044.0,2193.0,2143.0
+Andhra Pradesh,East Godavari,Rajahmundry,Groundnut,Bold,FAQ,31-07-2023,6042.0,7158.0,6592.0
+Andhra Pradesh,Guntur,Tenali,Turmeric,Duggirala,FAQ,28-07-2023,6678.0,9563.0,7546.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Byadagi,FAQ,29-07-2023,16078.0,23847.0,21985.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Local,FAQ,29-07-2023,1966.0,2169.0,2118.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2056.0,2190.0,2116.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),Local,FAQ,28-07-2023,7368.0,8764.0,8260.0
+Andhra Pradesh,Nandyal,Koilkuntla,Groundnut,Local,FAQ,01-08-2023,6028.0,7084.0,6785.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Hybrid,FAQ,29-07-2023,1921.0,2268.0,2130.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4933.0,5503.0,5250.0
+Andhra Pradesh,Kurnool,Yemmiganur,Groundnut,Local,FAQ,02-08-2023,5834.0,7161.0,6652.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Bold,FAQ,27-07-2023,6127.0,7326.0,6890.0
+Andhra Pradesh,Guntur,Duggirala,Cotton,Hybrid,FAQ,28-07-2023,6444.0,7218.0,7057.0
+Andhra Pradesh,Krishna,Vijayawada,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4924.0,5489.0,5148.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4920.0,5344.0,5193.0
+Andhra Pradesh,Chittor,Chittoor,Tomato,Hybrid,FAQ,31-07-2023,8328.0,14010.0,12010.0
+Andhra Pradesh,Nandyal,Atmakur,Dry Chillies,Teja,FAQ,27-07-2023,16394.0,23752.0,19048.0
+Andhra Pradesh,Anantapur,Kadiri,Maize,Yellow,FAQ,31-07-2023,1967.0,2298.0,2165.0
+Andhra Pradesh,Kurnool,Yemmiganur,Groundnut,Pods,FAQ,01-08-2023,6126.0,7424.0,6792.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,28-07-2023,9115.0,13187.0,10864.0
+Andhra Pradesh,Chittor,Chittoor,Maize,Yellow,FAQ,02-08-2023,1928.0,2267.0,2112.0
+Andhra Pradesh,Nandyal,Nandikotkur,Cotton,Hybrid,FAQ,29-07-2023,6532.0,7485.0,6930.0
+Andhra Pradesh,Guntur,Piduguralla,Tomato,Local,FAQ,29-07-2023,9340.0,12201.0,10414.0
+Andhra Pradesh,Chittor,Palamaner,Turmeric,Bulb,FAQ,02-08-2023,6607.0,8821.0,7730.0
+Andhra Pradesh,Guntur,Tenali,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4940.0,5319.0,5212.0
+Andhra Pradesh,Nandyal,Allagadda,Tomato,Local,FAQ,01-08-2023,9419.0,12049.0,11366.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4802.0,5406.0,5211.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Teja,FAQ,01-08-2023,16869.0,22638.0,20340.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,31-07-2023,5888.0,7105.0,6271.0
+Andhra Pradesh,Kurnool,Alur,Dry Chillies,Local,FAQ,02-08-2023,16698.0,22213.0,18808.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Pods,FAQ,28-07-2023,6192.0,7174.0,6932.0
+Andhra Pradesh,Guntur,Piduguralla,Groundnut,K-6,FAQ,27-07-2023,6057.0,6895.0,6502.0
+Andhra Pradesh,Nandyal,Nandikotkur,Turmeric,Finger,FAQ,29-07-2023,6765.0,8817.0,7716.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),Bold,FAQ,29-07-2023,7501.0,8699.0,8012.0
+Andhra Pradesh,Guntur,Tenali,Maize,Yellow,FAQ,31-07-2023,1902.0,2231.0,2165.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Bunny,FAQ,28-07-2023,6595.0,7512.0,7169.0
+Andhra Pradesh,Nandyal,Atmakur,Groundnut,K-6,FAQ,28-07-2023,5880.0,6814.0,6231.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Hybrid,FAQ,31-07-2023,6601.0,7426.0,6938.0
+Andhra Pradesh,Chittor,Palamaner,Maize,Local,FAQ,29-07-2023,1977.0,2175.0,2097.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),BPT-5204,FAQ,28-07-2023,2079.0,2161.0,2105.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2067.0,2246.0,2156.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Byadagi,FAQ,27-07-2023,16480.0,23492.0,19435.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4980.0,5336.0,5262.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,K-6,FAQ,29-07-2023,6013.0,7263.0,6431.0
+Andhra Pradesh,Krishna,Vijayawada,Green Chilli,Local,FAQ,27-07-2023,3140.0,4376.0,3576.0
+Andhra Pradesh,Chittor,Chittoor,Cotton,Bunny,FAQ,02-08-2023,6667.0,7384.0,6937.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Red,FAQ,02-08-2023,1557.0,2260.0,1984.0
+Andhra Pradesh,Kurnool,Kurnool,Lemon,Local,FAQ,31-07-2023,3461.0,5385.0,4296.0
+Andhra Pradesh,Krishna,Gudivada,Black Gram (Urd Beans)(Whole),Local,FAQ,27-07-2023,7312.0,8470.0,8094.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Medium Staple,FAQ,01-08-2023,6600.0,7335.0,7002.0
+Andhra Pradesh,Chittor,Madanapalli,Cotton,Bunny,FAQ,28-07-2023,6546.0,7342.0,6888.0
+Andhra Pradesh,Nandyal,Allagadda,Maize,Hybrid,FAQ,01-08-2023,1970.0,2191.0,2037.0
+Andhra Pradesh,Krishna,Vijayawada,Dry Chillies,Byadagi,FAQ,27-07-2023,15603.0,22219.0,19424.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4943.0,5514.0,5242.0
+Andhra Pradesh,Guntur,Guntur,Arhar (Tur/Red Gram)(Whole),Red,FAQ,27-07-2023,8706.0,10204.0,9338.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2062.0,2184.0,2159.0
+Andhra Pradesh,Chittor,Palamaner,Turmeric,Duggirala,FAQ,29-07-2023,6746.0,9181.0,7850.0
+Andhra Pradesh,Guntur,Duggirala,Dry Chillies,Byadagi,FAQ,27-07-2023,16803.0,21947.0,20257.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Local,FAQ,28-07-2023,5887.0,7139.0,6716.0
+Andhra Pradesh,Anantapur,Kadiri,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2285.0,2840.0,2505.0
+Andhra Pradesh,Chittor,Madanapalli,Onion,Red,FAQ,29-07-2023,1454.0,2006.0,1767.0
+Andhra Pradesh,Kurnool,Yemmiganur,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2079.0,2205.0,2161.0
+Andhra Pradesh,Anantapur,Hindupur,Maize,Yellow,FAQ,02-08-2023,1987.0,2224.0,2162.0
+Andhra Pradesh,Guntur,Duggirala,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2341.0,2976.0,2590.0
+Andhra Pradesh,Chittor,Palamaner,Cotton,Hybrid,FAQ,29-07-2023,6682.0,7391.0,7186.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4822.0,5489.0,5040.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,5085.0,5326.0,5187.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2064.0,2212.0,2166.0
+Andhra Pradesh,Nandyal,Atmakur,Maize,Hybrid,FAQ,31-07-2023,1991.0,2195.0,2112.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,29-07-2023,4971.0,5318.0,5242.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Hybrid,FAQ,28-07-2023,6588.0,7306.0,6833.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2062.0,2166.0,2114.0
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,Pods,FAQ,29-07-2023,5813.0,7002.0,6338.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),FAQ,FAQ,27-07-2023,5006.0,5577.0,5402.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Sona Masuri,FAQ,31-07-2023,2045.0,2172.0,2093.0
+Andhra Pradesh,Kurnool,Alur,Maize,Hybrid,FAQ,28-07-2023,1907.0,2175.0,2029.0
+Andhra Pradesh,Guntur,Piduguralla,Lemon,Local,FAQ,31-07-2023,3275.0,5351.0,4624.0
+Andhra Pradesh,Kurnool,Yemmiganur,Cotton,Bunny,FAQ,01-08-2023,6562.0,7375.0,7049.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Pods,FAQ,02-08-2023,5929.0,6975.0,6291.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,5046.0,5473.0,5337.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Kagzi,FAQ,31-07-2023,3511.0,5154.0,4232.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Teja,FAQ,02-08-2023,17036.0,23907.0,20712.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,29-07-2023,5928.0,6873.0,6287.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Pods,FAQ,02-08-2023,5998.0,7264.0,6631.0
+Andhra Pradesh,Kurnool,Alur,Dry Chillies,Guntur,FAQ,31-07-2023,15220.0,21757.0,17560.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Pods,FAQ,01-08-2023,6130.0,6801.0,6623.0
+Andhra Pradesh,Krishna,Gudivada,Turmeric,Bulb,FAQ,31-07-2023,6538.0,9278.0,8213.0
+Andhra Pradesh,Kurnool,Alur,Maize,Hybrid,FAQ,02-08-2023,1944.0,2158.0,2037.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Local,FAQ,29-07-2023,5975.0,7289.0,6449.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Duggirala,FAQ,01-08-2023,7060.0,9565.0,8201.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,4922.0,5367.0,5243.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,5084.0,5494.0,5239.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Local,FAQ,01-08-2023,16764.0,22246.0,19731.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4937.0,5343.0,5097.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2051.0,2229.0,2141.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2051.0,2180.0,2128.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Local,FAQ,31-07-2023,1987.0,2217.0,2112.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,5029.0,5413.0,5323.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Yellow,FAQ,02-08-2023,1924.0,2207.0,2130.0
+Andhra Pradesh,Kurnool,Yemmiganur,Black Gram (Urd Beans)(Whole),Bold,FAQ,27-07-2023,7327.0,8484.0,8203.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Pods,FAQ,31-07-2023,6195.0,7355.0,6921.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,31-07-2023,1996.0,2169.0,2131.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Hybrid,FAQ,27-07-2023,1987.0,2216.0,2116.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Hybrid,FAQ,27-07-2023,1972.0,2211.0,2122.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Yellow,FAQ,27-07-2023,1947.0,2295.0,2110.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2043.0,2183.0,2132.0
+Andhra Pradesh,Krishna,Vijayawada,Cotton,Medium Staple,FAQ,31-07-2023,6686.0,7451.0,7255.0
+Andhra Pradesh,Krishna,Gudivada,Tomato,Local,FAQ,01-08-2023,8054.0,12171.0,10588.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,5024.0,5430.0,5166.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4850.0,5390.0,5020.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Local,FAQ,27-07-2023,15733.0,22125.0,18116.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,31-07-2023,6570.0,7517.0,6935.0
+Andhra Pradesh,Chittor,Madanapalli,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,5061.0,5486.0,5240.0
+Andhra Pradesh,Anantapur,Kadiri,Groundnut,Local,FAQ,28-07-2023,5984.0,6978.0,6409.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Guntur,FAQ,31-07-2023,17253.0,23033.0,19444.0
+Andhra Pradesh,Guntur,Guntur,Tomato,Local,FAQ,29-07-2023,9481.0,12748.0,12033.0
+Andhra Pradesh,Anantapur,Anantapur,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2337.0,2921.0,2804.0
+Andhra Pradesh,Nandyal,Atmakur,Groundnut,Pods,FAQ,27-07-2023,5895.0,7200.0,6662.0
+Andhra Pradesh,Anantapur,Anantapur,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2207.0,3132.0,2668.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Hybrid,FAQ,01-08-2023,6660.0,7511.0,7330.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Duggirala,FAQ,02-08-2023,6848.0,9856.0,8181.0
+Andhra Pradesh,Nandyal,Nandikotkur,Onion,Red,FAQ,01-08-2023,1641.0,2088.0,1818.0
+Andhra Pradesh,Chittor,Madanapalli,Cotton,Bunny,FAQ,02-08-2023,6627.0,7507.0,7191.0
+Andhra Pradesh,Anantapur,Anantapur,Turmeric,Finger,FAQ,02-08-2023,6568.0,9441.0,7487.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,27-07-2023,8869.0,13831.0,10581.0
+Andhra Pradesh,Kurnool,Yemmiganur,Jowar(Sorghum),Yellow,FAQ,29-07-2023,2424.0,2870.0,2587.0
+Andhra Pradesh,Nandyal,Koilkuntla,Tomato,Local,FAQ,01-08-2023,8753.0,12681.0,10255.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,29-07-2023,5024.0,5402.0,5159.0
+Andhra Pradesh,Chittor,Chittoor,Bengal Gram(Gram)(Whole),Desi,FAQ,28-07-2023,5026.0,5368.0,5244.0
+Andhra Pradesh,Nandyal,Koilkuntla,Green Chilli,Local,FAQ,01-08-2023,2946.0,4353.0,3378.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Local,FAQ,27-07-2023,1945.0,2251.0,2140.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2078.0,2161.0,2113.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Hybrid,FAQ,01-08-2023,6665.0,7425.0,7241.0
+Andhra Pradesh,Guntur,Tenali,Turmeric,Finger,FAQ,02-08-2023,6544.0,9736.0,8953.0
+Andhra Pradesh,Anantapur,Hindupur,Jowar(Sorghum),Yellow,FAQ,02-08-2023,2322.0,2856.0,2735.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2045.0,2173.0,2118.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Coarse,FAQ,31-07-2023,2055.0,2245.0,2178.0
+Andhra Pradesh,Kurnool,Kurnool,Tomato,Local,FAQ,01-08-2023,9113.0,12386.0,10774.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4985.0,5582.0,5248.0
+Andhra Pradesh,Nandyal,Allagadda,Turmeric,Duggirala,FAQ,29-07-2023,6652.0,9167.0,7703.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Local,FAQ,27-07-2023,5094.0,5410.0,5331.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Local,FAQ,27-07-2023,15995.0,21569.0,18008.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),Yellow,FAQ,27-07-2023,2399.0,3057.0,2793.0
+Andhra Pradesh,Guntur,Piduguralla,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,5036.0,5373.0,5158.0
+Andhra Pradesh,Nandyal,Nandyal,Arhar (Tur/Red Gram)(Whole),Desi,FAQ,28-07-2023,8548.0,10565.0,9362.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Hybrid,FAQ,28-07-2023,6499.0,7259.0,7069.0
+Andhra Pradesh,Anantapur,Kadiri,Green Chilli,Green,FAQ,29-07-2023,3143.0,3901.0,3420.0
+Andhra Pradesh,East Godavari,Rajahmundry,Turmeric,Bulb,FAQ,28-07-2023,6577.0,9800.0,7756.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,4977.0,5305.0,5119.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Yellow,FAQ,02-08-2023,1942.0,2167.0,2017.0
+Andhra Pradesh,Kurnool,Adoni,Tomato,Local,FAQ,29-07-2023,8770.0,12273.0,10703.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2071.0,2237.0,2164.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2079.0,2156.0,2121.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,5006.0,5447.0,5339.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,27-07-2023,1932.0,2172.0,2019.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Local,FAQ,02-08-2023,1959.0,2257.0,2105.0
+Andhra Pradesh,Krishna,Gudivada,Cotton,Medium Staple,FAQ,01-08-2023,6488.0,7402.0,6959.0
+Andhra Pradesh,Nandyal,Atmakur,Black Gram (Urd Beans)(Whole),FAQ,FAQ,27-07-2023,7541.0,8591.0,8260.0
+Andhra Pradesh,Nandyal,Banaganapalle,Lemon,Kagzi,FAQ,31-07-2023,3471.0,4983.0,4181.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Local,FAQ,31-07-2023,3450.0,4876.0,4182.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,29-07-2023,9430.0,13717.0,11733.0
+Andhra Pradesh,Kurnool,Yemmiganur,Arhar (Tur/Red Gram)(Whole),Red,FAQ,27-07-2023,8565.0,9897.0,9457.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,01-08-2023,1906.0,2293.0,2131.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),BPT-5204,FAQ,31-07-2023,2054.0,2217.0,2164.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Guntur,FAQ,29-07-2023,16501.0,22055.0,19772.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,28-07-2023,1966.0,2184.0,2043.0
+Andhra Pradesh,Guntur,Guntur,Tomato,Local,FAQ,27-07-2023,9144.0,13435.0,12163.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,01-08-2023,6172.0,7381.0,6696.0
+Andhra Pradesh,Krishna,Vijayawada,Tomato,Hybrid,FAQ,29-07-2023,9054.0,12772.0,10801.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,28-07-2023,1987.0,2235.0,2111.0
+Andhra Pradesh,Nandyal,Atmakur,Groundnut,Local,FAQ,02-08-2023,6053.0,6821.0,6570.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Hybrid,FAQ,31-07-2023,6526.0,7336.0,6919.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4979.0,5565.0,5200.0
+Andhra Pradesh,East Godavari,Rajahmundry,Arhar (Tur/Red Gram)(Whole),Desi,FAQ,27-07-2023,8972.0,10072.0,9666.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2058.0,2177.0,2139.0
+Andhra Pradesh,Nandyal,Koilkuntla,Jowar(Sorghum),White,FAQ,29-07-2023,2329.0,2913.0,2702.0
+Andhra Pradesh,Guntur,Duggirala,Groundnut,Pods,FAQ,01-08-2023,6067.0,6832.0,6448.0
+Andhra Pradesh,Chittor,Chittoor,Jowar(Sorghum),Hybrid,FAQ,27-07-2023,2202.0,2921.0,2494.0
+Andhra Pradesh,Krishna,Vijayawada,Dry Chillies,Byadagi,FAQ,29-07-2023,15724.0,21360.0,18816.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Bunny,FAQ,28-07-2023,6439.0,7413.0,6843.0
+Andhra Pradesh,Krishna,Vijayawada,Black Gram (Urd Beans)(Whole),FAQ,FAQ,02-08-2023,7522.0,8243.0,8049.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4806.0,5576.0,5369.0
+Andhra Pradesh,Kurnool,Adoni,Jowar(Sorghum),Hybrid,FAQ,31-07-2023,2372.0,3084.0,2734.0
+Andhra Pradesh,East Godavari,Rajahmundry,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4806.0,5397.0,5220.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,31-07-2023,6650.0,7568.0,6966.0
+Andhra Pradesh,Krishna,Gudivada,Black Gram (Urd Beans)(Whole),Local,FAQ,28-07-2023,7374.0,8440.0,7736.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2054.0,2183.0,2104.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,K-6,FAQ,01-08-2023,6004.0,7434.0,6683.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),FAQ,FAQ,02-08-2023,7526.0,8342.0,7831.0
+Andhra Pradesh,Anantapur,Kadiri,Arhar (Tur/Red Gram)(Whole),Red,FAQ,28-07-2023,8922.0,10560.0,9950.0
+Andhra Pradesh,West Godavari,Eluru,Maize,Yellow,FAQ,02-08-2023,1949.0,2263.0,2163.0
+Andhra Pradesh,Anantapur,Anantapur,Green Chilli,Local,FAQ,02-08-2023,3170.0,4195.0,3803.0
+Andhra Pradesh,Chittor,Madanapalli,Groundnut,Bold,FAQ,02-08-2023,5926.0,7108.0,6558.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Local,FAQ,29-07-2023,4977.0,5406.0,5122.0
+Andhra Pradesh,Krishna,Gudivada,Maize,Hybrid,FAQ,31-07-2023,1904.0,2205.0,2038.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Guntur,FAQ,01-08-2023,16485.0,22153.0,19830.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,27-07-2023,6535.0,7524.0,7154.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Local,FAQ,01-08-2023,16189.0,21453.0,17931.0
+Andhra Pradesh,Kurnool,Yemmiganur,Turmeric,Finger,FAQ,29-07-2023,7188.0,8626.0,8084.0
+Andhra Pradesh,Kurnool,Yemmiganur,Black Gram (Urd Beans)(Whole),Local,FAQ,28-07-2023,7483.0,8795.0,8220.0
+Andhra Pradesh,Kurnool,Alur,Maize,Local,FAQ,28-07-2023,1936.0,2288.0,2110.0
+Andhra Pradesh,Chittor,Palamaner,Cotton,Bunny,FAQ,02-08-2023,6579.0,7516.0,7163.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4828.0,5504.0,5127.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Local,FAQ,02-08-2023,1996.0,2240.0,2088.0
+Andhra Pradesh,Guntur,Piduguralla,Groundnut,K-6,FAQ,01-08-2023,6065.0,7442.0,6692.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4979.0,5581.0,5253.0
+Andhra Pradesh,Nandyal,Nandikotkur,Maize,Hybrid,FAQ,02-08-2023,1979.0,2272.0,2165.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2067.0,2201.0,2108.0
+Andhra Pradesh,Chittor,Chittoor,Cotton,Bunny,FAQ,28-07-2023,6685.0,7337.0,7130.0
+Andhra Pradesh,Kurnool,Yemmiganur,Jowar(Sorghum),White,FAQ,28-07-2023,2500.0,2862.0,2662.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Yellow,FAQ,01-08-2023,1977.0,2275.0,2198.0
+Andhra Pradesh,Chittor,Madanapalli,Green Chilli,Green,FAQ,02-08-2023,2935.0,4336.0,3447.0
+Andhra Pradesh,Nandyal,Allagadda,Onion,Bellary,FAQ,28-07-2023,1449.0,2333.0,2055.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,Local,FAQ,02-08-2023,5975.0,7088.0,6685.0
+Andhra Pradesh,Kurnool,Kurnool,Arhar (Tur/Red Gram)(Whole),Red,FAQ,31-07-2023,8927.0,10552.0,10051.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Hybrid,FAQ,01-08-2023,6472.0,7586.0,7243.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Local,FAQ,29-07-2023,6071.0,7199.0,6658.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4951.0,5426.0,5132.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,4842.0,5375.0,5173.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Hybrid,FAQ,01-08-2023,1993.0,2257.0,2140.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Hybrid,FAQ,29-07-2023,6425.0,7264.0,6865.0
+Andhra Pradesh,Chittor,Palamaner,Paddy(Dhan)(Common),Sona Masuri,FAQ,31-07-2023,2044.0,2241.0,2184.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Bold,FAQ,27-07-2023,5966.0,7078.0,6508.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),FAQ,FAQ,27-07-2023,4912.0,5308.0,5215.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Bold,FAQ,28-07-2023,5855.0,7001.0,6674.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4941.0,5485.0,5351.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2049.0,2165.0,2138.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Medium Staple,FAQ,01-08-2023,6527.0,7510.0,6939.0
+Andhra Pradesh,Kurnool,Yemmiganur,Dry Chillies,Guntur,FAQ,27-07-2023,15596.0,22917.0,20072.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),White,FAQ,27-07-2023,2451.0,3000.0,2763.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4843.0,5429.0,5199.0
+Andhra Pradesh,Chittor,Palamaner,Onion,Red,FAQ,01-08-2023,1525.0,2266.0,1779.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Bold,FAQ,27-07-2023,6181.0,7181.0,6874.0
+Andhra Pradesh,Anantapur,Kadiri,Turmeric,Duggirala,FAQ,01-08-2023,6514.0,9810.0,7575.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Pods,FAQ,29-07-2023,5901.0,6811.0,6533.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Common,FAQ,28-07-2023,2069.0,2213.0,2168.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,29-07-2023,6440.0,7341.0,6863.0
+Andhra Pradesh,Kurnool,Kurnool,Turmeric,Duggirala,FAQ,28-07-2023,7081.0,9527.0,9014.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Pods,FAQ,02-08-2023,5873.0,6894.0,6545.0
+Andhra Pradesh,Guntur,Piduguralla,Tomato,Local,FAQ,27-07-2023,8440.0,12110.0,9907.0
+Andhra Pradesh,Kurnool,Yemmiganur,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2077.0,2202.0,2176.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2041.0,2215.0,2118.0
+Andhra Pradesh,Kurnool,Yemmiganur,Groundnut,K-6,FAQ,02-08-2023,5933.0,6887.0,6395.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Bunny,FAQ,02-08-2023,6532.0,7583.0,7025.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,31-07-2023,6608.0,7347.0,7124.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Bunny,FAQ,27-07-2023,6618.0,7232.0,6987.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,01-08-2023,8441.0,12256.0,10211.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Local,FAQ,29-07-2023,16115.0,23153.0,18813.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2058.0,2223.0,2183.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2066.0,2229.0,2120.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Duggirala,FAQ,02-08-2023,6784.0,9270.0,8462.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,4843.0,5482.0,5284.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Hybrid,FAQ,28-07-2023,6420.0,7511.0,6947.0
+Andhra Pradesh,Guntur,Tenali,Maize,Hybrid,FAQ,01-08-2023,1903.0,2173.0,2045.0
+Andhra Pradesh,Kurnool,Adoni,Arhar (Tur/Red Gram)(Whole),Local,FAQ,29-07-2023,8811.0,9877.0,9204.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Bold,FAQ,31-07-2023,5926.0,6995.0,6760.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4856.0,5455.0,5309.0
+Andhra Pradesh,Nandyal,Atmakur,Groundnut,K-6,FAQ,29-07-2023,6110.0,7293.0,6592.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Bold,FAQ,02-08-2023,6167.0,7144.0,6520.0
+Andhra Pradesh,Nandyal,Allagadda,Tomato,Hybrid,FAQ,31-07-2023,8259.0,13783.0,12671.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2054.0,2156.0,2112.0
+Andhra Pradesh,Kurnool,Adoni,Arhar (Tur/Red Gram)(Whole),Local,FAQ,28-07-2023,8998.0,10727.0,10068.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Bunny,FAQ,01-08-2023,6467.0,7594.0,7251.0
+Andhra Pradesh,Krishna,Gudivada,Black Gram (Urd Beans)(Whole),Local,FAQ,31-07-2023,7211.0,8532.0,7851.0
+Andhra Pradesh,Anantapur,Kadiri,Groundnut,Local,FAQ,01-08-2023,6154.0,6846.0,6499.0
+Andhra Pradesh,Nandyal,Allagadda,Dry Chillies,Teja,FAQ,01-08-2023,16027.0,22228.0,19670.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Yellow,FAQ,29-07-2023,1964.0,2217.0,2126.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Bold,FAQ,28-07-2023,6151.0,7346.0,6892.0
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,Local,FAQ,28-07-2023,5973.0,7437.0,6453.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Hybrid,FAQ,01-08-2023,6446.0,7266.0,6824.0
+Andhra Pradesh,Kurnool,Yemmiganur,Groundnut,Local,FAQ,29-07-2023,6179.0,7163.0,6614.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,29-07-2023,1920.0,2293.0,2083.0
+Andhra Pradesh,Nandyal,Koilkuntla,Maize,Local,FAQ,29-07-2023,1961.0,2164.0,2087.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2066.0,2222.0,2160.0
+Andhra Pradesh,Kurnool,Yemmiganur,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,4824.0,5585.0,5346.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4863.0,5472.0,5234.0
+Andhra Pradesh,Nandyal,Nandyal,Arhar (Tur/Red Gram)(Whole),Red,FAQ,31-07-2023,9122.0,10346.0,9882.0
+Andhra Pradesh,Nandyal,Koilkuntla,Jowar(Sorghum),Yellow,FAQ,31-07-2023,2273.0,3123.0,2701.0
+Andhra Pradesh,Nandyal,Atmakur,Dry Chillies,Teja,FAQ,27-07-2023,16722.0,21474.0,19135.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Hybrid,FAQ,28-07-2023,1934.0,2172.0,2108.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Bunny,FAQ,02-08-2023,6696.0,7338.0,7017.0
+Andhra Pradesh,Nandyal,Nandikotkur,Onion,Bellary,FAQ,01-08-2023,1568.0,2128.0,1867.0
+Andhra Pradesh,Anantapur,Kadiri,Lemon,Local,FAQ,31-07-2023,3349.0,4877.0,4029.0
+Andhra Pradesh,Nandyal,Nandyal,Turmeric,Bulb,FAQ,01-08-2023,6793.0,9944.0,9160.0
+Andhra Pradesh,Krishna,Vijayawada,Groundnut,Bold,FAQ,01-08-2023,6088.0,6933.0,6409.0
+Andhra Pradesh,Nandyal,Nandyal,Turmeric,Duggirala,FAQ,31-07-2023,6849.0,8963.0,7508.0
+Andhra Pradesh,Guntur,Guntur,Black Gram (Urd Beans)(Whole),Bold,FAQ,01-08-2023,7383.0,8344.0,7952.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),White,FAQ,27-07-2023,2284.0,3039.0,2829.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Pods,FAQ,29-07-2023,6015.0,7393.0,6725.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),Yellow,FAQ,02-08-2023,2310.0,2961.0,2520.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2062.0,2186.0,2117.0
+Andhra Pradesh,Kurnool,Adoni,Tomato,Local,FAQ,01-08-2023,8676.0,13375.0,12025.0
+Andhra Pradesh,Kurnool,Adoni,Jowar(Sorghum),Hybrid,FAQ,02-08-2023,2383.0,2851.0,2546.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Bunny,FAQ,29-07-2023,6567.0,7346.0,6857.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Medium Staple,FAQ,01-08-2023,6520.0,7216.0,6742.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2061.0,2165.0,2139.0
+Andhra Pradesh,Nandyal,Banaganapalle,Tomato,Hybrid,FAQ,29-07-2023,9397.0,12796.0,11085.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2053.0,2233.0,2155.0
+Andhra Pradesh,Chittor,Chittoor,Maize,Local,FAQ,01-08-2023,1930.0,2272.0,2096.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,27-07-2023,1694.0,2233.0,2070.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,02-08-2023,6589.0,7439.0,6957.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2373.0,3089.0,2797.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Sona Masuri,FAQ,01-08-2023,2065.0,2212.0,2171.0
+Andhra Pradesh,Chittor,Palamaner,Jowar(Sorghum),White,FAQ,02-08-2023,2273.0,3029.0,2765.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Hybrid,FAQ,27-07-2023,6532.0,7368.0,6955.0
+Andhra Pradesh,Nandyal,Atmakur,Turmeric,Finger,FAQ,31-07-2023,6851.0,9417.0,8226.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Local,FAQ,02-08-2023,1906.0,2171.0,2013.0
+Andhra Pradesh,Anantapur,Anantapur,Tomato,Local,FAQ,02-08-2023,8718.0,12942.0,12006.0
+Andhra Pradesh,Nandyal,Nandikotkur,Jowar(Sorghum),Yellow,FAQ,01-08-2023,2303.0,2942.0,2741.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),FAQ,FAQ,02-08-2023,7457.0,8616.0,8158.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,28-07-2023,6484.0,7319.0,7128.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Local,FAQ,29-07-2023,5011.0,5507.0,5281.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Teja,FAQ,29-07-2023,16401.0,23803.0,21292.0
+Andhra Pradesh,Guntur,Piduguralla,Maize,Hybrid,FAQ,27-07-2023,1957.0,2231.0,2162.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2078.0,2230.0,2146.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Bunny,FAQ,02-08-2023,6424.0,7570.0,7144.0
+Andhra Pradesh,Nandyal,Allagadda,Tomato,Local,FAQ,28-07-2023,8303.0,13346.0,12169.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,29-07-2023,6441.0,7446.0,7037.0
+Andhra Pradesh,Kurnool,Kurnool,Green Chilli,Green,FAQ,27-07-2023,3068.0,4172.0,3751.0
+Andhra Pradesh,Nandyal,Allagadda,Maize,Yellow,FAQ,27-07-2023,1941.0,2258.0,2052.0
+Andhra Pradesh,Kurnool,Yemmiganur,Maize,Yellow,FAQ,27-07-2023,1996.0,2297.0,2110.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,31-07-2023,8976.0,13890.0,11156.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Hybrid,FAQ,02-08-2023,1906.0,2265.0,2131.0
+Andhra Pradesh,Guntur,Duggirala,Onion,Red,FAQ,01-08-2023,1622.0,2340.0,1851.0
+Andhra Pradesh,Guntur,Piduguralla,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,5065.0,5353.0,5284.0
+Andhra Pradesh,Guntur,Guntur,Maize,Hybrid,FAQ,31-07-2023,1919.0,2262.0,2171.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Bulb,FAQ,27-07-2023,6506.0,9352.0,7512.0
+Andhra Pradesh,Krishna,Vijayawada,Onion,Bellary,FAQ,29-07-2023,1536.0,2257.0,1941.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,4940.0,5358.0,5089.0
+Andhra Pradesh,East Godavari,Rajahmundry,Black Gram (Urd Beans)(Whole),Local,FAQ,02-08-2023,7384.0,8354.0,7765.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,29-07-2023,1637.0,2227.0,2037.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),Sona Masuri,FAQ,01-08-2023,2074.0,2240.0,2192.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,29-07-2023,6426.0,7468.0,6835.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,31-07-2023,6497.0,7299.0,6842.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,5026.0,5586.0,5279.0
+Andhra Pradesh,Nandyal,Nandikotkur,Cotton,Medium Staple,FAQ,01-08-2023,6403.0,7461.0,7087.0
+Andhra Pradesh,Kurnool,Alur,Onion,Red,FAQ,02-08-2023,1435.0,2123.0,1781.0
+Andhra Pradesh,Nandyal,Nandikotkur,Cotton,Medium Staple,FAQ,02-08-2023,6631.0,7476.0,7154.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,29-07-2023,2065.0,2172.0,2104.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),Sona Masuri,FAQ,31-07-2023,2070.0,2211.0,2142.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Pods,FAQ,01-08-2023,6121.0,7378.0,6977.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Medium Staple,FAQ,01-08-2023,6662.0,7233.0,6961.0
+Andhra Pradesh,Chittor,Chittoor,Cotton,Medium Staple,FAQ,29-07-2023,6423.0,7426.0,6755.0
+Andhra Pradesh,Guntur,Guntur,Maize,Local,FAQ,01-08-2023,1920.0,2230.0,2039.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Teja,FAQ,27-07-2023,16701.0,23151.0,20212.0
+Andhra Pradesh,Nandyal,Allagadda,Lemon,Local,FAQ,27-07-2023,3472.0,5211.0,4391.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Hybrid,FAQ,01-08-2023,6539.0,7523.0,7190.0
+Andhra Pradesh,Nandyal,Nandyal,Arhar (Tur/Red Gram)(Whole),Local,FAQ,29-07-2023,9072.0,10546.0,9940.0
+Andhra Pradesh,Kurnool,Yemmiganur,Maize,Yellow,FAQ,31-07-2023,1934.0,2160.0,2114.0
+Andhra Pradesh,Nandyal,Nandyal,Turmeric,Finger,FAQ,31-07-2023,6522.0,9113.0,8296.0
+Andhra Pradesh,Nandyal,Banaganapalle,Tomato,Local,FAQ,29-07-2023,9489.0,12956.0,12037.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Pods,FAQ,31-07-2023,5832.0,7475.0,7043.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2074.0,2162.0,2144.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,4838.0,5594.0,5380.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2059.0,2222.0,2142.0
+Andhra Pradesh,Kurnool,Yemmiganur,Paddy(Dhan)(Common),Coarse,FAQ,28-07-2023,2050.0,2185.0,2109.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Local,FAQ,27-07-2023,1903.0,2249.0,2113.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,K-6,FAQ,28-07-2023,5882.0,6871.0,6195.0
+Andhra Pradesh,Chittor,Madanapalli,Green Chilli,Green,FAQ,28-07-2023,3096.0,4082.0,3507.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Local,FAQ,27-07-2023,5856.0,7495.0,6540.0
+Andhra Pradesh,Guntur,Tenali,Cotton,Medium Staple,FAQ,01-08-2023,6496.0,7439.0,7096.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,4891.0,5343.0,5176.0
+Andhra Pradesh,Guntur,Piduguralla,Dry Chillies,Byadagi,FAQ,31-07-2023,15751.0,21183.0,19957.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,02-08-2023,6072.0,7189.0,6433.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Local,FAQ,02-08-2023,16678.0,23357.0,19746.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4845.0,5413.0,5230.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Pods,FAQ,28-07-2023,6140.0,7011.0,6709.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Pods,FAQ,27-07-2023,6025.0,7477.0,6865.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,31-07-2023,5897.0,6942.0,6548.0
+Andhra Pradesh,Guntur,Piduguralla,Black Gram (Urd Beans)(Whole),Bold,FAQ,29-07-2023,7237.0,8635.0,7790.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Bunny,FAQ,31-07-2023,6602.0,7441.0,7220.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Local,FAQ,01-08-2023,6090.0,7191.0,6684.0
+Andhra Pradesh,Nandyal,Koilkuntla,Tomato,Local,FAQ,29-07-2023,9436.0,12038.0,11436.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,5100.0,5444.0,5245.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,5075.0,5466.0,5344.0
+Andhra Pradesh,Nandyal,Allagadda,Maize,Hybrid,FAQ,31-07-2023,1953.0,2204.0,2061.0
+Andhra Pradesh,Kurnool,Adoni,Tomato,Local,FAQ,31-07-2023,8148.0,14453.0,11520.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Bunny,FAQ,28-07-2023,6511.0,7366.0,7008.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Hybrid,FAQ,02-08-2023,6444.0,7304.0,7104.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Pods,FAQ,29-07-2023,5861.0,7031.0,6434.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Hybrid,FAQ,31-07-2023,6565.0,7577.0,7039.0
+Andhra Pradesh,Kurnool,Alur,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2066.0,2199.0,2117.0
+Andhra Pradesh,Nandyal,Koilkuntla,Green Chilli,Local,FAQ,28-07-2023,2856.0,4183.0,3376.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,4810.0,5554.0,5385.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2056.0,2234.0,2130.0
+Andhra Pradesh,Chittor,Palamaner,Jowar(Sorghum),Hybrid,FAQ,28-07-2023,2203.0,3002.0,2592.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,4946.0,5302.0,5151.0
+Andhra Pradesh,Nandyal,Atmakur,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2061.0,2177.0,2152.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,K-6,FAQ,01-08-2023,6125.0,7272.0,6931.0
+Andhra Pradesh,Nandyal,Allagadda,Black Gram (Urd Beans)(Whole),Local,FAQ,27-07-2023,7567.0,8515.0,7966.0
+Andhra Pradesh,East Godavari,Rajahmundry,Paddy(Dhan)(Common),Common,FAQ,29-07-2023,2051.0,2190.0,2119.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Pods,FAQ,31-07-2023,6026.0,7493.0,6632.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,27-07-2023,1596.0,2343.0,2104.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,31-07-2023,1938.0,2233.0,2035.0
+Andhra Pradesh,Nandyal,Atmakur,Maize,Yellow,FAQ,02-08-2023,1917.0,2225.0,2076.0
+Andhra Pradesh,Guntur,Tenali,Jowar(Sorghum),Yellow,FAQ,01-08-2023,2493.0,3190.0,3014.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Desi,FAQ,28-07-2023,4863.0,5560.0,5381.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,29-07-2023,8070.0,12186.0,11210.0
+Andhra Pradesh,Chittor,Palamaner,Maize,Local,FAQ,01-08-2023,1966.0,2177.0,2119.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Guntur,FAQ,28-07-2023,16468.0,23257.0,20924.0
+Andhra Pradesh,Nandyal,Allagadda,Onion,Bellary,FAQ,27-07-2023,1490.0,2226.0,1919.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Bunny,FAQ,02-08-2023,6669.0,7333.0,7119.0
+Andhra Pradesh,Kurnool,Yemmiganur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,5017.0,5450.0,5358.0
+Andhra Pradesh,Nandyal,Allagadda,Turmeric,Finger,FAQ,27-07-2023,6806.0,9758.0,8194.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Local,FAQ,01-08-2023,1940.0,2266.0,2043.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Bunny,FAQ,31-07-2023,6547.0,7342.0,7160.0
+Andhra Pradesh,Nandyal,Koilkuntla,Cotton,Bunny,FAQ,28-07-2023,6604.0,7464.0,6899.0
+Andhra Pradesh,Guntur,Piduguralla,Groundnut,Bold,FAQ,28-07-2023,6085.0,6857.0,6376.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2056.0,2186.0,2101.0
+Andhra Pradesh,Guntur,Tenali,Onion,Bellary,FAQ,31-07-2023,1508.0,2108.0,1728.0
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,Local,FAQ,31-07-2023,5980.0,7188.0,6589.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,27-07-2023,5942.0,6865.0,6495.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4804.0,5424.0,5232.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Local,FAQ,01-08-2023,1991.0,2297.0,2170.0
+Andhra Pradesh,Nandyal,Nandikotkur,Turmeric,Finger,FAQ,02-08-2023,6767.0,8708.0,7642.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4819.0,5430.0,5131.0
+Andhra Pradesh,Guntur,Piduguralla,Paddy(Dhan)(Common),Coarse,FAQ,27-07-2023,2054.0,2244.0,2179.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2065.0,2196.0,2113.0
+Andhra Pradesh,Nandyal,Atmakur,Jowar(Sorghum),White,FAQ,31-07-2023,2300.0,3048.0,2825.0
+Andhra Pradesh,Anantapur,Hindupur,Dry Chillies,Local,FAQ,31-07-2023,15837.0,23446.0,21390.0
+Andhra Pradesh,Nandyal,Atmakur,Maize,Local,FAQ,28-07-2023,1930.0,2240.0,2131.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,29-07-2023,4853.0,5419.0,5113.0
+Andhra Pradesh,Chittor,Chittoor,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,5035.0,5398.0,5195.0
+Andhra Pradesh,Krishna,Vijayawada,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2045.0,2206.0,2141.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2071.0,2153.0,2125.0
+Andhra Pradesh,Chittor,Palamaner,Turmeric,Duggirala,FAQ,28-07-2023,6807.0,8937.0,8184.0
+Andhra Pradesh,Anantapur,Kadiri,Dry Chillies,Teja,FAQ,02-08-2023,16248.0,22900.0,19049.0
+Andhra Pradesh,Guntur,Duggirala,Black Gram (Urd Beans)(Whole),FAQ,FAQ,28-07-2023,7486.0,8673.0,7886.0
+Andhra Pradesh,Nandyal,Atmakur,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2056.0,2201.0,2166.0
+Andhra Pradesh,Nandyal,Banaganapalle,Arhar (Tur/Red Gram)(Whole),Desi,FAQ,31-07-2023,8881.0,10591.0,9701.0
+Andhra Pradesh,Krishna,Vijayawada,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,5031.0,5497.0,5254.0
+Andhra Pradesh,Guntur,Piduguralla,Onion,Nasik,FAQ,01-08-2023,1413.0,2393.0,2039.0
+Andhra Pradesh,Nandyal,Allagadda,Maize,Hybrid,FAQ,29-07-2023,1997.0,2215.0,2064.0
+Andhra Pradesh,Chittor,Chittoor,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,4953.0,5456.0,5250.0
+Andhra Pradesh,Guntur,Duggirala,Groundnut,Local,FAQ,31-07-2023,5950.0,7124.0,6701.0
+Andhra Pradesh,Chittor,Chittoor,Lemon,Kagzi,FAQ,29-07-2023,3799.0,5186.0,4420.0
+Andhra Pradesh,Krishna,Vijayawada,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2073.0,2223.0,2144.0
+Andhra Pradesh,Chittor,Madanapalli,Black Gram (Urd Beans)(Whole),Bold,FAQ,31-07-2023,7514.0,8513.0,7988.0
+Andhra Pradesh,Nandyal,Koilkuntla,Jowar(Sorghum),White,FAQ,31-07-2023,2417.0,2981.0,2605.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,02-08-2023,1912.0,2277.0,2140.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4873.0,5352.0,5055.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Teja,FAQ,31-07-2023,15580.0,22215.0,18182.0
+Andhra Pradesh,Nandyal,Nandikotkur,Dry Chillies,Teja,FAQ,31-07-2023,15073.0,22842.0,18170.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,31-07-2023,6517.0,7482.0,6906.0
+Andhra Pradesh,Kurnool,Alur,Jowar(Sorghum),Hybrid,FAQ,27-07-2023,2373.0,3120.0,2798.0
+Andhra Pradesh,Nandyal,Koilkuntla,Maize,Hybrid,FAQ,29-07-2023,1920.0,2167.0,2077.0
+Andhra Pradesh,Chittor,Palamaner,Maize,Hybrid,FAQ,01-08-2023,1997.0,2197.0,2096.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,4834.0,5406.0,5137.0
+Andhra Pradesh,Chittor,Madanapalli,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,5012.0,5389.0,5241.0
+Andhra Pradesh,Chittor,Palamaner,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2045.0,2162.0,2098.0
+Andhra Pradesh,Krishna,Vijayawada,Jowar(Sorghum),White,FAQ,29-07-2023,2408.0,3004.0,2711.0
+Andhra Pradesh,West Godavari,Eluru,Cotton,Hybrid,FAQ,01-08-2023,6515.0,7274.0,6984.0
+Andhra Pradesh,Anantapur,Anantapur,Cotton,Medium Staple,FAQ,02-08-2023,6679.0,7269.0,6905.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Hybrid,FAQ,28-07-2023,1919.0,2276.0,2137.0
+Andhra Pradesh,Chittor,Palamaner,Arhar (Tur/Red Gram)(Whole),Local,FAQ,27-07-2023,8839.0,9995.0,9408.0
+Andhra Pradesh,Anantapur,Anantapur,Cotton,Medium Staple,FAQ,01-08-2023,6596.0,7364.0,7015.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Duggirala,FAQ,31-07-2023,6842.0,8624.0,7404.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Annigeri,FAQ,29-07-2023,4810.0,5367.0,5057.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,01-08-2023,6097.0,7336.0,6809.0
+Andhra Pradesh,Nandyal,Koilkuntla,Groundnut,K-6,FAQ,01-08-2023,5846.0,7343.0,6911.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,5047.0,5312.0,5222.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Medium Staple,FAQ,28-07-2023,6697.0,7241.0,7086.0
+Andhra Pradesh,Kurnool,Adoni,Dry Chillies,Byadagi,FAQ,29-07-2023,17187.0,21097.0,18874.0
+Andhra Pradesh,Nandyal,Banaganapalle,Green Chilli,Green,FAQ,31-07-2023,3146.0,3882.0,3666.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,4976.0,5405.0,5257.0
+Andhra Pradesh,Kurnool,Adoni,Tomato,Local,FAQ,28-07-2023,8924.0,13962.0,12485.0
+Andhra Pradesh,Krishna,Vijayawada,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2054.0,2178.0,2125.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Bold,FAQ,02-08-2023,5917.0,7201.0,6914.0
+Andhra Pradesh,West Godavari,Eluru,Groundnut,K-6,FAQ,28-07-2023,6185.0,7350.0,7070.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Hybrid,FAQ,02-08-2023,1913.0,2280.0,2069.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,28-07-2023,2070.0,2218.0,2151.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Bold,FAQ,02-08-2023,5966.0,7116.0,6675.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,K-6,FAQ,31-07-2023,6006.0,6995.0,6766.0
+Andhra Pradesh,Anantapur,Hindupur,Cotton,Bunny,FAQ,31-07-2023,6685.0,7331.0,6880.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Kagzi,FAQ,02-08-2023,3783.0,5308.0,4772.0
+Andhra Pradesh,Chittor,Palamaner,Onion,Red,FAQ,01-08-2023,1519.0,2387.0,2137.0
+Andhra Pradesh,West Godavari,Eluru,Groundnut,Pods,FAQ,29-07-2023,5929.0,6999.0,6543.0
+Andhra Pradesh,Kurnool,Adoni,Turmeric,Finger,FAQ,01-08-2023,7097.0,9682.0,9028.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,4830.0,5535.0,5204.0
+Andhra Pradesh,Anantapur,Kadiri,Groundnut,K-6,FAQ,28-07-2023,5977.0,6800.0,6618.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2076.0,2238.0,2149.0
+Andhra Pradesh,Guntur,Guntur,Maize,Hybrid,FAQ,27-07-2023,1965.0,2188.0,2073.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,27-07-2023,8595.0,12764.0,11304.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,4997.0,5511.0,5151.0
+Andhra Pradesh,Chittor,Palamaner,Green Chilli,Local,FAQ,27-07-2023,2853.0,3958.0,3560.0
+Andhra Pradesh,Chittor,Madanapalli,Jowar(Sorghum),White,FAQ,27-07-2023,2409.0,3127.0,2979.0
+Andhra Pradesh,Guntur,Tenali,Maize,Hybrid,FAQ,02-08-2023,1913.0,2161.0,2035.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,27-07-2023,6431.0,7347.0,6843.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,28-07-2023,6057.0,7274.0,6464.0
+Andhra Pradesh,Guntur,Piduguralla,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2066.0,2194.0,2151.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,31-07-2023,6046.0,7110.0,6481.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),Desi,FAQ,28-07-2023,5026.0,5477.0,5248.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2072.0,2175.0,2136.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,01-08-2023,1960.0,2258.0,2092.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Medium Staple,FAQ,27-07-2023,6654.0,7463.0,7019.0
+Andhra Pradesh,Guntur,Duggirala,Maize,Local,FAQ,01-08-2023,1951.0,2262.0,2090.0
+Andhra Pradesh,Nandyal,Atmakur,Tomato,Hybrid,FAQ,28-07-2023,8742.0,12282.0,10688.0
+Andhra Pradesh,Anantapur,Hindupur,Dry Chillies,Guntur,FAQ,01-08-2023,17222.0,21036.0,19055.0
+Andhra Pradesh,Chittor,Madanapalli,Black Gram (Urd Beans)(Whole),Bold,FAQ,28-07-2023,7355.0,8703.0,8043.0
+Andhra Pradesh,Guntur,Piduguralla,Black Gram (Urd Beans)(Whole),FAQ,FAQ,02-08-2023,7269.0,8483.0,8233.0
+Andhra Pradesh,Guntur,Duggirala,Dry Chillies,Guntur,FAQ,27-07-2023,16468.0,21041.0,18333.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Finger,FAQ,31-07-2023,6855.0,9443.0,8280.0
+Andhra Pradesh,Nandyal,Allagadda,Tomato,Local,FAQ,31-07-2023,9053.0,12206.0,10845.0
+Andhra Pradesh,Chittor,Palamaner,Bengal Gram(Gram)(Whole),Annigeri,FAQ,29-07-2023,4825.0,5324.0,5204.0
+Andhra Pradesh,Anantapur,Kadiri,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,4898.0,5476.0,5292.0
+Andhra Pradesh,Nandyal,Nandikotkur,Turmeric,Duggirala,FAQ,02-08-2023,6950.0,8965.0,7995.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),White,FAQ,27-07-2023,2273.0,3170.0,2594.0
+Andhra Pradesh,Anantapur,Kadiri,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2067.0,2216.0,2125.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,02-08-2023,5855.0,6808.0,6377.0
+Andhra Pradesh,Guntur,Guntur,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,8862.0,10623.0,9619.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Bold,FAQ,28-07-2023,6100.0,7411.0,6974.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2053.0,2193.0,2132.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,5093.0,5488.0,5309.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2060.0,2207.0,2131.0
+Andhra Pradesh,Krishna,Gudivada,Cotton,Bunny,FAQ,27-07-2023,6668.0,7470.0,6955.0
+Andhra Pradesh,Guntur,Guntur,Onion,Nasik,FAQ,01-08-2023,1401.0,2343.0,1689.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Red,FAQ,31-07-2023,1509.0,2368.0,1844.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,5041.0,5514.0,5338.0
+Andhra Pradesh,Nandyal,Koilkuntla,Dry Chillies,Byadagi,FAQ,29-07-2023,15621.0,23748.0,19359.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Yellow,FAQ,01-08-2023,1937.0,2225.0,2153.0
+Andhra Pradesh,Nandyal,Nandikotkur,Maize,Yellow,FAQ,28-07-2023,1980.0,2297.0,2226.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,31-07-2023,9299.0,13934.0,11410.0
+Andhra Pradesh,East Godavari,Rajahmundry,Lemon,Kagzi,FAQ,01-08-2023,3474.0,5095.0,4197.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4987.0,5439.0,5256.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,5020.0,5464.0,5330.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,27-07-2023,6680.0,7210.0,6983.0
+Andhra Pradesh,Kurnool,Kurnool,Turmeric,Duggirala,FAQ,02-08-2023,7114.0,9926.0,7960.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2069.0,2160.0,2120.0
+Andhra Pradesh,Nandyal,Atmakur,Arhar (Tur/Red Gram)(Whole),Red,FAQ,31-07-2023,8844.0,9860.0,9655.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2042.0,2173.0,2137.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),Yellow,FAQ,02-08-2023,2469.0,2983.0,2815.0
+Andhra Pradesh,Guntur,Duggirala,Groundnut,K-6,FAQ,01-08-2023,5853.0,7374.0,6366.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Guntur,FAQ,31-07-2023,16656.0,21392.0,18767.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Bold,FAQ,31-07-2023,6080.0,7315.0,6647.0
+Andhra Pradesh,Krishna,Vijayawada,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,4822.0,5361.0,5194.0
+Andhra Pradesh,Kurnool,Kurnool,Green Chilli,Green,FAQ,28-07-2023,2842.0,4115.0,3424.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Yellow,FAQ,01-08-2023,1936.0,2266.0,2110.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,29-07-2023,6141.0,6863.0,6649.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Bunny,FAQ,02-08-2023,6609.0,7216.0,7045.0
+Andhra Pradesh,Chittor,Palamaner,Groundnut,Bold,FAQ,28-07-2023,5836.0,6974.0,6380.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4890.0,5546.0,5144.0
+Andhra Pradesh,Guntur,Tenali,Cotton,Bunny,FAQ,31-07-2023,6567.0,7420.0,6863.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),BPT-5204,FAQ,28-07-2023,2045.0,2156.0,2122.0
+Andhra Pradesh,Krishna,Gudivada,Groundnut,Local,FAQ,28-07-2023,5879.0,7080.0,6651.0
+Andhra Pradesh,Chittor,Madanapalli,Turmeric,Duggirala,FAQ,27-07-2023,6908.0,8888.0,8307.0
+Andhra Pradesh,Anantapur,Anantapur,Black Gram (Urd Beans)(Whole),Local,FAQ,27-07-2023,7279.0,8588.0,8201.0
+Andhra Pradesh,Anantapur,Anantapur,Maize,Yellow,FAQ,29-07-2023,1912.0,2291.0,2035.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,4918.0,5309.0,5169.0
+Andhra Pradesh,Chittor,Chittoor,Maize,Yellow,FAQ,29-07-2023,1921.0,2178.0,2034.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2065.0,2212.0,2157.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,5065.0,5444.0,5195.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,28-07-2023,2057.0,2214.0,2167.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2080.0,2204.0,2118.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Hybrid,FAQ,02-08-2023,1936.0,2232.0,2097.0
+Andhra Pradesh,Nandyal,Atmakur,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2296.0,2908.0,2488.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2076.0,2228.0,2126.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,4907.0,5475.0,5144.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2050.0,2174.0,2120.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,K-6,FAQ,28-07-2023,6030.0,7488.0,6751.0
+Andhra Pradesh,Guntur,Duggirala,Black Gram (Urd Beans)(Whole),Local,FAQ,28-07-2023,7295.0,8391.0,8028.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4808.0,5510.0,5351.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,5085.0,5551.0,5414.0
+Andhra Pradesh,Nandyal,Atmakur,Arhar (Tur/Red Gram)(Whole),Local,FAQ,01-08-2023,8716.0,10290.0,9259.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Sona Masuri,FAQ,01-08-2023,2049.0,2203.0,2095.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Byadagi,FAQ,28-07-2023,15852.0,21532.0,19835.0
+Andhra Pradesh,Kurnool,Alur,Bengal Gram(Gram)(Whole),Local,FAQ,27-07-2023,4807.0,5476.0,5315.0
+Andhra Pradesh,Nandyal,Nandikotkur,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2074.0,2246.0,2158.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,31-07-2023,6576.0,7335.0,6926.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,5085.0,5538.0,5438.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,5012.0,5469.0,5352.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Local,FAQ,28-07-2023,16664.0,23443.0,19980.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Bold,FAQ,28-07-2023,5871.0,6801.0,6476.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,4810.0,5481.0,5320.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Byadagi,FAQ,02-08-2023,16414.0,23810.0,19153.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,27-07-2023,1471.0,2393.0,1825.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2067.0,2223.0,2140.0
+Andhra Pradesh,Guntur,Piduguralla,Tomato,Hybrid,FAQ,29-07-2023,8315.0,13733.0,10890.0
+Andhra Pradesh,Guntur,Piduguralla,Jowar(Sorghum),White,FAQ,02-08-2023,2200.0,2954.0,2702.0
+Andhra Pradesh,Nandyal,Nandikotkur,Jowar(Sorghum),White,FAQ,31-07-2023,2348.0,2951.0,2694.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,31-07-2023,9183.0,13445.0,12077.0
+Andhra Pradesh,Kurnool,Alur,Jowar(Sorghum),White,FAQ,28-07-2023,2335.0,3120.0,2584.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,29-07-2023,1926.0,2166.0,2039.0
+Andhra Pradesh,Kurnool,Yemmiganur,Turmeric,Bulb,FAQ,28-07-2023,7012.0,9321.0,8742.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4978.0,5484.0,5252.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,5083.0,5349.0,5281.0
+Andhra Pradesh,Chittor,Palamaner,Groundnut,Local,FAQ,27-07-2023,5841.0,6944.0,6277.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Medium Staple,FAQ,01-08-2023,6617.0,7492.0,6996.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),Yellow,FAQ,29-07-2023,2271.0,2820.0,2593.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),Coarse,FAQ,28-07-2023,2042.0,2150.0,2079.0
+Andhra Pradesh,Kurnool,Alur,Dry Chillies,Teja,FAQ,28-07-2023,15242.0,21621.0,19191.0
+Andhra Pradesh,Nandyal,Banaganapalle,Arhar (Tur/Red Gram)(Whole),Red,FAQ,31-07-2023,9091.0,10108.0,9598.0
+Andhra Pradesh,East Godavari,Rajahmundry,Dry Chillies,Teja,FAQ,02-08-2023,15663.0,22926.0,19249.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Local,FAQ,31-07-2023,15924.0,22337.0,18692.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,29-07-2023,4868.0,5381.0,5038.0
+Andhra Pradesh,Nandyal,Atmakur,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2067.0,2231.0,2150.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Byadagi,FAQ,01-08-2023,15152.0,22161.0,19086.0
+Andhra Pradesh,Anantapur,Anantapur,Cotton,Medium Staple,FAQ,02-08-2023,6660.0,7390.0,7201.0
+Andhra Pradesh,Nandyal,Nandikotkur,Cotton,Bunny,FAQ,29-07-2023,6424.0,7561.0,7171.0
+Andhra Pradesh,East Godavari,Rajahmundry,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,5085.0,5435.0,5356.0
+Andhra Pradesh,Chittor,Madanapalli,Maize,Yellow,FAQ,28-07-2023,1981.0,2169.0,2077.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Teja,FAQ,28-07-2023,17493.0,22882.0,21357.0
+Andhra Pradesh,Kurnool,Kurnool,Tomato,Local,FAQ,29-07-2023,9366.0,14285.0,11007.0
+Andhra Pradesh,Chittor,Chittoor,Cotton,Bunny,FAQ,01-08-2023,6519.0,7330.0,6874.0
+Andhra Pradesh,Nandyal,Atmakur,Maize,Hybrid,FAQ,27-07-2023,1979.0,2243.0,2127.0
+Andhra Pradesh,Chittor,Chittoor,Groundnut,Pods,FAQ,27-07-2023,5966.0,6904.0,6523.0
+Andhra Pradesh,Guntur,Guntur,Maize,Yellow,FAQ,27-07-2023,1956.0,2165.0,2049.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4879.0,5496.0,5241.0
+Andhra Pradesh,Guntur,Piduguralla,Tomato,Local,FAQ,27-07-2023,8258.0,13007.0,11151.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,Pods,FAQ,27-07-2023,5958.0,7415.0,6898.0
+Andhra Pradesh,Krishna,Gudivada,Groundnut,K-6,FAQ,02-08-2023,5990.0,6988.0,6475.0
+Andhra Pradesh,Chittor,Madanapalli,Paddy(Dhan)(Common),Common,FAQ,29-07-2023,2052.0,2234.0,2185.0
+Andhra Pradesh,Nandyal,Atmakur,Tomato,Hybrid,FAQ,28-07-2023,8202.0,14436.0,11453.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Common,FAQ,29-07-2023,2069.0,2210.0,2118.0
+Andhra Pradesh,Kurnool,Adoni,Maize,Hybrid,FAQ,28-07-2023,1991.0,2211.0,2110.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Medium Staple,FAQ,29-07-2023,6646.0,7406.0,6934.0
+Andhra Pradesh,Krishna,Gudivada,Groundnut,Bold,FAQ,02-08-2023,6003.0,6895.0,6650.0
+Andhra Pradesh,Guntur,Tenali,Cotton,Medium Staple,FAQ,27-07-2023,6452.0,7550.0,6892.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Desi,FAQ,28-07-2023,4810.0,5315.0,5052.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),Sona Masuri,FAQ,29-07-2023,2055.0,2196.0,2125.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4809.0,5412.0,5169.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Sona Masuri,FAQ,31-07-2023,2063.0,2185.0,2110.0
+Andhra Pradesh,Nandyal,Nandikotkur,Jowar(Sorghum),Yellow,FAQ,02-08-2023,2449.0,2836.0,2570.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,K-6,FAQ,28-07-2023,6142.0,7346.0,6632.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Byadagi,FAQ,02-08-2023,15563.0,21620.0,19353.0
+Andhra Pradesh,Nandyal,Allagadda,Groundnut,K-6,FAQ,02-08-2023,5804.0,7438.0,6823.0
+Andhra Pradesh,Nandyal,Nandyal,Turmeric,Duggirala,FAQ,27-07-2023,6657.0,9413.0,8783.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2076.0,2235.0,2160.0
+Andhra Pradesh,Chittor,Madanapalli,Jowar(Sorghum),White,FAQ,31-07-2023,2291.0,3008.0,2730.0
+Andhra Pradesh,Guntur,Guntur,Black Gram (Urd Beans)(Whole),FAQ,FAQ,27-07-2023,7203.0,8800.0,8454.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4994.0,5483.0,5214.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Desi,FAQ,31-07-2023,4819.0,5597.0,5302.0
+Andhra Pradesh,Kurnool,Yemmiganur,Onion,Bellary,FAQ,29-07-2023,1597.0,2381.0,2088.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Annigeri,FAQ,28-07-2023,4955.0,5372.0,5092.0
+Andhra Pradesh,Kurnool,Kurnool,Onion,Nasik,FAQ,31-07-2023,1598.0,2272.0,2043.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2050.0,2192.0,2120.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,5012.0,5472.0,5194.0
+Andhra Pradesh,East Godavari,Rajahmundry,Lemon,Kagzi,FAQ,02-08-2023,3521.0,5428.0,4957.0
+Andhra Pradesh,Nandyal,Nandyal,Green Chilli,Local,FAQ,01-08-2023,2920.0,3919.0,3548.0
+Andhra Pradesh,Guntur,Tenali,Black Gram (Urd Beans)(Whole),FAQ,FAQ,28-07-2023,7318.0,8482.0,8098.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2076.0,2215.0,2133.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Byadagi,FAQ,02-08-2023,17179.0,22261.0,20957.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Local,FAQ,29-07-2023,4976.0,5439.0,5142.0
+Andhra Pradesh,Nandyal,Koilkuntla,Dry Chillies,Guntur,FAQ,02-08-2023,16459.0,23833.0,18934.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Byadagi,FAQ,01-08-2023,15300.0,23042.0,19674.0
+Andhra Pradesh,Krishna,Gudivada,Bengal Gram(Gram)(Whole),FAQ,FAQ,27-07-2023,5061.0,5345.0,5287.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2079.0,2239.0,2206.0
+Andhra Pradesh,Chittor,Madanapalli,Groundnut,Local,FAQ,29-07-2023,6145.0,6926.0,6411.0
+Andhra Pradesh,Guntur,Duggirala,Black Gram (Urd Beans)(Whole),Bold,FAQ,02-08-2023,7595.0,8388.0,7856.0
+Andhra Pradesh,Krishna,Vijayawada,Dry Chillies,Teja,FAQ,29-07-2023,15523.0,23321.0,20109.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,31-07-2023,1979.0,2267.0,2084.0
+Andhra Pradesh,Chittor,Madanapalli,Maize,Hybrid,FAQ,02-08-2023,1943.0,2214.0,2089.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Red,FAQ,27-07-2023,1560.0,2292.0,2127.0
+Andhra Pradesh,Guntur,Duggirala,Dry Chillies,Local,FAQ,01-08-2023,15476.0,23030.0,20109.0
+Andhra Pradesh,Nandyal,Banaganapalle,Dry Chillies,Byadagi,FAQ,28-07-2023,16734.0,22033.0,18665.0
+Andhra Pradesh,Kurnool,Adoni,Dry Chillies,Teja,FAQ,01-08-2023,16472.0,21501.0,20052.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Local,FAQ,29-07-2023,16140.0,22561.0,19749.0
+Andhra Pradesh,West Godavari,Eluru,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,5099.0,5403.0,5327.0
+Andhra Pradesh,East Godavari,Rajahmundry,Cotton,Bunny,FAQ,28-07-2023,6449.0,7563.0,7235.0
+Andhra Pradesh,Chittor,Palamaner,Jowar(Sorghum),White,FAQ,28-07-2023,2267.0,3194.0,2643.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Finger,FAQ,01-08-2023,6853.0,8685.0,8054.0
+Andhra Pradesh,Chittor,Palamaner,Cotton,Hybrid,FAQ,31-07-2023,6663.0,7302.0,7026.0
+Andhra Pradesh,Nandyal,Nandikotkur,Dry Chillies,Guntur,FAQ,01-08-2023,17487.0,22986.0,20934.0
+Andhra Pradesh,Anantapur,Kadiri,Turmeric,Finger,FAQ,27-07-2023,6983.0,9125.0,8033.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2068.0,2171.0,2134.0
+Andhra Pradesh,Anantapur,Kadiri,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4926.0,5330.0,5152.0
+Andhra Pradesh,Kurnool,Alur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,5049.0,5331.0,5235.0
+Andhra Pradesh,Nandyal,Nandikotkur,Cotton,Hybrid,FAQ,29-07-2023,6434.0,7243.0,6757.0
+Andhra Pradesh,Kurnool,Adoni,Dry Chillies,Byadagi,FAQ,29-07-2023,17079.0,23919.0,20355.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2046.0,2205.0,2166.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Medium Staple,FAQ,31-07-2023,6499.0,7201.0,6945.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,5001.0,5345.0,5120.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Guntur,FAQ,02-08-2023,16809.0,23714.0,21105.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2051.0,2155.0,2124.0
+Andhra Pradesh,Kurnool,Adoni,Black Gram (Urd Beans)(Whole),Local,FAQ,29-07-2023,7344.0,8606.0,7991.0
+Andhra Pradesh,Kurnool,Yemmiganur,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2074.0,2239.0,2124.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,02-08-2023,6594.0,7331.0,7145.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Medium Staple,FAQ,29-07-2023,6664.0,7237.0,7069.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2056.0,2246.0,2139.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Bulb,FAQ,02-08-2023,7095.0,9700.0,8722.0
+Andhra Pradesh,Anantapur,Kadiri,Dry Chillies,Byadagi,FAQ,27-07-2023,15331.0,23179.0,21537.0
+Andhra Pradesh,Krishna,Gudivada,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,4925.0,5477.0,5312.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4983.0,5534.0,5317.0
+Andhra Pradesh,Guntur,Tenali,Tomato,Hybrid,FAQ,31-07-2023,9381.0,12282.0,10848.0
+Andhra Pradesh,Nandyal,Atmakur,Onion,Red,FAQ,27-07-2023,1478.0,2126.0,1901.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,01-08-2023,1630.0,2231.0,1980.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4957.0,5510.0,5149.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,Local,FAQ,31-07-2023,5938.0,7273.0,6595.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Medium Staple,FAQ,01-08-2023,6416.0,7457.0,6810.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),Coarse,FAQ,31-07-2023,2075.0,2157.0,2120.0
+Andhra Pradesh,Nandyal,Koilkuntla,Maize,Yellow,FAQ,29-07-2023,1997.0,2158.0,2063.0
+Andhra Pradesh,Guntur,Piduguralla,Groundnut,Pods,FAQ,31-07-2023,6127.0,6855.0,6507.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,27-07-2023,5057.0,5434.0,5192.0
+Andhra Pradesh,Nandyal,Allagadda,Dry Chillies,Teja,FAQ,02-08-2023,16633.0,21308.0,18999.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2072.0,2246.0,2180.0
+Andhra Pradesh,Guntur,Piduguralla,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,5001.0,5585.0,5282.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,K-6,FAQ,28-07-2023,6138.0,7032.0,6749.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2066.0,2222.0,2122.0
+Andhra Pradesh,Anantapur,Kadiri,Maize,Local,FAQ,28-07-2023,1900.0,2203.0,2087.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Hybrid,FAQ,01-08-2023,1952.0,2255.0,2050.0
+Andhra Pradesh,Krishna,Vijayawada,Maize,Yellow,FAQ,31-07-2023,1914.0,2258.0,2141.0
+Andhra Pradesh,Anantapur,Kadiri,Tomato,Hybrid,FAQ,29-07-2023,8916.0,12469.0,11634.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Pods,FAQ,28-07-2023,5983.0,7347.0,6881.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Hybrid,FAQ,31-07-2023,6414.0,7453.0,7075.0
+Andhra Pradesh,Chittor,Madanapalli,Tomato,Hybrid,FAQ,31-07-2023,8686.0,13473.0,11329.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,27-07-2023,6012.0,6834.0,6643.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Pods,FAQ,01-08-2023,6112.0,7437.0,6968.0
+Andhra Pradesh,Anantapur,Kadiri,Cotton,Hybrid,FAQ,02-08-2023,6645.0,7241.0,7020.0
+Andhra Pradesh,Guntur,Tenali,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,5064.0,5426.0,5283.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Sona Masuri,FAQ,29-07-2023,2056.0,2184.0,2113.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Local,FAQ,28-07-2023,5965.0,7290.0,6858.0
+Andhra Pradesh,Anantapur,Anantapur,Black Gram (Urd Beans)(Whole),Bold,FAQ,02-08-2023,7419.0,8388.0,8067.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Annigeri,FAQ,28-07-2023,4863.0,5514.0,5282.0
+Andhra Pradesh,Nandyal,Nandyal,Maize,Local,FAQ,28-07-2023,1998.0,2248.0,2193.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,02-08-2023,2045.0,2185.0,2121.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Medium Staple,FAQ,02-08-2023,6613.0,7470.0,7253.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2072.0,2202.0,2113.0
+Andhra Pradesh,East Godavari,Rajahmundry,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,5001.0,5360.0,5243.0
+Andhra Pradesh,Guntur,Duggirala,Cotton,Hybrid,FAQ,29-07-2023,6605.0,7259.0,6821.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Local,FAQ,28-07-2023,16884.0,21097.0,19863.0
+Andhra Pradesh,Guntur,Duggirala,Arhar (Tur/Red Gram)(Whole),Red,FAQ,01-08-2023,9108.0,10539.0,10156.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4953.0,5539.0,5333.0
+Andhra Pradesh,Guntur,Piduguralla,Maize,Local,FAQ,02-08-2023,1905.0,2207.0,2059.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Local,FAQ,01-08-2023,4816.0,5523.0,5100.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,28-07-2023,9367.0,13762.0,12109.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Medium Staple,FAQ,01-08-2023,6622.0,7279.0,7057.0
+Andhra Pradesh,Nandyal,Banaganapalle,Cotton,Hybrid,FAQ,29-07-2023,6535.0,7593.0,6892.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2061.0,2188.0,2126.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2239.0,3034.0,2579.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2068.0,2165.0,2105.0
+Andhra Pradesh,Chittor,Palamaner,Dry Chillies,Local,FAQ,01-08-2023,15127.0,23797.0,20397.0
+Andhra Pradesh,Kurnool,Yemmiganur,Cotton,Medium Staple,FAQ,29-07-2023,6547.0,7429.0,6970.0
+Andhra Pradesh,Nandyal,Nandikotkur,Dry Chillies,Local,FAQ,01-08-2023,15550.0,21552.0,17555.0
+Andhra Pradesh,West Godavari,Eluru,Dry Chillies,Byadagi,FAQ,31-07-2023,16358.0,22210.0,19136.0
+Andhra Pradesh,Kurnool,Alur,Turmeric,Finger,FAQ,02-08-2023,6732.0,9041.0,7677.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,5047.0,5594.0,5214.0
+Andhra Pradesh,Kurnool,Alur,Green Chilli,Local,FAQ,31-07-2023,2896.0,4250.0,3924.0
+Andhra Pradesh,Nandyal,Allagadda,Dry Chillies,Byadagi,FAQ,27-07-2023,16706.0,21963.0,20691.0
+Andhra Pradesh,Nandyal,Banaganapalle,Paddy(Dhan)(Common),BPT-5204,FAQ,31-07-2023,2050.0,2222.0,2104.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2072.0,2195.0,2112.0
+Andhra Pradesh,Anantapur,Anantapur,Cotton,Medium Staple,FAQ,28-07-2023,6496.0,7233.0,6752.0
+Andhra Pradesh,Guntur,Tenali,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2202.0,2826.0,2598.0
+Andhra Pradesh,Krishna,Vijayawada,Groundnut,Local,FAQ,02-08-2023,5970.0,6873.0,6484.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,5045.0,5322.0,5223.0
+Andhra Pradesh,West Godavari,Eluru,Onion,Red,FAQ,31-07-2023,1615.0,2015.0,1750.0
+Andhra Pradesh,Kurnool,Alur,Black Gram (Urd Beans)(Whole),Local,FAQ,29-07-2023,7423.0,8545.0,7887.0
+Andhra Pradesh,Kurnool,Yemmiganur,Maize,Hybrid,FAQ,31-07-2023,1939.0,2245.0,2097.0
+Andhra Pradesh,Nandyal,Nandyal,Turmeric,Finger,FAQ,31-07-2023,6971.0,9302.0,8418.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),Hybrid,FAQ,27-07-2023,2427.0,3034.0,2822.0
+Andhra Pradesh,Anantapur,Hindupur,Dry Chillies,Guntur,FAQ,29-07-2023,17320.0,21318.0,20092.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Bunny,FAQ,01-08-2023,6426.0,7506.0,6986.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Bunny,FAQ,02-08-2023,6409.0,7263.0,6759.0
+Andhra Pradesh,Nandyal,Nandyal,Onion,Nasik,FAQ,31-07-2023,1639.0,2340.0,1953.0
+Andhra Pradesh,Kurnool,Alur,Cotton,Medium Staple,FAQ,28-07-2023,6489.0,7555.0,7323.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2062.0,2206.0,2114.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2064.0,2204.0,2172.0
+Andhra Pradesh,Chittor,Chittoor,Paddy(Dhan)(Common),Common,FAQ,28-07-2023,2070.0,2240.0,2150.0
+Andhra Pradesh,West Godavari,Eluru,Black Gram (Urd Beans)(Whole),Bold,FAQ,02-08-2023,7541.0,8285.0,7833.0
+Andhra Pradesh,Nandyal,Banaganapalle,Onion,Nasik,FAQ,29-07-2023,1458.0,2073.0,1888.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),White,FAQ,01-08-2023,2338.0,3020.0,2642.0
+Andhra Pradesh,Kurnool,Adoni,Tomato,Hybrid,FAQ,29-07-2023,8147.0,13814.0,11228.0
+Andhra Pradesh,Chittor,Madanapalli,Jowar(Sorghum),Yellow,FAQ,29-07-2023,2238.0,3062.0,2526.0
+Andhra Pradesh,Anantapur,Hindupur,Cotton,Medium Staple,FAQ,27-07-2023,6670.0,7327.0,7015.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,02-08-2023,6492.0,7434.0,7041.0
+Andhra Pradesh,Nandyal,Allagadda,Dry Chillies,Local,FAQ,29-07-2023,17397.0,21506.0,19273.0
+Andhra Pradesh,Nandyal,Nandikotkur,Lemon,Kagzi,FAQ,02-08-2023,3644.0,5149.0,4728.0
+Andhra Pradesh,Guntur,Tenali,Jowar(Sorghum),White,FAQ,02-08-2023,2420.0,3151.0,2808.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),Bold,FAQ,29-07-2023,7395.0,8265.0,7937.0
+Andhra Pradesh,Chittor,Chittoor,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2074.0,2164.0,2125.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Bulb,FAQ,02-08-2023,7120.0,8615.0,7625.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),BPT-5204,FAQ,01-08-2023,2065.0,2231.0,2163.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,4965.0,5463.0,5363.0
+Andhra Pradesh,Kurnool,Adoni,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,5033.0,5410.0,5188.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,4939.0,5453.0,5195.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2050.0,2246.0,2205.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),Sona Masuri,FAQ,01-08-2023,2046.0,2166.0,2116.0
+Andhra Pradesh,Nandyal,Koilkuntla,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2069.0,2244.0,2125.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),FAQ,FAQ,28-07-2023,4819.0,5411.0,5009.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Local,FAQ,01-08-2023,6163.0,7053.0,6639.0
+Andhra Pradesh,Guntur,Guntur,Dry Chillies,Teja,FAQ,27-07-2023,15100.0,22946.0,17859.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4879.0,5463.0,5105.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2064.0,2240.0,2124.0
+Andhra Pradesh,Nandyal,Nandyal,Arhar (Tur/Red Gram)(Whole),Local,FAQ,31-07-2023,9181.0,10023.0,9604.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Local,FAQ,31-07-2023,16982.0,23662.0,19008.0
+Andhra Pradesh,East Godavari,Rajahmundry,Groundnut,Local,FAQ,31-07-2023,5866.0,6854.0,6480.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Annigeri,FAQ,28-07-2023,4856.0,5409.0,5220.0
+Andhra Pradesh,Nandyal,Koilkuntla,Bengal Gram(Gram)(Whole),Desi,FAQ,02-08-2023,4869.0,5543.0,5314.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),FAQ,FAQ,02-08-2023,4944.0,5363.0,5103.0
+Andhra Pradesh,Kurnool,Yemmiganur,Arhar (Tur/Red Gram)(Whole),Local,FAQ,27-07-2023,8671.0,9928.0,9420.0
+Andhra Pradesh,Anantapur,Kadiri,Maize,Yellow,FAQ,02-08-2023,1951.0,2284.0,2075.0
+Andhra Pradesh,Nandyal,Koilkuntla,Maize,Yellow,FAQ,29-07-2023,1992.0,2227.0,2110.0
+Andhra Pradesh,Kurnool,Yemmiganur,Cotton,Medium Staple,FAQ,02-08-2023,6406.0,7488.0,7089.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Local,FAQ,27-07-2023,8325.0,13516.0,11106.0
+Andhra Pradesh,Kurnool,Kurnool,Groundnut,Pods,FAQ,28-07-2023,5888.0,7088.0,6334.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Medium Staple,FAQ,28-07-2023,6587.0,7404.0,6901.0
+Andhra Pradesh,Anantapur,Kadiri,Turmeric,Duggirala,FAQ,29-07-2023,7146.0,9395.0,7898.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4840.0,5305.0,5101.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),Coarse,FAQ,28-07-2023,2064.0,2168.0,2142.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,01-08-2023,6001.0,6882.0,6478.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,4962.0,5300.0,5222.0
+Andhra Pradesh,Kurnool,Yemmiganur,Groundnut,Pods,FAQ,01-08-2023,5968.0,7412.0,6905.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Pods,FAQ,28-07-2023,6175.0,7137.0,6833.0
+Andhra Pradesh,East Godavari,Rajahmundry,Jowar(Sorghum),Yellow,FAQ,01-08-2023,2441.0,3163.0,2960.0
+Andhra Pradesh,Krishna,Gudivada,Paddy(Dhan)(Common),BPT-5204,FAQ,31-07-2023,2045.0,2198.0,2109.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,29-07-2023,2064.0,2204.0,2124.0
+Andhra Pradesh,Kurnool,Kurnool,Black Gram (Urd Beans)(Whole),Local,FAQ,02-08-2023,7497.0,8204.0,7894.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),BPT-5204,FAQ,31-07-2023,2066.0,2219.0,2136.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Bunny,FAQ,27-07-2023,6446.0,7461.0,6879.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Coarse,FAQ,01-08-2023,2055.0,2178.0,2134.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Hybrid,FAQ,31-07-2023,6566.0,7423.0,6900.0
+Andhra Pradesh,Kurnool,Kurnool,Jowar(Sorghum),Hybrid,FAQ,01-08-2023,2345.0,3195.0,2846.0
+Andhra Pradesh,Chittor,Palamaner,Green Chilli,Local,FAQ,02-08-2023,2855.0,4405.0,3412.0
+Andhra Pradesh,Anantapur,Hindupur,Cotton,Hybrid,FAQ,31-07-2023,6635.0,7580.0,6966.0
+Andhra Pradesh,Guntur,Duggirala,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2072.0,2211.0,2161.0
+Andhra Pradesh,Nandyal,Atmakur,Black Gram (Urd Beans)(Whole),Local,FAQ,28-07-2023,7356.0,8582.0,8217.0
+Andhra Pradesh,Nandyal,Nandyal,Tomato,Hybrid,FAQ,31-07-2023,9389.0,13088.0,10617.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Yellow,FAQ,29-07-2023,1908.0,2156.0,2030.0
+Andhra Pradesh,Guntur,Tenali,Tomato,Local,FAQ,01-08-2023,8984.0,12716.0,11902.0
+Andhra Pradesh,Guntur,Guntur,Maize,Yellow,FAQ,28-07-2023,1964.0,2216.0,2065.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Common,FAQ,28-07-2023,2041.0,2210.0,2135.0
+Andhra Pradesh,Nandyal,Allagadda,Turmeric,Finger,FAQ,01-08-2023,6619.0,8554.0,7431.0
+Andhra Pradesh,Kurnool,Yemmiganur,Dry Chillies,Guntur,FAQ,28-07-2023,15217.0,21828.0,18521.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),FAQ,FAQ,31-07-2023,4976.0,5455.0,5296.0
+Andhra Pradesh,Guntur,Piduguralla,Bengal Gram(Gram)(Whole),Desi,FAQ,27-07-2023,4965.0,5518.0,5285.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,29-07-2023,5089.0,5383.0,5266.0
+Andhra Pradesh,Krishna,Gudivada,Turmeric,Finger,FAQ,31-07-2023,7151.0,9362.0,8103.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,01-08-2023,5843.0,6851.0,6294.0
+Andhra Pradesh,Nandyal,Nandikotkur,Turmeric,Finger,FAQ,01-08-2023,7170.0,9814.0,9038.0
+Andhra Pradesh,Guntur,Tenali,Groundnut,Bold,FAQ,02-08-2023,5977.0,7064.0,6566.0
+Andhra Pradesh,Nandyal,Allagadda,Bengal Gram(Gram)(Whole),Annigeri,FAQ,29-07-2023,5088.0,5438.0,5274.0
+Andhra Pradesh,Guntur,Tenali,Turmeric,Duggirala,FAQ,27-07-2023,6837.0,8887.0,7844.0
+Andhra Pradesh,Nandyal,Atmakur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,02-08-2023,5010.0,5540.0,5278.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Local,FAQ,01-08-2023,3521.0,5361.0,4315.0
+Andhra Pradesh,Nandyal,Koilkuntla,Turmeric,Bulb,FAQ,27-07-2023,6779.0,9623.0,8119.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Medium Staple,FAQ,28-07-2023,6543.0,7341.0,7139.0
+Andhra Pradesh,Nandyal,Banaganapalle,Bengal Gram(Gram)(Whole),Local,FAQ,28-07-2023,5084.0,5505.0,5402.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Bulb,FAQ,02-08-2023,6640.0,9603.0,8822.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),Sona Masuri,FAQ,28-07-2023,2048.0,2175.0,2125.0
+Andhra Pradesh,Nandyal,Nandyal,Lemon,Kagzi,FAQ,27-07-2023,3272.0,4863.0,4510.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Pods,FAQ,01-08-2023,5803.0,7400.0,7047.0
+Andhra Pradesh,East Godavari,Rajahmundry,Maize,Hybrid,FAQ,29-07-2023,1962.0,2224.0,2170.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Duggirala,FAQ,29-07-2023,6844.0,9977.0,9219.0
+Andhra Pradesh,Anantapur,Kadiri,Dry Chillies,Local,FAQ,31-07-2023,15555.0,22730.0,17902.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Bunny,FAQ,31-07-2023,6682.0,7213.0,6934.0
+Andhra Pradesh,Krishna,Vijayawada,Groundnut,Local,FAQ,31-07-2023,6191.0,7289.0,6773.0
+Andhra Pradesh,Kurnool,Adoni,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2067.0,2188.0,2109.0
+Andhra Pradesh,Kurnool,Kurnool,Maize,Hybrid,FAQ,01-08-2023,1986.0,2178.0,2069.0
+Andhra Pradesh,Krishna,Vijayawada,Groundnut,Bold,FAQ,31-07-2023,6183.0,7040.0,6519.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Pods,FAQ,28-07-2023,5968.0,7327.0,6624.0
+Andhra Pradesh,Chittor,Palamaner,Maize,Hybrid,FAQ,29-07-2023,1945.0,2236.0,2175.0
+Andhra Pradesh,Nandyal,Atmakur,Jowar(Sorghum),Hybrid,FAQ,28-07-2023,2444.0,3088.0,2896.0
+Andhra Pradesh,Chittor,Madanapalli,Black Gram (Urd Beans)(Whole),FAQ,FAQ,31-07-2023,7543.0,8318.0,8086.0
+Andhra Pradesh,Chittor,Chittoor,Groundnut,Local,FAQ,31-07-2023,6122.0,6924.0,6563.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2052.0,2206.0,2142.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Teja,FAQ,27-07-2023,16726.0,21180.0,19875.0
+Andhra Pradesh,Anantapur,Anantapur,Dry Chillies,Teja,FAQ,02-08-2023,15241.0,23234.0,18677.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2062.0,2231.0,2142.0
+Andhra Pradesh,East Godavari,Rajahmundry,Onion,Bellary,FAQ,27-07-2023,1505.0,2272.0,1967.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,29-07-2023,5942.0,7271.0,6665.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Teja,FAQ,27-07-2023,15953.0,21860.0,19591.0
+Andhra Pradesh,Anantapur,Kadiri,Groundnut,Local,FAQ,28-07-2023,6056.0,7450.0,6768.0
+Andhra Pradesh,Kurnool,Yemmiganur,Black Gram (Urd Beans)(Whole),FAQ,FAQ,01-08-2023,7362.0,8744.0,7831.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,28-07-2023,2053.0,2215.0,2159.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Coarse,FAQ,29-07-2023,2076.0,2228.0,2193.0
+Andhra Pradesh,Nandyal,Koilkuntla,Maize,Local,FAQ,01-08-2023,1952.0,2218.0,2054.0
+Andhra Pradesh,Guntur,Duggirala,Tomato,Hybrid,FAQ,28-07-2023,9092.0,13655.0,12607.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Duggirala,FAQ,02-08-2023,6556.0,8750.0,7327.0
+Andhra Pradesh,Nandyal,Allagadda,Paddy(Dhan)(Common),BPT-5204,FAQ,31-07-2023,2062.0,2153.0,2107.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,K-6,FAQ,27-07-2023,5905.0,6909.0,6535.0
+Andhra Pradesh,Guntur,Piduguralla,Arhar (Tur/Red Gram)(Whole),Local,FAQ,29-07-2023,8661.0,10538.0,9640.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,28-07-2023,6558.0,7268.0,6783.0
+Andhra Pradesh,Anantapur,Hindupur,Groundnut,Bold,FAQ,29-07-2023,6146.0,7127.0,6867.0
+Andhra Pradesh,Kurnool,Alur,Turmeric,Bulb,FAQ,01-08-2023,6811.0,9954.0,8850.0
+Andhra Pradesh,Guntur,Guntur,Groundnut,Local,FAQ,01-08-2023,6039.0,7242.0,6782.0
+Andhra Pradesh,Kurnool,Adoni,Jowar(Sorghum),Hybrid,FAQ,31-07-2023,2357.0,3056.0,2675.0
+Andhra Pradesh,Kurnool,Alur,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4962.0,5541.0,5264.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Local,FAQ,31-07-2023,4878.0,5391.0,5032.0
+Andhra Pradesh,Anantapur,Anantapur,Groundnut,Local,FAQ,29-07-2023,5915.0,7175.0,6726.0
+Andhra Pradesh,Krishna,Gudivada,Cotton,Bunny,FAQ,31-07-2023,6490.0,7506.0,7200.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,4964.0,5357.0,5255.0
+Andhra Pradesh,Nandyal,Koilkuntla,Tomato,Local,FAQ,31-07-2023,8375.0,13787.0,11747.0
+Andhra Pradesh,West Godavari,Eluru,Cotton,Bunny,FAQ,28-07-2023,6479.0,7369.0,6853.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Local,FAQ,29-07-2023,16621.0,22596.0,19217.0
+Andhra Pradesh,Chittor,Palamaner,Maize,Yellow,FAQ,27-07-2023,1918.0,2193.0,2088.0
+Andhra Pradesh,Kurnool,Adoni,Cotton,Medium Staple,FAQ,31-07-2023,6482.0,7449.0,6863.0
+Andhra Pradesh,Guntur,Duggirala,Bengal Gram(Gram)(Whole),Desi,FAQ,28-07-2023,4815.0,5460.0,5068.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Hybrid,FAQ,29-07-2023,6481.0,7486.0,7148.0
+Andhra Pradesh,Anantapur,Hindupur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,27-07-2023,4845.0,5448.0,5129.0
+Andhra Pradesh,Guntur,Guntur,Paddy(Dhan)(Common),Common,FAQ,31-07-2023,2080.0,2196.0,2161.0
+Andhra Pradesh,Guntur,Tenali,Bengal Gram(Gram)(Whole),Local,FAQ,27-07-2023,5053.0,5585.0,5228.0
+Andhra Pradesh,Guntur,Guntur,Maize,Hybrid,FAQ,27-07-2023,1954.0,2177.0,2121.0
+Andhra Pradesh,Kurnool,Alur,Maize,Hybrid,FAQ,31-07-2023,1983.0,2168.0,2110.0
+Andhra Pradesh,Guntur,Duggirala,Jowar(Sorghum),White,FAQ,31-07-2023,2431.0,2977.0,2796.0
+Andhra Pradesh,Nandyal,Atmakur,Jowar(Sorghum),White,FAQ,28-07-2023,2338.0,3108.0,2770.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,4917.0,5588.0,5432.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Hybrid,FAQ,02-08-2023,6618.0,7498.0,7124.0
+Andhra Pradesh,Anantapur,Hindupur,Dry Chillies,Guntur,FAQ,29-07-2023,16203.0,21896.0,18937.0
+Andhra Pradesh,Anantapur,Hindupur,Paddy(Dhan)(Common),BPT-5204,FAQ,02-08-2023,2049.0,2161.0,2118.0
+Andhra Pradesh,Kurnool,Kurnool,Bengal Gram(Gram)(Whole),Local,FAQ,27-07-2023,4850.0,5383.0,5042.0
+Andhra Pradesh,Nandyal,Nandikotkur,Paddy(Dhan)(Common),Sona Masuri,FAQ,27-07-2023,2079.0,2208.0,2162.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Local,FAQ,29-07-2023,6108.0,6974.0,6584.0
+Andhra Pradesh,Guntur,Guntur,Turmeric,Duggirala,FAQ,01-08-2023,6737.0,9954.0,8924.0
+Andhra Pradesh,West Godavari,Eluru,Onion,Red,FAQ,27-07-2023,1507.0,2062.0,1822.0
+Andhra Pradesh,Guntur,Tenali,Cotton,Hybrid,FAQ,28-07-2023,6546.0,7327.0,6998.0
+Andhra Pradesh,Guntur,Guntur,Jowar(Sorghum),Hybrid,FAQ,29-07-2023,2442.0,2975.0,2653.0
+Andhra Pradesh,Nandyal,Nandyal,Cotton,Medium Staple,FAQ,31-07-2023,6507.0,7254.0,7067.0
+Andhra Pradesh,Chittor,Madanapalli,Cotton,Bunny,FAQ,02-08-2023,6531.0,7318.0,7041.0
+Andhra Pradesh,Guntur,Guntur,Maize,Yellow,FAQ,01-08-2023,1919.0,2202.0,2108.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Bunny,FAQ,01-08-2023,6674.0,7422.0,6924.0
+Andhra Pradesh,Nandyal,Nandikotkur,Bengal Gram(Gram)(Whole),Annigeri,FAQ,31-07-2023,4889.0,5379.0,5126.0
+Andhra Pradesh,Nandyal,Nandyal,Black Gram (Urd Beans)(Whole),Local,FAQ,02-08-2023,7402.0,8640.0,8320.0
+Andhra Pradesh,Nandyal,Atmakur,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2050.0,2222.0,2158.0
+Andhra Pradesh,Nandyal,Koilkuntla,Green Chilli,Local,FAQ,28-07-2023,3010.0,4148.0,3665.0
+Andhra Pradesh,Nandyal,Atmakur,Cotton,Medium Staple,FAQ,29-07-2023,6497.0,7456.0,6838.0
+Andhra Pradesh,Chittor,Palamaner,Black Gram (Urd Beans)(Whole),FAQ,FAQ,02-08-2023,7227.0,8701.0,7765.0
+Andhra Pradesh,Nandyal,Allagadda,Jowar(Sorghum),White,FAQ,28-07-2023,2232.0,2877.0,2436.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),Coarse,FAQ,02-08-2023,2060.0,2212.0,2150.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4866.0,5515.0,5065.0
+Andhra Pradesh,Guntur,Piduguralla,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2060.0,2239.0,2121.0
+Andhra Pradesh,Kurnool,Kurnool,Dry Chillies,Guntur,FAQ,29-07-2023,16395.0,23815.0,20164.0
+Andhra Pradesh,Anantapur,Anantapur,Bengal Gram(Gram)(Whole),Local,FAQ,02-08-2023,4817.0,5485.0,5194.0
+Andhra Pradesh,Guntur,Guntur,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4823.0,5365.0,5126.0
+Andhra Pradesh,Anantapur,Anantapur,Dry Chillies,Guntur,FAQ,02-08-2023,15578.0,22156.0,18187.0
+Andhra Pradesh,Krishna,Gudivada,Bengal Gram(Gram)(Whole),Annigeri,FAQ,01-08-2023,4988.0,5354.0,5235.0
+Andhra Pradesh,Nandyal,Nandyal,Groundnut,Pods,FAQ,02-08-2023,5842.0,7247.0,6515.0
+Andhra Pradesh,Nandyal,Atmakur,Groundnut,Pods,FAQ,02-08-2023,6066.0,7418.0,6584.0
+Andhra Pradesh,Chittor,Chittoor,Groundnut,Local,FAQ,01-08-2023,5961.0,7036.0,6369.0
+Andhra Pradesh,Nandyal,Atmakur,Turmeric,Duggirala,FAQ,31-07-2023,7153.0,9854.0,8706.0
+Andhra Pradesh,Kurnool,Kurnool,Turmeric,Bulb,FAQ,29-07-2023,6789.0,9450.0,8686.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Common,FAQ,01-08-2023,2050.0,2205.0,2126.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Local,FAQ,29-07-2023,5088.0,5434.0,5260.0
+Andhra Pradesh,Chittor,Chittoor,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,4979.0,5455.0,5358.0
+Andhra Pradesh,Kurnool,Yemmiganur,Cotton,Bunny,FAQ,27-07-2023,6490.0,7289.0,7072.0
+Andhra Pradesh,Nandyal,Nandikotkur,Tomato,Hybrid,FAQ,02-08-2023,9234.0,14298.0,12048.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Byadagi,FAQ,27-07-2023,15094.0,22067.0,17668.0
+Andhra Pradesh,Krishna,Gudivada,Maize,Hybrid,FAQ,01-08-2023,1925.0,2188.0,2043.0
+Andhra Pradesh,Krishna,Vijayawada,Bengal Gram(Gram)(Whole),FAQ,FAQ,01-08-2023,5075.0,5520.0,5369.0
+Andhra Pradesh,Kurnool,Adoni,Groundnut,Pods,FAQ,28-07-2023,5995.0,7429.0,6929.0
+Andhra Pradesh,Guntur,Piduguralla,Arhar (Tur/Red Gram)(Whole),Red,FAQ,01-08-2023,8950.0,9837.0,9575.0
+Andhra Pradesh,Nandyal,Atmakur,Dry Chillies,Teja,FAQ,27-07-2023,16950.0,23766.0,20134.0
+Andhra Pradesh,Nandyal,Banaganapalle,Maize,Hybrid,FAQ,31-07-2023,1993.0,2168.0,2113.0
+Andhra Pradesh,Kurnool,Kurnool,Lemon,Kagzi,FAQ,02-08-2023,3666.0,5106.0,4317.0
+Andhra Pradesh,Guntur,Guntur,Cotton,Hybrid,FAQ,29-07-2023,6562.0,7260.0,6947.0
+Andhra Pradesh,Nandyal,Nandyal,Bengal Gram(Gram)(Whole),Annigeri,FAQ,28-07-2023,4815.0,5519.0,5164.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Pods,FAQ,01-08-2023,6030.0,6863.0,6460.0
+Andhra Pradesh,Chittor,Madanapalli,Maize,Hybrid,FAQ,28-07-2023,1913.0,2162.0,2059.0
+Andhra Pradesh,Kurnool,Yemmiganur,Bengal Gram(Gram)(Whole),Desi,FAQ,01-08-2023,4920.0,5326.0,5144.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Byadagi,FAQ,28-07-2023,16202.0,21594.0,18885.0
+Andhra Pradesh,Nandyal,Nandyal,Dry Chillies,Byadagi,FAQ,01-08-2023,16540.0,23207.0,19361.0
+Andhra Pradesh,Kurnool,Alur,Bengal Gram(Gram)(Whole),Desi,FAQ,29-07-2023,5033.0,5397.0,5310.0
+Andhra Pradesh,Kurnool,Kurnool,Paddy(Dhan)(Common),BPT-5204,FAQ,27-07-2023,2067.0,2192.0,2126.0
+Andhra Pradesh,Nandyal,Allagadda,Green Chilli,Local,FAQ,29-07-2023,3038.0,3817.0,3390.0
+Andhra Pradesh,Chittor,Madanapalli,Dry Chillies,Local,FAQ,01-08-2023,17054.0,23408.0,20940.0
+Andhra Pradesh,Kurnool,Kurnool,Cotton,Bunny,FAQ,27-07-2023,6677.0,7293.0,7073.0
+Andhra Pradesh,Guntur,Tenali,Paddy(Dhan)(Common),Sona Masuri,FAQ,02-08-2023,2074.0,2161.0,2102.0
+Andhra Pradesh,Nandyal,Nandyal,Paddy(Dhan)(Common),Sona Masuri,FAQ,29-07-2023,2041.0,2219.0,2104.0
+Andhra Pradesh,Anantapur,Kadiri,Paddy(Dhan)(Common),Coarse,FAQ,31-07-2023,2041.0,2171.0,2115.0
+Andhra Pradesh,Nandyal,Nandyal,Jowar(Sorghum),White,FAQ,01-08-2023,2357.0,2903.0,2653.0
+Andhra Pradesh,Nandyal,Banaganapalle,Groundnut,Local,FAQ,02-08-2023,6080.0,6813.0,6514.0
+Andhra Pradesh,Nandyal,Allagadda,Cotton,Medium Staple,FAQ,01-08-2023,6413.0,7268.0,6791.0
+Andhra Pradesh,Anantapur,Anantapur,Paddy(Dhan)(Common),Common,FAQ,27-07-2023,2059.0,2245.0,2121.0
+Andhra Pradesh,Nandyal,Banaganapalle,Tomato,Local,FAQ,02-08-2023,9278.0,13650.0,12479.0

@@ -1,0 +1,13 @@
+{
+  "accuracy": 0.8462,
+  "cv_accuracy": 0.8143,
+  "classes": [
+    "Black Soil",
+    "Cinder Soil",
+    "Laterite Soil",
+    "Peat Soil",
+    "Yellow Soil"
+  ],
+  "n_samples": 156,
+  "feature_dim": 102
+}

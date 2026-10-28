@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Admin System Console</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <div class="flex h-screen overflow-hidden">
+        
+        <!-- Sidebar (Light Theme) -->
+        <aside class="bg-white w-64 lg:w-72 flex-shrink-0 border-r border-slate-200/80 h-screen flex flex-col shadow-sm">
+            <!-- Brand -->
+            <div class="h-20 flex items-center px-6 border-b border-slate-100 space-x-3 justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-md shadow-emerald-600/20">
+                        <i class="fas fa-shield-halved text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-xl text-slate-900 tracking-tight block">CropAI</span>
+                        <span class="text-[10px] font-extrabold text-emerald-600 uppercase tracking-widest block">Admin Console</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="flex-1 overflow-y-auto px-4 py-6 space-y-6 custom-scrollbar">
+                <div>
+                    <div class="px-3 text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-2">MANAGEMENT</div>
+                    <div class="space-y-1">
+                        <a href="dashboard.html" class="flex items-center px-3.5 py-2.5 rounded-xl text-xs font-bold bg-emerald-50 text-emerald-800 border-r-4 border-emerald-600 shadow-sm">
+                            <i class="fas fa-chart-pie w-5 mr-2.5 text-emerald-600 text-sm"></i> System Overview
+                        </a>
+                        <a href="users.html" class="flex items-center px-3.5 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition">
+                            <i class="fas fa-users w-5 mr-2.5 text-slate-400 text-sm"></i> User Governance
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="px-3 text-[10px] font-extrabold text-slate-400 uppercase tracking-widest mb-2">DATA & AI INTELLIGENCE</div>
+                    <div class="space-y-1">
+                        <a href="datasets.html" class="flex items-center px-3.5 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition">
+                            <i class="fas fa-database w-5 mr-2.5 text-slate-400 text-sm"></i> Datasets Inventory
+                        </a>
+                        <a href="models.html" class="flex items-center px-3.5 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition">
+                            <i class="fas fa-brain w-5 mr-2.5 text-slate-400 text-sm"></i> ML Models & Health
+                        </a>
+                        <a href="reports.html" class="flex items-center px-3.5 py-2.5 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100/80 hover:text-slate-900 transition">
+                            <i class="fas fa-file-contract w-5 mr-2.5 text-slate-400 text-sm"></i> System Audit Logs
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer & Logout -->
+            <div class="p-4 border-t border-slate-100 bg-slate-50/50">
+                <button id="admin-logout" class="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-rose-600 hover:bg-rose-50 rounded-xl transition">
+                    <span class="flex items-center"><i class="fas fa-arrow-right-from-bracket mr-2"></i> Logout Admin</span>
+                    <i class="fas fa-chevron-right text-[10px] text-rose-300"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Workspace -->
+        <main class="flex-1 overflow-y-auto bg-slate-50 p-8 space-y-6 custom-scrollbar">
+            
+            <!-- Hero Header Card (Light Theme) -->
+            <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-extrabold rounded-full border border-emerald-200/60 inline-block mb-2">
+                        System Admin Console
+                    </span>
+                    <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight">System Overview</h1>
+                    <p class="text-xs text-slate-500 mt-1 font-medium">Live telemetry from MySQL database & Python ML Microservice</p>
+                </div>
+                <div class="flex items-center space-x-2 bg-emerald-50 px-4 py-2 rounded-2xl border border-emerald-200/80">
+                    <i class="fas fa-circle text-[8px] text-emerald-500 animate-pulse"></i>
+                    <span class="text-xs font-bold text-emerald-800">System Health: 100% Active</span>
+                </div>
+            </div>
+
+            <!-- Metric Cards Grid -->
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-4">
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Total Users</p>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mt-2" id="stat-users">-</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">Platform farmers</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Active Users</p>
+                    <h3 class="text-2xl font-extrabold text-emerald-600 mt-2" id="stat-active">-</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">Verified active</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-green-50 text-green-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-wheat-field"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Total Farms</p>
+                    <h3 class="text-2xl font-extrabold text-slate-900 mt-2" id="stat-farms">-</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">Registered plots</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-indigo-50 text-indigo-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-wand-magic-sparkles"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">ML Recs</p>
+                    <h3 class="text-2xl font-extrabold text-indigo-600 mt-2" id="stat-recs">-</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">Generated predictions</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Saved Reports</p>
+                    <h3 class="text-2xl font-extrabold text-purple-600 mt-2" id="stat-reports">-</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">PDF exports</p>
+                </div>
+
+                <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm relative overflow-hidden">
+                    <div class="w-8 h-8 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center absolute top-4 right-4 text-xs font-bold">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <p class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Dataset Rows</p>
+                    <h3 class="text-2xl font-extrabold text-amber-600 mt-2">6,312</h3>
+                    <p class="text-[10px] font-semibold text-slate-400 mt-1">Ingested CSV records</p>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <h3 class="text-sm font-extrabold text-slate-900 mb-4 flex items-center">
+                        <i class="fas fa-chart-pie text-emerald-600 mr-2"></i> ML Model Crop Distribution
+                    </h3>
+                    <div class="relative h-64 w-full">
+                        <canvas id="cropDistChart"></canvas>
+                    </div>
+                </div>
+                <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <h3 class="text-sm font-extrabold text-slate-900 mb-4 flex items-center">
+                        <i class="fas fa-chart-column text-emerald-600 mr-2"></i> Recommendations Activity Over Time
+                    </h3>
+                    <div class="relative h-64 w-full">
+                        <canvas id="recsTrendChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Users Table -->
+            <div class="bg-white rounded-3xl border border-slate-200/80 shadow-sm overflow-hidden">
+                <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                    <h3 class="font-extrabold text-sm text-slate-900">Registered Platform Farmers</h3>
+                    <a href="users.html" class="text-xs font-extrabold text-emerald-600 hover:underline">Manage All <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs whitespace-nowrap">
+                        <thead class="bg-slate-50 text-slate-500 font-extrabold uppercase border-b border-slate-100">
+                            <tr>
+                                <th class="px-6 py-3.5">Farmer Name</th>
+                                <th class="px-6 py-3.5">Email</th>
+                                <th class="px-6 py-3.5">State</th>
+                                <th class="px-6 py-3.5">Status</th>
+                                <th class="px-6 py-3.5">Joined Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="users-tbody" class="divide-y divide-slate-100 text-slate-700">
+                            <tr><td colspan="5" class="px-6 py-8 text-center text-slate-400">Loading user registry...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const token = localStorage.getItem('token');
+            if (!token) { window.location.href = '../login.html'; return; }
+
+            const headers = { 'Authorization': `Bearer ${token}` };
+            
+            try {
+                // Fetch Stats
+                const statRes = await fetch('http://localhost:5000/api/admin/dashboard', { headers });
+                const statData = await statRes.json();
+                
+                if (statData.success) {
+                    document.getElementById('stat-users').textContent = statData.stats.totalUsers || 0;
+                    document.getElementById('stat-active').textContent = statData.stats.activeUsers || 0;
+                    document.getElementById('stat-farms').textContent = statData.stats.totalFarms || 0;
+                    document.getElementById('stat-recs').textContent = statData.stats.totalRecommendations || 0;
+                    document.getElementById('stat-reports').textContent = statData.stats.totalRecommendations || 0;
+                }
+
+                // Fetch Users
+                const userRes = await fetch('http://localhost:5000/api/admin/users', { headers });
+                const userData = await userRes.json();
+                
+                const tbody = document.getElementById('users-tbody');
+                if (userData.success && userData.users && userData.users.length > 0) {
+                    tbody.innerHTML = '';
+                    userData.users.forEach(u => {
+                        const date = new Date(u.created_at).toLocaleDateString('en-IN');
+                        const statusClass = u.status === 'active' ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-rose-50 text-rose-700 border border-rose-200';
+                        tbody.innerHTML += `
+                            <tr class="hover:bg-slate-50/80 transition">
+                                <td class="px-6 py-4 font-bold text-slate-900">${u.name}</td>
+                                <td class="px-6 py-4 text-slate-500">${u.email}</td>
+                                <td class="px-6 py-4 font-medium">${u.state || 'Andhra Pradesh'}</td>
+                                <td class="px-6 py-4"><span class="px-2.5 py-1 rounded-full text-[10px] font-extrabold uppercase ${statusClass}">${u.status}</span></td>
+                                <td class="px-6 py-4 text-slate-500">${date}</td>
+                            </tr>
+                        `;
+                    });
+                }
+
+                // Render Charts
+                renderAdminCharts();
+
+            } catch (e) {
+                console.error("Admin fetch error", e);
+            }
+
+            document.getElementById('admin-logout').addEventListener('click', () => {
+                localStorage.clear();
+                window.location.href = '../login.html';
+            });
+        });
+
+        function renderAdminCharts() {
+            const ctx1 = document.getElementById('cropDistChart')?.getContext('2d');
+            if (ctx1) {
+                new Chart(ctx1, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Rice', 'Cotton', 'Chilli', 'Maize', 'Groundnut', 'Pulses'],
+                        datasets: [{
+                            data: [35, 25, 15, 12, 8, 5],
+                            backgroundColor: ['#10b981', '#3b82f6', '#f43f5e', '#f59e0b', '#8b5cf6', '#06b6d4']
+                        }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false }
+                });
+            }
+
+            const ctx2 = document.getElementById('recsTrendChart')?.getContext('2d');
+            if (ctx2) {
+                new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Sep 29', 'Sep 30', 'Oct 1', 'Oct 2', 'Oct 3', 'Oct 4', 'Oct 5'],
+                        datasets: [{
+                            label: 'Recommendations',
+                            data: [2, 4, 3, 7, 5, 12, 8],
+                            backgroundColor: '#10b981',
+                            borderRadius: 6
+                        }]
+                    },
+                    options: { responsive: true, maintainAspectRatio: false }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

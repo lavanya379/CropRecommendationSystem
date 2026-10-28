@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Market Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar Navigation Container -->
+        <div id="sidebar-container"></div>
+
+        <!-- Main Workspace -->
+        <main class="flex-1 overflow-y-auto pt-16 lg:pt-0 lg:pl-72 bg-slate-50 custom-scrollbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+                
+                <!-- Header -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-max mb-2 border border-emerald-200">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Agmarknet Mandi Dataset</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Market Intelligence</h1>
+                        <p class="text-slate-500 text-sm mt-1">Real mandi market prices, commodity price trends, and regional AP/TS market yard transactions.</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="text-xs font-bold text-slate-500 bg-slate-100 px-3 py-2 rounded-xl border border-slate-200">
+                            <i class="fas fa-database text-emerald-600 mr-1"></i> <span id="record-count-badge">10,828 Mandi Records</span>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Search & Filters -->
+                <div class="bg-white p-6 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Search Commodity</label>
+                            <input type="text" id="market-search" placeholder="e.g. Capsicum, Cotton, Chilli, Paddy, Maize..." class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold focus:ring-2 focus:ring-emerald-500 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Select Commodity</label>
+                            <select id="commodity-select" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold focus:ring-2 focus:ring-emerald-500 outline-none">
+                                <option value="">All Commodities</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1">Select District / Market</label>
+                            <select id="district-select" class="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold focus:ring-2 focus:ring-emerald-500 outline-none">
+                                <option value="">All Mandi Districts</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Notification Banner for Fallbacks -->
+                    <div id="market-banner" class="hidden"></div>
+                </div>
+
+                <!-- Price Metric Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Active Commodity</p>
+                        <h4 class="text-lg font-extrabold text-slate-900 mt-1 truncate" id="stat-commodity">All Commodities</h4>
+                        <p class="text-[11px] font-semibold text-emerald-600 mt-1" id="stat-district">All Districts</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Latest Modal Price</p>
+                        <h4 class="text-lg font-extrabold text-emerald-600 mt-1" id="stat-modal-price">₹-- / Qtl</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Weighted Market Rate</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Price Range (Min - Max)</p>
+                        <h4 class="text-lg font-extrabold text-slate-800 mt-1" id="stat-price-range">₹-- – ₹--</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Trading Spread</p>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                        <p class="text-xs font-bold text-slate-400 uppercase tracking-wider">Market Activity</p>
+                        <h4 class="text-lg font-extrabold text-indigo-600 mt-1" id="stat-records-count">-- Records</h4>
+                        <p class="text-[11px] text-slate-400 mt-1">Agmarknet Verified</p>
+                    </div>
+                </div>
+
+                <!-- Chart & Trends Section -->
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                        <div>
+                            <h3 class="text-lg font-extrabold text-slate-900" id="chart-title">Commodity Price Trend (Modal Price ₹/Quintal)</h3>
+                            <p class="text-xs text-slate-400 mt-0.5" id="chart-subtitle">Historical modal price progression across auctions</p>
+                        </div>
+                        <span class="text-xs font-bold bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-xl border border-emerald-100 flex items-center space-x-1">
+                            <i class="fas fa-chart-line"></i>
+                            <span id="chart-badge">Live Market Trends</span>
+                        </span>
+                    </div>
+                    <div class="relative h-72 w-full">
+                        <canvas id="marketTrendChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Prices Table -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex items-center justify-between">
+                        <h3 class="text-lg font-extrabold text-slate-900">Recent Mandi Transactions</h3>
+                        <span class="text-xs font-semibold text-slate-500" id="table-record-info">Showing recent arrivals</span>
+                    </div>
+                    
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200/80">
+                        <table class="w-full text-left text-sm">
+                            <thead class="bg-slate-100/80 text-slate-500 font-extrabold uppercase text-[11px] tracking-wider">
+                                <tr>
+                                    <th class="px-4 py-3.5">Commodity</th>
+                                    <th class="px-4 py-3.5">Variety</th>
+                                    <th class="px-4 py-3.5">Market Yard</th>
+                                    <th class="px-4 py-3.5">District</th>
+                                    <th class="px-4 py-3.5 text-right">Min Price</th>
+                                    <th class="px-4 py-3.5 text-right">Max Price</th>
+                                    <th class="px-4 py-3.5 text-right">Modal Price</th>
+                                    <th class="px-4 py-3.5 text-right">Arrival Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="market-tbody" class="divide-y divide-slate-100 bg-white">
+                                <tr>
+                                    <td colspan="8" class="px-4 py-8 text-center text-slate-400 text-xs">Loading Agmarknet price records...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Page Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>
+        let trendChart = null;
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            initCropAINavigation('market');
+            if (!getToken()) { window.location.href = '../login.html'; return; }
+
+            await loadDropdowns();
+            loadMarketData();
+
+            const searchInput = document.getElementById('market-search');
+            const commSelect  = document.getElementById('commodity-select');
+            const distSelect  = document.getElementById('district-select');
+
+            searchInput?.addEventListener('input', debounce(() => {
+                if (searchInput.value.trim() && commSelect) {
+                    commSelect.value = ''; // clear select if typing search
+                }
+                loadMarketData();
+            }, 300));
+
+            commSelect?.addEventListener('change', () => {
+                if (commSelect.value && searchInput) {
+                    searchInput.value = ''; // clear free text if choosing from select
+                }
+                loadMarketData();
+            });
+
+            distSelect?.addEventListener('change', loadMarketData);
+        });
+
+        async function loadDropdowns() {
+            try {
+                const cRes = await MarketAPI.getCommodities();
+                if (cRes.success && cRes.commodities) {
+                    const sel = document.getElementById('commodity-select');
+                    // Clear existing (keep default)
+                    sel.innerHTML = '<option value="">All Commodities</option>';
+                    cRes.commodities.forEach(c => {
+                        const opt = document.createElement('option');
+                        opt.value = c; opt.textContent = c;
+                        sel.appendChild(opt);
+                    });
+                }
+
+                const dRes = await MarketAPI.getDistricts();
+                if (dRes.success && dRes.districts) {
+                    const sel = document.getElementById('district-select');
+                    sel.innerHTML = '<option value="">All Mandi Districts</option>';
+                    dRes.districts.forEach(d => {
+                        if (d.district) {
+                            const opt = document.createElement('option');
+                            opt.value = d.district; 
+                            opt.textContent = `${d.district} (${d.state || 'AP/TS'})`;
+                            sel.appendChild(opt);
+                        }
+                    });
+                }
+            } catch (e) {
+                console.warn('Error loading market dropdowns:', e);
+            }
+        }
+
+        async function loadMarketData() {
+            const search = document.getElementById('market-search')?.value.trim() || '';
+            const comm   = document.getElementById('commodity-select')?.value || search;
+            const dist   = document.getElementById('district-select')?.value || '';
+            const tbody  = document.getElementById('market-tbody');
+            const banner = document.getElementById('market-banner');
+
+            try {
+                const res = await MarketAPI.getPrices(null, dist, comm, 60);
+
+                if (res.is_fallback && res.fallback_message) {
+                    banner.className = 'bg-amber-50 border border-amber-200 text-amber-800 px-4 py-2.5 rounded-2xl text-xs font-semibold flex items-center space-x-2';
+                    banner.innerHTML = `<i class="fas fa-info-circle text-amber-600 text-sm"></i><span>${res.fallback_message}</span>`;
+                    banner.classList.remove('hidden');
+                } else {
+                    banner.classList.add('hidden');
+                }
+
+                if (res.success && res.prices && res.prices.length > 0) {
+                    const prices = res.prices;
+                    
+                    tbody.innerHTML = prices.map(p => `
+                      <tr class="hover:bg-slate-50/80 transition">
+                        <td class="px-4 py-3 font-extrabold text-slate-800 flex items-center space-x-2">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                            <span>${p.commodity}</span>
+                        </td>
+                        <td class="px-4 py-3 text-slate-500 text-xs">${p.variety || 'FAQ'}</td>
+                        <td class="px-4 py-3 font-semibold text-slate-700">${p.market || 'Mandi Yard'}</td>
+                        <td class="px-4 py-3 text-slate-600 text-xs font-medium">
+                            ${p.district} <span class="text-slate-400">(${p.state || 'AP'})</span>
+                        </td>
+                        <td class="px-4 py-3 text-right font-bold text-slate-600">₹${Number(p.min_price || 0).toLocaleString('en-IN')}</td>
+                        <td class="px-4 py-3 text-right font-bold text-slate-600">₹${Number(p.max_price || 0).toLocaleString('en-IN')}</td>
+                        <td class="px-4 py-3 text-right font-extrabold text-emerald-700 text-base">₹${Number(p.modal_price || 0).toLocaleString('en-IN')}</td>
+                        <td class="px-4 py-3 text-right text-slate-400 text-xs">${p.arrival_date ? new Date(p.arrival_date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' }) : 'Recent'}</td>
+                      </tr>`).join('');
+
+                    updateStatCards(comm, dist, prices);
+                    updateTrendChart(comm, dist, prices);
+                } else {
+                    tbody.innerHTML = `<tr><td colspan="8" class="px-4 py-8 text-center text-slate-400 text-xs">No mandi price records found for this selection.</td></tr>`;
+                    updateStatCards(comm, dist, []);
+                    updateTrendChart(comm, dist, []);
+                }
+            } catch (e) {
+                tbody.innerHTML = `<tr><td colspan="8" class="px-4 py-8 text-center text-rose-500 text-xs">Could not fetch market data: ${e.message}</td></tr>`;
+            }
+        }
+
+        function updateStatCards(comm, dist, prices) {
+            const statComm   = document.getElementById('stat-commodity');
+            const statDist   = document.getElementById('stat-district');
+            const statModal  = document.getElementById('stat-modal-price');
+            const statRange  = document.getElementById('stat-price-range');
+            const statCount  = document.getElementById('stat-records-count');
+            const tableInfo  = document.getElementById('table-record-info');
+
+            statComm.textContent = comm || 'All Commodities';
+            statDist.textContent = dist ? `${dist} Mandi Yard` : 'All Mandi Districts';
+
+            if (!prices || prices.length === 0) {
+                statModal.textContent = '₹-- / Qtl';
+                statRange.textContent = '₹-- – ₹--';
+                statCount.textContent = '0 Records';
+                tableInfo.textContent = 'No records found';
+                return;
+            }
+
+            const modalPrices = prices.map(p => parseFloat(p.modal_price || 0)).filter(v => v > 0);
+            const minPrices   = prices.map(p => parseFloat(p.min_price || 0)).filter(v => v > 0);
+            const maxPrices   = prices.map(p => parseFloat(p.max_price || 0)).filter(v => v > 0);
+
+            const latestModal = modalPrices[0] || 0;
+            const overallMin  = minPrices.length ? Math.min(...minPrices) : 0;
+            const overallMax  = maxPrices.length ? Math.max(...maxPrices) : 0;
+
+            statModal.textContent = `₹${Math.round(latestModal).toLocaleString('en-IN')} / Qtl`;
+            statRange.textContent = `₹${Math.round(overallMin).toLocaleString('en-IN')} – ₹${Math.round(overallMax).toLocaleString('en-IN')}`;
+            statCount.textContent = `${prices.length} Records`;
+            tableInfo.textContent = `Displaying ${prices.length} transaction entries`;
+        }
+
+        function updateTrendChart(comm, dist, prices) {
+            const ctx = document.getElementById('marketTrendChart')?.getContext('2d');
+            if (!ctx) return;
+
+            const chartTitle    = document.getElementById('chart-title');
+            const chartSubtitle = document.getElementById('chart-subtitle');
+            const chartBadge    = document.getElementById('chart-badge');
+
+            if (trendChart) {
+                trendChart.destroy();
+                trendChart = null;
+            }
+
+            if (!prices || prices.length === 0) {
+                chartTitle.textContent = 'Price Trend: No Data Available';
+                chartSubtitle.textContent = 'Select a different commodity or district';
+                chartBadge.textContent = 'No Records';
+                return;
+            }
+
+            const isSpecificCommodity = Boolean(comm && comm.trim());
+
+            if (isSpecificCommodity) {
+                // Line chart of chronological price progression
+                const displayTitle = `${prices[0]?.commodity || comm} Price Trend`;
+                const locationText = dist ? `in ${dist} Mandi` : 'Across AP / Telangana';
+                chartTitle.textContent = `${displayTitle} (₹/Quintal)`;
+                chartSubtitle.textContent = `Historical modal, minimum, and maximum rates ${locationText}`;
+                chartBadge.textContent = `${prices[0]?.commodity || comm} • Trend Active`;
+
+                // Take up to 20 most recent rows, sort chronologically (oldest to newest)
+                const chronological = prices.slice(0, 20).sort((a, b) => new Date(a.arrival_date || 0) - new Date(b.arrival_date || 0));
+
+                const labels = chronological.map(p => {
+                    if (p.arrival_date) {
+                        return new Date(p.arrival_date).toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: '2-digit' });
+                    }
+                    return p.market || 'Yard';
+                });
+
+                const modalData = chronological.map(p => parseFloat(p.modal_price || 0));
+                const minData   = chronological.map(p => parseFloat(p.min_price || 0));
+                const maxData   = chronological.map(p => parseFloat(p.max_price || 0));
+
+                trendChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            {
+                                label: 'Modal Price (₹/Quintal)',
+                                data: modalData,
+                                borderColor: '#059669',
+                                backgroundColor: 'rgba(5, 150, 105, 0.12)',
+                                fill: true,
+                                tension: 0.35,
+                                borderWidth: 3,
+                                pointBackgroundColor: '#047857',
+                                pointRadius: 4,
+                                pointHoverRadius: 6
+                            },
+                            {
+                                label: 'Max Price (₹/Quintal)',
+                                data: maxData,
+                                borderColor: '#6366f1',
+                                borderDash: [4, 4],
+                                backgroundColor: 'transparent',
+                                tension: 0.35,
+                                borderWidth: 1.5,
+                                pointRadius: 2
+                            },
+                            {
+                                label: 'Min Price (₹/Quintal)',
+                                data: minData,
+                                borderColor: '#f59e0b',
+                                borderDash: [4, 4],
+                                backgroundColor: 'transparent',
+                                tension: 0.35,
+                                borderWidth: 1.5,
+                                pointRadius: 2
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: { intersect: false, mode: 'index' },
+                        plugins: {
+                            legend: { position: 'top', labels: { boxWidth: 12, font: { weight: 'bold', size: 11 } } },
+                            tooltip: {
+                                callbacks: {
+                                    label: (ctx) => ` ${ctx.dataset.label}: ₹${Number(ctx.parsed.y).toLocaleString('en-IN')}`
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: false,
+                                ticks: {
+                                    callback: (val) => `₹${Number(val).toLocaleString('en-IN')}`
+                                },
+                                grid: { color: 'rgba(226, 232, 240, 0.6)' }
+                            },
+                            x: {
+                                grid: { display: false }
+                            }
+                        }
+                    }
+                });
+            } else {
+                // Multi-commodity Bar Chart comparison for the selected district or state
+                const locationText = dist ? `in ${dist} Mandi Yard` : 'Across AP & Telangana';
+                chartTitle.textContent = `Top Mandi Commodities Modal Price (₹/Quintal)`;
+                chartSubtitle.textContent = `Latest auction rates by commodity ${locationText}`;
+                chartBadge.textContent = dist ? `${dist} Mandi Comparison` : 'All Commodities Comparison';
+
+                // Aggregate by commodity: find latest modal price per commodity
+                const commodityMap = new Map();
+                prices.forEach(p => {
+                    if (p.commodity && !commodityMap.has(p.commodity)) {
+                        commodityMap.set(p.commodity, parseFloat(p.modal_price || 0));
+                    }
+                });
+
+                const topEntries = Array.from(commodityMap.entries()).slice(0, 12);
+                const labels = topEntries.map(e => e[0].length > 18 ? e[0].slice(0, 16) + '...' : e[0]);
+                const data   = topEntries.map(e => e[1]);
+
+                trendChart = new Chart(ctx, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Modal Price (₹/Quintal)',
+                            data: data,
+                            backgroundColor: 'rgba(16, 185, 129, 0.85)',
+                            borderColor: '#059669',
+                            borderWidth: 1.5,
+                            borderRadius: 8
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: (ctx) => ` Modal Price: ₹${Number(ctx.parsed.y).toLocaleString('en-IN')} / Quintal`
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: (val) => `₹${Number(val).toLocaleString('en-IN')}`
+                                },
+                                grid: { color: 'rgba(226, 232, 240, 0.6)' }
+                            },
+                            x: {
+                                grid: { display: false },
+                                ticks: { maxRotation: 45, minRotation: 20, font: { size: 10, weight: 'bold' } }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function(...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+    </script>
+</body>
+</html>

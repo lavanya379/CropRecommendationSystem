@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Crop Recommendation Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+    
+    <!-- Top Navigation -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex justify-between items-center">
+            <a href="dashboard.html" class="flex items-center text-slate-600 hover:text-emerald-700 transition font-semibold text-sm">
+                <i class="fas fa-arrow-left mr-2"></i> Back to Dashboard
+            </a>
+            <div class="flex items-center space-x-2">
+                <div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-md shadow-emerald-200">
+                    <i class="fas fa-leaf text-lg"></i>
+                </div>
+                <span class="font-extrabold text-xl text-slate-900 tracking-tight">CropAI</span>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button onclick="downloadReportPDF()" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl text-sm font-bold shadow-sm shadow-emerald-200 transition flex items-center">
+                    <i class="fas fa-file-pdf mr-2"></i> Download PDF
+                </button>
+                <button onclick="window.print()" class="text-slate-700 hover:text-emerald-700 px-3 py-2 rounded-xl text-sm font-semibold border border-slate-200 hover:bg-slate-100 transition hidden md:flex items-center">
+                    <i class="fas fa-print mr-2"></i> Print
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 pb-24">
+        
+        <!-- Header Title Section -->
+        <div class="mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm">
+            <div>
+                <div class="flex items-center space-x-2 mb-1">
+                    <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-200">Verified ML Report</span>
+                    <span class="text-xs text-slate-400">•</span>
+                    <span class="text-xs text-slate-500 font-medium" id="report-date">Generated: Loading...</span>
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Crop Recommendation Report</h1>
+                <p class="text-slate-500 text-sm mt-1">Multi-source Climate, Soil, and Market Intelligence Powered by Ensemble Machine Learning</p>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-xl border border-slate-200" id="model-version">Model: Loading...</span>
+            </div>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loading-state" class="bg-white rounded-2xl p-16 text-center border border-slate-200 shadow-sm">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-emerald-50 text-emerald-600 rounded-full mb-4">
+                <i class="fas fa-circle-notch fa-spin text-3xl"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-800">Processing Analysis</h3>
+            <p class="text-slate-500 text-sm mt-1">Fetching ML Ensemble probabilities, SHAP explainability values, and mandi market prices...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error-state" class="hidden bg-rose-50 border border-rose-200 text-rose-800 p-6 rounded-2xl text-center font-medium my-6">
+        </div>
+
+        <!-- Main Report Content -->
+        <div id="result-content" class="hidden space-y-8">
+            
+            <!-- TOP RECOMMENDATION HERO CARD -->
+            <div class="bg-gradient-to-br from-emerald-900 via-slate-900 to-emerald-950 rounded-3xl p-6 sm:p-8 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 opacity-10 text-white pointer-events-none">
+                    <i class="fas fa-wheat-awn text-9xl"></i>
+                </div>
+                
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6 relative z-10">
+                    <div class="flex items-center space-x-6">
+                        <div class="w-20 h-20 sm:w-24 sm:h-24 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center border border-white/20 shadow-inner flex-shrink-0">
+                            <i class="fas fa-seedling text-emerald-400 text-4xl sm:text-5xl"></i>
+                        </div>
+                        <div>
+                            <span class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-300 rounded-full text-xs font-bold uppercase tracking-wider mb-2 border border-emerald-500/30">
+                                Primary Recommendation
+                            </span>
+                            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white capitalize tracking-tight" id="rec-crop">Loading...</h2>
+                            <p class="text-emerald-200/80 text-sm mt-1 flex items-center">
+                                <i class="fas fa-check-circle text-emerald-400 mr-1.5"></i> Optimal match for your soil chemical profile & climate features
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Model Confidence Pill -->
+                    <div class="bg-white/10 backdrop-blur-md p-5 rounded-2xl border border-white/15 min-w-[200px] text-center flex-shrink-0">
+                        <p class="text-xs text-emerald-200 font-bold uppercase tracking-wider mb-1">Model Confidence</p>
+                        <p class="text-4xl font-extrabold text-white tracking-tight" id="rec-conf">--%</p>
+                        <div class="w-full bg-slate-700/60 rounded-full h-2.5 mt-3 overflow-hidden p-0.5 border border-white/10">
+                            <div class="bg-gradient-to-r from-emerald-400 to-teal-300 h-full rounded-full transition-all duration-500" id="conf-bar" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CROP PLANTING & HARVEST SCHEDULE TIMELINE -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80 space-y-6">
+                <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center font-bold text-lg">
+                            <i class="fas fa-calendar-days"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-extrabold text-slate-900">Crop Sowing & Expected Harvest Calendar</h3>
+                            <p class="text-xs text-slate-500">Agro-climatic timeline & maturity cycle for Andhra Pradesh & Telangana</p>
+                        </div>
+                    </div>
+                    <span class="text-xs font-extrabold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200/80" id="crop-season-badge">Season: Loading...</span>
+                </div>
+
+                <div id="crop-timeline-container">
+                    <div class="text-center py-6 text-slate-400 text-sm">
+                        <i class="fas fa-spinner fa-spin mr-2"></i> Calculating crop harvest timeline...
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXPLAINABILITY & ALTERNATIVES GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- SHAP Explainable AI Section -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center font-bold">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900">Explainable AI (SHAP Breakdown)</h3>
+                            </div>
+                            <span class="text-xs bg-purple-50 text-purple-700 font-bold px-2.5 py-1 rounded-lg border border-purple-100">Feature Impacts</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Quantifies how each soil & climate feature influenced the AI decision. Green bars push towards recommending this crop.</p>
+                        
+                        <!-- SHAP items container -->
+                        <div class="space-y-3.5" id="shap-container">
+                            <div class="text-center py-8 text-slate-400 text-sm">
+                                <i class="fas fa-spinner fa-spin mr-2"></i> Loading SHAP feature explanations...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alternative Crops Section -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center font-bold">
+                                    <i class="fas fa-layer-group"></i>
+                                </div>
+                                <h3 class="text-lg font-bold text-slate-900">Alternative Recommended Crops</h3>
+                            </div>
+                            <span class="text-xs bg-blue-50 text-blue-700 font-bold px-2.5 py-1 rounded-lg border border-blue-100">Ensemble Rank</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-6">Secondary crop options suitable for your field condition ranked by model probability score.</p>
+                        
+                        <!-- Alternatives list container -->
+                        <div class="space-y-3" id="alt-crops">
+                            <div class="text-center py-8 text-slate-400 text-sm">
+                                <i class="fas fa-spinner fa-spin mr-2"></i> Loading alternative crops...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTEXT SNAPSHOTS: Weather & Soil Features + Market Intelligence -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                
+                <!-- Weather & Soil Snapshot -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-cloud-sun font-bold"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Soil & Climate Input Snapshot</h3>
+                        </div>
+                        <span class="text-xs font-bold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200/60">Field Parameters</span>
+                    </div>
+                    
+                    <div id="weather-snapshot">
+                        <div class="text-center py-8 text-slate-400 text-sm">Loading field inputs...</div>
+                    </div>
+                </div>
+
+                <!-- Market Intelligence Section -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-chart-line font-bold"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-slate-900">Market Price Intelligence</h3>
+                        </div>
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200/60">Agmarknet Dataset</span>
+                    </div>
+                    
+                    <div id="market-snapshot">
+                        <div class="text-center py-8 text-slate-400 text-sm">
+                            <i class="fas fa-spinner fa-spin mr-2"></i> Querying Mandi market prices...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FERTILIZER & IRRIGATION GUIDANCE GRID -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Fertilizer & Soil NPK Dosage Plan -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 bg-purple-100 text-purple-700 rounded-xl flex items-center justify-center font-bold flex-shrink-0">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Soil NPK Fertilizer Recommendation</h3>
+                        </div>
+                        <span class="text-xs font-bold text-purple-800 bg-purple-50 px-2.5 py-1 rounded-lg border border-purple-200/60 flex-shrink-0 whitespace-nowrap">Dosage / Acre</span>
+                    </div>
+                    <div id="fertilizer-plan">
+                        <div class="text-center py-6 text-slate-400 text-sm">
+                            <i class="fas fa-spinner fa-spin mr-2"></i> Calculating N-P-K fertilizer requirement...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Irrigation & Water Management Schedule -->
+                <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                    <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-9 h-9 bg-cyan-100 text-cyan-700 rounded-xl flex items-center justify-center font-bold flex-shrink-0">
+                                <i class="fas fa-droplet"></i>
+                            </div>
+                            <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Irrigation & Water Schedule</h3>
+                        </div>
+                        <span class="text-xs font-bold text-cyan-800 bg-cyan-50 px-2.5 py-1 rounded-lg border border-cyan-200/60 flex-shrink-0 whitespace-nowrap">Water Guide</span>
+                    </div>
+                    <div id="irrigation-plan">
+                        <div class="text-center py-6 text-slate-400 text-sm">
+                            <i class="fas fa-spinner fa-spin mr-2"></i> Generating irrigation schedule...
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PEST ADVISORY SECTION -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                <div class="flex flex-wrap items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-9 h-9 bg-rose-100 text-rose-700 rounded-xl flex items-center justify-center font-bold flex-shrink-0">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base sm:text-lg font-extrabold text-slate-900">Pest & Disease Warning Advisory</h3>
+                            <p class="text-xs text-slate-500">Integrated Pest Management (IPM) & Crop Protection Protocol</p>
+                        </div>
+                    </div>
+                    <span class="text-xs font-bold text-rose-800 bg-rose-50 px-2.5 py-1 rounded-lg border border-rose-200/60 flex-shrink-0 whitespace-nowrap">Regional Alert</span>
+                </div>
+                <div id="pest-advisory">
+                    <div class="text-center py-6 text-slate-400 text-sm">
+                        <i class="fas fa-spinner fa-spin mr-2"></i> Fetching pest advisory notes...
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3-TIER PRICE & PROFITABILITY INTELLIGENCE (PREVIOUS, PRESENT, FUTURE PREDICTION) -->
+            <div class="bg-white p-6 sm:p-7 rounded-2xl shadow-sm border border-slate-200/80">
+                <div class="flex flex-wrap items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-100">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-teal-700 text-white rounded-xl flex items-center justify-center font-bold shadow-sm flex-shrink-0">
+                            <i class="fas fa-sack-dollar text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slate-900">Crop Price & Financial Profitability Intelligence</h3>
+                            <p class="text-xs text-slate-500 font-medium mt-0.5">Comprehensive 3-Way Trajectory: Previous Year Baseline ➔ Present Market Rate ➔ Future Harvest Prediction</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-2 flex-shrink-0">
+                        <span class="text-xs font-bold text-blue-800 bg-blue-50 px-3 py-1 rounded-lg border border-blue-200/60 flex items-center">
+                            <i class="fas fa-database mr-1.5 text-blue-600"></i> Agmarknet AP/TS
+                        </span>
+                        <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-200/60 flex items-center">
+                            <i class="fas fa-robot mr-1.5 text-emerald-600"></i> AI Harvest Forecast
+                        </span>
+                    </div>
+                </div>
+                <div id="profit-estimate">
+                    <div class="text-center py-8 text-slate-400 text-sm">
+                        <i class="fas fa-spinner fa-spin mr-2 text-emerald-600"></i> Computing 3-Tier price trajectory and farm profit models...
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Disclaimer Banner -->
+            <div class="bg-amber-50/90 border border-amber-200/80 text-amber-900 p-5 rounded-2xl text-xs flex items-start space-x-3">
+                <i class="fas fa-shield-halved text-amber-600 text-base mt-0.5 flex-shrink-0"></i>
+                <div>
+                    <p class="font-bold text-slate-900 mb-0.5">Agronomic Guidance Note:</p>
+                    <p class="text-slate-600 leading-relaxed">This recommendation is computed by an Ensemble Machine Learning model (Random Forest + XGBoost + LightGBM) trained on verified agricultural datasets. Actual crop yield may vary based on irrigation practices, localized pest control, and unexpected climate anomalies.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/result.js"></script>
+</body>
+</html>

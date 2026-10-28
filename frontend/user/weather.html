@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Weather Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen">
+
+    <div class="flex h-screen overflow-hidden">
+        <!-- Sidebar Navigation Container -->
+        <div id="sidebar-container"></div>
+
+        <!-- Main Workspace -->
+        <main class="flex-1 overflow-y-auto pt-16 lg:pt-0 lg:pl-72 bg-slate-50 custom-scrollbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+                
+                <!-- Header -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-bold text-blue-700 bg-blue-50 px-3 py-1 rounded-full w-max mb-2 border border-blue-200">
+                            <i class="fas fa-cloud-sun-rain"></i>
+                            <span>Real-Time Weather Intelligence</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Weather Intelligence</h1>
+                        <p class="text-slate-500 text-sm mt-1">Real-time agricultural weather metrics, forecast trends, and rainfall statistics.</p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-2">
+                        <!-- Select Farm Dropdown -->
+                        <div class="flex items-center space-x-1.5 bg-emerald-50 px-3 py-2 rounded-xl border border-emerald-200">
+                            <i class="fas fa-tractor text-emerald-700 text-xs"></i>
+                            <select id="user-farm-select" onchange="onUserFarmSelected()" class="bg-transparent text-xs font-bold text-slate-800 outline-none cursor-pointer">
+                                <option value="">-- Select My Farm --</option>
+                            </select>
+                        </div>
+
+                        <div class="relative flex items-center">
+                            <i class="fas fa-location-dot absolute left-3 text-slate-400 text-xs"></i>
+                            <input type="text" id="weather-location-input" placeholder="Enter city/district (e.g. Guntur)" value="Guntur"
+                                   onkeypress="if(event.key === 'Enter') searchLocationWeather()"
+                                   class="pl-9 pr-3 py-2.5 bg-slate-100 border border-slate-300 rounded-xl text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 w-36 sm:w-48">
+                        </div>
+                        <button type="button" id="btn-search-weather" onclick="searchLocationWeather()" class="px-3.5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-extrabold shadow-md shadow-blue-200 transition flex items-center">
+                            <i class="fas fa-search mr-1.5"></i> Search
+                        </button>
+                        <button type="button" onclick="detectGPSLocation()" class="px-3.5 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-xl text-xs font-bold transition flex items-center border border-slate-200" title="Use Live GPS Coordinates">
+                            <i class="fas fa-crosshairs text-blue-600 mr-1.5"></i> Live GPS
+                        </button>
+                        <a href="recommendation.html" class="px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-extrabold shadow-md shadow-emerald-200 transition flex items-center">
+                            <i class="fas fa-wand-magic-sparkles mr-1.5"></i> AI Analysis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Farm Report Linked Banner (Auto-Synchronized) -->
+                <div id="farm-report-banner" class="hidden transition-all duration-300">
+                    <div class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-700 text-white p-5 rounded-3xl shadow-md border border-emerald-400/30 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                        <div class="flex items-center space-x-3.5">
+                            <div class="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center text-xl shrink-0">
+                                <i class="fas fa-file-shield"></i>
+                            </div>
+                            <div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-[10px] font-extrabold uppercase tracking-wider bg-white/25 px-2.5 py-0.5 rounded-full">Report Linked</span>
+                                    <h4 class="font-extrabold text-base" id="banner-farm-title">Farm: sravya (Warangal)</h4>
+                                </div>
+                                <p class="text-xs text-white/90 mt-1" id="banner-report-desc">
+                                    Recommended Crop: <strong>Banana</strong> • <strong>86% AI Match</strong> • <strong>11 Months Growth Cycle</strong>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-2 shrink-0">
+                            <span class="text-xs bg-white text-emerald-800 font-extrabold px-3.5 py-2 rounded-xl shadow-xs flex items-center">
+                                <i class="fas fa-cloud-rain text-blue-500 mr-2 text-sm"></i>
+                                <span id="banner-rainfall-badge">Rainfall Analysis Active</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Weather Highlights Cards -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6" id="weather-cards">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 text-center py-8">
+                        <i class="fas fa-spinner fa-spin text-slate-400 mb-2"></i>
+                        <p class="text-xs text-slate-400">Loading metrics...</p>
+                    </div>
+                </div>
+
+                <!-- Weather & Rainfall Forecast Charts -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <!-- Chart 1: Temperature & Humidity Trend -->
+                    <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                            <h3 class="text-lg font-extrabold text-slate-900">Temperature & Humidity Trends</h3>
+                            <span class="text-xs font-bold bg-amber-50 text-amber-700 px-2.5 py-1 rounded-lg border border-amber-100">8-Point Forecast</span>
+                        </div>
+                        <div class="relative h-64 w-full">
+                            <canvas id="tempHumidityChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Chart 2: Rainfall & Precipitation Probability -->
+                    <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm relative">
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4 pb-3 border-b border-slate-100">
+                            <div>
+                                <h3 class="text-lg font-extrabold text-slate-900">Precipitation &amp; Rainfall Rate</h3>
+                                <p class="text-[11px] text-slate-400 font-medium">8-point volume (mm) &amp; precipitation chance (%)</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span id="rain-condition-badge" class="text-xs font-bold bg-emerald-50 text-emerald-700 px-3 py-1 rounded-xl border border-emerald-200">
+                                    <i class="fas fa-sun text-amber-500 mr-1"></i> Clear &amp; Dry (0 mm)
+                                </span>
+                            </div>
+                        </div>
+                        <div class="relative h-64 w-full">
+                            <canvas id="rainfallChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming 5-Day Daily Weather & Rainfall Forecast Rail -->
+                <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm space-y-4">
+                    <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                        <div>
+                            <h3 class="text-lg font-extrabold text-slate-900 flex items-center">
+                                <i class="fas fa-calendar-days text-blue-600 mr-2"></i> Upcoming Days Weather & Rainfall Forecast
+                            </h3>
+                            <p class="text-xs text-slate-400 mt-0.5">Real-time 5-day daily forecast analysis for agricultural planning</p>
+                        </div>
+                        <span id="forecast-location-tag" class="text-xs font-bold bg-blue-50 text-blue-700 px-3 py-1 rounded-full border border-blue-200">Guntur</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4" id="upcoming-5day-rail">
+                        <div class="col-span-full text-center py-6 text-slate-400 text-xs">
+                            <i class="fas fa-spinner fa-spin mr-1"></i> Loading upcoming 5-day forecast...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Seasonal & Multi-Month Crop Weather Intelligence -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm space-y-6" id="multi-month-section">
+                    
+                    <!-- Section Top Header & Farm/Crop Selector Bar -->
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                        <div>
+                            <div class="flex items-center space-x-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-max mb-1 border border-emerald-200">
+                                <i class="fas fa-seedling"></i>
+                                <span>Multi-Month Seasonal Weather Intelligence</span>
+                            </div>
+                            <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">Crop Cycle Weather & Rainfall Analysis</h2>
+                            <p class="text-xs sm:text-sm text-slate-500 mt-0.5">Projected stage-by-stage weather metrics, cumulative rainfall, temperature stress, and moisture budgets.</p>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-wrap items-center gap-2">
+                            <button type="button" onclick="openPreviousReportModal()" class="px-3.5 py-2 bg-amber-50 hover:bg-amber-100 text-amber-800 rounded-xl text-xs font-extrabold border border-amber-200 transition flex items-center">
+                                <i class="fas fa-file-invoice text-amber-600 mr-1.5"></i> Link Previous AI Report
+                            </button>
+                            <button type="button" onclick="exportWeatherReport()" class="px-3.5 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-xs font-extrabold border border-slate-200 transition flex items-center">
+                                <i class="fas fa-print text-slate-600 mr-1.5"></i> Export Report
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Filter & Parameter Selection Bar -->
+                    <div class="bg-slate-50 p-4 sm:p-5 rounded-2xl border border-slate-200/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                        <div class="flex flex-wrap items-center gap-3">
+                            <!-- Crop Selector -->
+                            <div class="flex items-center space-x-2">
+                                <label class="text-xs font-bold text-slate-600">Crop:</label>
+                                <select id="mm-crop-select" onchange="onMMParameterChanged()" class="bg-white border border-slate-300 rounded-xl px-3 py-1.5 text-xs font-bold text-slate-800 outline-none focus:ring-2 focus:ring-emerald-500">
+                                    <option value="rice">Rice (Paddy) - 4 Months</option>
+                                    <option value="cotton">Cotton - 5 Months</option>
+                                    <option value="maize">Maize - 4 Months</option>
+                                    <option value="chilli">Chilli - 5 Months</option>
+                                    <option value="capsicum">Capsicum - 4 Months</option>
+                                    <option value="groundnut">Groundnut - 4 Months</option>
+                                    <option value="tomato">Tomato - 4 Months</option>
+                                    <option value="onion">Onion - 4 Months</option>
+                                    <option value="bengal gram">Bengal Gram - 4 Months</option>
+                                    <option value="banana">Banana - 11 Months</option>
+                                </select>
+                            </div>
+
+                            <!-- Target District Badge -->
+                            <div class="flex items-center space-x-1.5 text-xs font-bold bg-white px-3 py-1.5 rounded-xl border border-slate-200 text-slate-700">
+                                <i class="fas fa-map-pin text-blue-500"></i>
+                                <span>District: <strong id="mm-active-district" class="text-slate-900">Nandyal</strong></span>
+                            </div>
+                        </div>
+
+                        <!-- Duration Selector Buttons -->
+                        <div class="flex items-center space-x-1.5">
+                            <span class="text-xs font-bold text-slate-500 mr-1">Duration:</span>
+                            <div class="inline-flex rounded-xl bg-white p-1 border border-slate-200" id="duration-btn-group">
+                                <button type="button" onclick="selectDurationMonths(1)" class="duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition" data-months="1">1M</button>
+                                <button type="button" onclick="selectDurationMonths(2)" class="duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition" data-months="2">2M</button>
+                                <button type="button" onclick="selectDurationMonths(3)" class="duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition" data-months="3">3M</button>
+                                <button type="button" onclick="selectDurationMonths(4)" class="duration-btn active-duration px-3 py-1 text-xs font-extrabold rounded-lg bg-emerald-600 text-white shadow-xs transition" data-months="4">4 Months</button>
+                                <button type="button" onclick="selectDurationMonths(6)" class="duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition" data-months="6">6M</button>
+                                <button type="button" onclick="selectDurationMonths(12)" class="duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition" data-months="12">12M</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4 Seasonal Summary Metric Cards -->
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4" id="mm-summary-cards">
+                        <div class="bg-blue-50/60 p-5 rounded-2xl border border-blue-200/80">
+                            <p class="text-xs font-bold text-blue-700 uppercase tracking-wider">Total Rainfall Expected</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-blue-900 mt-1" id="mm-stat-rain">-- mm</h3>
+                            <p class="text-[11px] text-blue-600 font-semibold mt-1" id="mm-stat-rain-sub">Cumulative precipitation</p>
+                        </div>
+                        <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-200/80">
+                            <p class="text-xs font-bold text-amber-700 uppercase tracking-wider">Mean Season Temp</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-amber-900 mt-1" id="mm-stat-temp">--°C</h3>
+                            <p class="text-[11px] text-amber-600 font-semibold mt-1" id="mm-stat-temp-sub">Optimal growing range</p>
+                        </div>
+                        <div class="bg-teal-50/60 p-5 rounded-2xl border border-teal-200/80">
+                            <p class="text-xs font-bold text-teal-700 uppercase tracking-wider">Water Deficit / Irrigation</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-teal-900 mt-1" id="mm-stat-deficit">-- mm</h3>
+                            <p class="text-[11px] text-teal-600 font-semibold mt-1" id="mm-stat-deficit-sub">Supplementary irrigation required</p>
+                        </div>
+                        <div class="bg-emerald-50/60 p-5 rounded-2xl border border-emerald-200/80">
+                            <p class="text-xs font-bold text-emerald-700 uppercase tracking-wider">Farm Rainwater Harvest</p>
+                            <h3 class="text-2xl sm:text-3xl font-extrabold text-emerald-900 mt-1" id="mm-stat-harvest">-- m³</h3>
+                            <p class="text-[11px] text-emerald-600 font-semibold mt-1" id="mm-stat-harvest-sub">Total volume on farm field</p>
+                        </div>
+                    </div>
+
+                    <!-- Multi-Month Chart -->
+                    <div class="bg-slate-50/60 p-6 rounded-2xl border border-slate-200/80 space-y-3">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <h3 class="text-base font-extrabold text-slate-900" id="mm-chart-title">Crop Weather Progression (Rainfall vs Temperature & Humidity)</h3>
+                                <p class="text-xs text-slate-400">Monthly precipitation volume (mm) & thermal trajectory across the cycle</p>
+                            </div>
+                            <span class="text-xs font-bold bg-white px-2.5 py-1 rounded-lg border border-slate-200 text-slate-600">Dual-Axis Chart</span>
+                        </div>
+                        <div class="relative h-72 w-full">
+                            <canvas id="multiMonthChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Stage-by-Stage Agronomic Growth & Weather Advisory Table -->
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <h3 class="text-base font-extrabold text-slate-900 flex items-center">
+                                <i class="fas fa-timeline text-emerald-600 mr-2"></i> Stage-by-Stage Agronomic Weather & Moisture Advisory
+                            </h3>
+                            <span class="text-xs font-semibold text-slate-500" id="mm-table-season-tag">4 Months Growth Cycle</span>
+                        </div>
+                        
+                        <div class="overflow-x-auto rounded-2xl border border-slate-200/80">
+                            <table class="w-full text-left text-sm">
+                                <thead class="bg-slate-100/90 text-slate-500 font-extrabold uppercase text-[11px] tracking-wider">
+                                    <tr>
+                                        <th class="px-4 py-3.5">Month &amp; Stage</th>
+                                        <th class="px-4 py-3.5">Expected Temp</th>
+                                        <th class="px-4 py-3.5 text-right">Rainfall (mm)</th>
+                                        <th class="px-4 py-3.5 text-right">Avg Humidity</th>
+                                        <th class="px-4 py-3.5">Soil Moisture Need</th>
+                                        <th class="px-4 py-3.5">Agronomic Weather Advisory</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="mm-table-tbody" class="divide-y divide-slate-100 bg-white">
+                                    <tr>
+                                        <td colspan="6" class="px-4 py-8 text-center text-slate-400 text-xs">Loading multi-month weather analysis...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Previous Reports Modal -->
+                <div id="previous-reports-modal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-xs z-50 flex items-center justify-center p-4 hidden">
+                    <div class="bg-white rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+                        <div class="flex items-center justify-between pb-3 border-b border-slate-100">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-8 h-8 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold">
+                                    <i class="fas fa-file-invoice"></i>
+                                </div>
+                                <h3 class="font-extrabold text-slate-900 text-base">Select Past AI Analysis Report</h3>
+                            </div>
+                            <button type="button" onclick="closePreviousReportModal()" class="w-8 h-8 rounded-full text-slate-400 hover:text-slate-700 flex items-center justify-center">
+                                <i class="fas fa-xmark"></i>
+                            </button>
+                        </div>
+                        <p class="text-xs text-slate-500">Pick any previous farm crop recommendation to automatically configure the multi-month weather duration & crop requirements:</p>
+                        <div class="max-h-60 overflow-y-auto space-y-2 pr-1" id="previous-reports-list">
+                            <div class="text-center py-6 text-slate-400 text-xs">Loading past reports...</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Page Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/nav.js"></script>
+    <script>
+        let chart1Instance = null;
+        let chart2Instance = null;
+        let multiMonthChartInstance = null;
+
+        let activeQuery = { lat: null, lon: null, location: 'Guntur' };
+        let refreshInterval = null;
+
+        let userFarms = [];
+        let userReports = [];
+        let activeFarmId = null;
+        let activeDistrict = 'Guntur';
+        let activeState = 'Andhra Pradesh';
+        let currentMonths = 4;
+        let currentCrop = 'rice';
+        let lastMMResponse = null;
+
+        function normalizeDistrict(name) {
+            if (!name) return 'Nandyal';
+            const l = name.trim().toLowerCase();
+            if (l.includes('warngal') || l.includes('warangal')) return 'Warangal';
+            if (l.includes('anantpur') || l.includes('anantapur')) return 'Anantapur';
+            if (l.includes('tirupati') || l.includes('tirupathi')) return 'Tirupati';
+            if (l.includes('chittor') || l.includes('chittoor')) return 'Chittoor';
+            if (l.includes('cuddapah') || l.includes('kadapa')) return 'Kadapa';
+            if (l.includes('vizag') || l.includes('visakhapatnam')) return 'Visakhapatnam';
+            if (l.includes('vijaywada') || l.includes('vijayawada')) return 'Vijayawada';
+            if (l.includes('hyd') || l.includes('hyderabad')) return 'Hyderabad';
+            if (l.includes('adilabad')) return 'Adilabad';
+            if (l.includes('karimnagar')) return 'Karimnagar';
+            if (l.includes('khammam')) return 'Khammam';
+            if (l.includes('nandyal')) return 'Nandyal';
+            if (l.includes('guntur')) return 'Guntur';
+            if (l.includes('kurnool')) return 'Kurnool';
+            return name.trim();
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            initCropAINavigation('weather');
+            if (!getToken()) { window.location.href = '../login.html'; return; }
+
+            // 1. Immediately load user's farms and their existing AI reports
+            await loadUserFarmsAndReports();
+
+            // 2. Set up 60-second auto-refresh for real-time live updates
+            refreshInterval = setInterval(() => {
+                if (activeDistrict) {
+                    loadWeatherPageData(activeQuery.lat, activeQuery.lon, activeDistrict, true);
+                }
+            }, 60000);
+        });
+
+        async function loadUserFarmsAndReports() {
+            try {
+                // Fetch farms and previous AI recommendations in parallel
+                const [farmRes, recRes] = await Promise.all([
+                    FarmAPI.getAll().catch(() => ({ success: false })),
+                    RecAPI.getHistory().catch(() => ({ success: false }))
+                ]);
+
+                if (recRes && recRes.success && recRes.recommendations) {
+                    userReports = recRes.recommendations;
+                }
+
+                const sel = document.getElementById('user-farm-select');
+                if (!sel) return;
+
+                sel.innerHTML = '<option value="">-- Select Farm Land --</option>';
+
+                if (farmRes && farmRes.success && farmRes.farms && farmRes.farms.length > 0) {
+                    userFarms = farmRes.farms;
+                    userFarms.forEach(f => {
+                        const opt = document.createElement('option');
+                        opt.value = f.id;
+                        const distClean = normalizeDistrict(f.district);
+
+                        // Find existing report for this farm (by farm_id or farm_name)
+                        const rep = (userReports || []).find(r => 
+                            (r.farm_id && String(r.farm_id) === String(f.id)) ||
+                            (r.farm_name && r.farm_name.toLowerCase() === (f.farm_name || '').toLowerCase())
+                        );
+
+                        if (rep) {
+                            const cName = rep.recommended_crop || 'Crop';
+                            let dur = 4;
+                            const cLower = cName.toLowerCase();
+                            if (cLower.includes('banana') || cLower.includes('sugarcane')) dur = 11;
+                            else if (cLower.includes('cotton') || cLower.includes('chilli')) dur = 5;
+                            else dur = 4;
+
+                            opt.textContent = `🌾 ${f.farm_name} (${distClean}) — Report: ${cName.toUpperCase()} (${dur} Months)`;
+                        } else {
+                            opt.textContent = `🌾 ${f.farm_name} (${distClean}) — ${f.area || 5} Ac`;
+                        }
+
+                        sel.appendChild(opt);
+                    });
+
+                    // Auto-select sravya or the first farm with an existing report
+                    const sravyaFarm = userFarms.find(f => (f.farm_name || '').toLowerCase().includes('sravya')) || userFarms[0];
+                    sel.value = sravyaFarm.id;
+                    onUserFarmSelected();
+                } else {
+                    loadMultiMonthWeather();
+                }
+            } catch (e) {
+                console.warn('Could not load user farms and reports:', e);
+                loadMultiMonthWeather();
+            }
+        }
+
+        function onUserFarmSelected() {
+            const sel = document.getElementById('user-farm-select');
+            const farmId = sel ? sel.value : null;
+            if (!farmId) {
+                activeFarmId = null;
+                return;
+            }
+
+            const farm = userFarms.find(f => String(f.id) === String(farmId));
+            if (!farm) return;
+
+            activeFarmId = farm.id;
+            const cleanDistrict = normalizeDistrict(farm.district);
+            activeDistrict = cleanDistrict;
+            activeState = farm.state || 'Andhra Pradesh';
+
+            const locInput = document.getElementById('weather-location-input');
+            if (locInput) locInput.value = cleanDistrict;
+
+            // Automatically find previous analysis report for this farm land
+            const report = (userReports || []).find(r => 
+                (r.farm_id && String(r.farm_id) === String(farm.id)) ||
+                (r.farm_name && r.farm_name.toLowerCase() === (farm.farm_name || '').toLowerCase())
+            );
+
+            const banner = document.getElementById('farm-report-banner');
+            const bTitle = document.getElementById('banner-farm-title');
+            const bDesc  = document.getElementById('banner-report-desc');
+            const bRain  = document.getElementById('banner-rainfall-badge');
+
+            if (report) {
+                const cropName = report.recommended_crop || 'Rice';
+                currentCrop = cropName.toLowerCase();
+                
+                // Determine cycle duration based on recommended crop
+                let duration = 4;
+                if (currentCrop.includes('banana') || currentCrop.includes('sugarcane')) duration = 11;
+                else if (currentCrop.includes('cotton') || currentCrop.includes('chilli')) duration = 5;
+                else duration = 4;
+
+                currentMonths = duration;
+
+                if (banner) {
+                    banner.classList.remove('hidden');
+                    const conf = report.model_confidence ? `${Math.round(report.model_confidence * 100)}% Match` : 'AI Recommended';
+                    bTitle.textContent = `Farm Land: ${farm.farm_name} (${cleanDistrict})`;
+                    bDesc.innerHTML = `Linked Analysis Report: <strong class="capitalize">${cropName}</strong> • <strong class="bg-emerald-900/30 px-1.5 py-0.5 rounded">${conf}</strong> • <strong>${duration} Months Growth Cycle</strong>`;
+                    bRain.innerHTML = `<i class="fas fa-chart-line text-emerald-600 mr-1.5"></i>Rainfall Analysis from Report: Active`;
+                }
+
+                syncCropDropdown(currentCrop, duration);
+                syncDurationButtons(duration);
+
+            } else {
+                // If farm doesn't have an exact report yet, infer from farm name (e.g. cotton, rice, wheat, maize)
+                const farmLower = (farm.farm_name || '').toLowerCase();
+                if (farmLower.includes('cotton')) currentCrop = 'cotton';
+                else if (farmLower.includes('rice')) currentCrop = 'rice';
+                else if (farmLower.includes('wheat') || farmLower.includes('maize')) currentCrop = 'maize';
+                else currentCrop = 'rice';
+
+                currentMonths = currentCrop === 'cotton' ? 5 : 4;
+
+                if (banner) {
+                    banner.classList.remove('hidden');
+                    bTitle.textContent = `Farm Land: ${farm.farm_name} (${cleanDistrict})`;
+                    bDesc.innerHTML = `Farm Land Profile: <strong>${farm.farm_name}</strong> • Soil: <strong>${farm.soil_type || 'Fertile Agricultural Soil'}</strong> • <strong>${currentMonths} Months Cycle</strong>`;
+                    bRain.innerHTML = `<i class="fas fa-cloud-rain text-blue-500 mr-1.5"></i>Rainfall Analysis Active`;
+                }
+
+                syncCropDropdown(currentCrop, currentMonths);
+                syncDurationButtons(currentMonths);
+            }
+
+            activeQuery = { lat: farm.latitude, lon: farm.longitude, location: cleanDistrict };
+            loadWeatherPageData(farm.latitude, farm.longitude, cleanDistrict);
+            loadMultiMonthWeather();
+        }
+
+        function syncDurationButtons(months) {
+            const buttons = document.querySelectorAll('.duration-btn');
+            buttons.forEach(btn => {
+                const bMonths = parseInt(btn.getAttribute('data-months'));
+                if (bMonths === months) {
+                    btn.className = 'duration-btn active-duration px-3 py-1 text-xs font-extrabold rounded-lg bg-emerald-600 text-white shadow-xs transition';
+                    btn.textContent = bMonths === 4 ? '4 Months' : `${bMonths}M`;
+                } else {
+                    btn.className = 'duration-btn px-2.5 py-1 text-xs font-bold rounded-lg text-slate-600 hover:text-slate-900 transition';
+                    btn.textContent = bMonths === 4 ? '4M' : `${bMonths}M`;
+                }
+            });
+        }
+
+        function syncCropDropdown(crop, duration) {
+            const cropSel = document.getElementById('mm-crop-select');
+            if (!cropSel) return;
+            const norm = crop.toLowerCase().trim();
+            let matched = false;
+            for (let i = 0; i < cropSel.options.length; i++) {
+                if (cropSel.options[i].value.toLowerCase().includes(norm) || norm.includes(cropSel.options[i].value.toLowerCase())) {
+                    cropSel.selectedIndex = i;
+                    matched = true;
+                    break;
+                }
+            }
+            if (!matched) {
+                const opt = document.createElement('option');
+                opt.value = norm;
+                opt.textContent = `${crop.toUpperCase()} - ${duration} Months`;
+                cropSel.appendChild(opt);
+                cropSel.value = norm;
+            }
+        }
+
+        function selectDurationMonths(months) {
+            currentMonths = parseInt(months) || 4;
+            syncDurationButtons(currentMonths);
+            loadMultiMonthWeather();
+        }
+
+        function onMMParameterChanged() {
+            const cropSel = document.getElementById('mm-crop-select');
+            if (cropSel) currentCrop = cropSel.value;
+            loadMultiMonthWeather();
+        }
+
+        async function loadMultiMonthWeather() {
+            const targetDistrict = activeDistrict || document.getElementById('weather-location-input')?.value.trim() || 'Nandyal';
+            const cropSel = document.getElementById('mm-crop-select');
+            if (cropSel) currentCrop = cropSel.value;
+
+            const badgeDist = document.getElementById('mm-active-district');
+            if (badgeDist) badgeDist.textContent = targetDistrict;
+
+            const tableSeasonTag = document.getElementById('mm-table-season-tag');
+            if (tableSeasonTag) tableSeasonTag.textContent = `${currentMonths} Months Growth Cycle (${currentCrop.toUpperCase()})`;
+
+            const tbody = document.getElementById('mm-table-tbody');
+            if (tbody) {
+                tbody.innerHTML = `<tr><td colspan="6" class="px-4 py-8 text-center text-slate-400 text-xs"><i class="fas fa-spinner fa-spin mr-1"></i> Calculating ${currentMonths}-month weather analysis for ${targetDistrict}...</td></tr>`;
+            }
+
+            try {
+                const res = await WeatherAPI.getMultiMonth(targetDistrict, activeState, currentMonths, currentCrop, activeFarmId);
+                if (res.success) {
+                    lastMMResponse = res;
+
+                    // Update summary metric cards
+                    const statRain     = document.getElementById('mm-stat-rain');
+                    const statRainSub  = document.getElementById('mm-stat-rain-sub');
+                    const statTemp     = document.getElementById('mm-stat-temp');
+                    const statDeficit  = document.getElementById('mm-stat-deficit');
+                    const statDefSub   = document.getElementById('mm-stat-deficit-sub');
+                    const statHarvest  = document.getElementById('mm-stat-harvest');
+                    const statHarvSub  = document.getElementById('mm-stat-harvest-sub');
+
+                    if (statRain)    statRain.textContent = `${res.summary.total_rainfall_mm} mm`;
+                    if (statRainSub) statRainSub.textContent = `Cumulative over ${currentMonths} months`;
+
+                    if (statTemp)    statTemp.textContent = `${res.summary.mean_temperature_c}°C`;
+
+                    if (statDeficit) statDeficit.textContent = `${res.summary.water_balance_deficit_mm} mm`;
+                    if (statDefSub)  statDefSub.textContent = `${res.summary.supplementary_irrigation_needed_pct}% supplementary irrigation`;
+
+                    if (statHarvest) statHarvest.textContent = `${Number(res.summary.farm_rainwater_harvest_m3).toLocaleString('en-IN')} m³`;
+                    if (statHarvSub) {
+                        const areaTxt = res.query.farm?.area ? `${res.query.farm.area} Acres Farm` : '5 Acres Farm Field';
+                        statHarvSub.textContent = `Harvest volume on ${areaTxt}`;
+                    }
+
+                    // Render chart
+                    renderMultiMonthChart(res.monthly_breakdown, targetDistrict);
+
+                    // Render table
+                    if (tbody && res.monthly_breakdown) {
+                        tbody.innerHTML = res.monthly_breakdown.map((m, idx) => {
+                            const rainBadge = m.rainfall_mm > 80 
+                                ? 'bg-blue-100 text-blue-800' 
+                                : (m.rainfall_mm > 30 ? 'bg-sky-50 text-sky-700' : 'bg-slate-100 text-slate-600');
+
+                            return `
+                              <tr class="hover:bg-slate-50/80 transition">
+                                <td class="px-4 py-3.5">
+                                  <div class="font-extrabold text-slate-900">${m.short_label}</div>
+                                  <div class="text-xs text-emerald-700 font-bold">${m.stage_name}</div>
+                                </td>
+                                <td class="px-4 py-3.5">
+                                  <div class="font-extrabold text-slate-800">${m.avg_temp}°C</div>
+                                  <div class="text-[11px] text-slate-400">${m.min_temp}° - ${m.max_temp}°C</div>
+                                </td>
+                                <td class="px-4 py-3.5 text-right">
+                                  <span class="inline-block px-2.5 py-1 rounded-xl font-extrabold text-xs ${rainBadge}">
+                                    ${m.rainfall_mm} mm
+                                  </span>
+                                  <div class="text-[10px] text-slate-400 mt-0.5">~${m.rainy_days} rainy days</div>
+                                </td>
+                                <td class="px-4 py-3.5 text-right font-extrabold text-teal-700 text-xs">
+                                  ${m.humidity_pct}%
+                                </td>
+                                <td class="px-4 py-3.5">
+                                  <span class="text-xs font-semibold text-slate-700 bg-slate-100 px-2 py-0.5 rounded-md border border-slate-200">
+                                    ${m.soil_moisture}
+                                  </span>
+                                </td>
+                                <td class="px-4 py-3.5 text-xs text-slate-600 font-medium">
+                                  <div class="flex items-start space-x-1.5">
+                                    <i class="fas fa-circle-info text-blue-500 mt-0.5 text-xs"></i>
+                                    <span>${m.advisory}</span>
+                                  </div>
+                                </td>
+                              </tr>`;
+                        }).join('');
+                    }
+                }
+            } catch (err) {
+                if (tbody) {
+                    tbody.innerHTML = `<tr><td colspan="6" class="px-4 py-6 text-center text-rose-500 text-xs">Could not fetch seasonal analysis: ${err.message}</td></tr>`;
+                }
+            }
+        }
+
+        function renderMultiMonthChart(breakdown, district) {
+            const ctx = document.getElementById('multiMonthChart')?.getContext('2d');
+            if (!ctx) return;
+
+            if (multiMonthChartInstance) {
+                multiMonthChartInstance.destroy();
+                multiMonthChartInstance = null;
+            }
+
+            if (!breakdown || breakdown.length === 0) return;
+
+            const labels = breakdown.map(m => m.short_label);
+            const rainData = breakdown.map(m => m.rainfall_mm);
+            const tempData = breakdown.map(m => m.avg_temp);
+            const humData  = breakdown.map(m => m.humidity_pct);
+
+            const titleEl = document.getElementById('mm-chart-title');
+            if (titleEl) {
+                titleEl.textContent = `${currentMonths}-Month Climate Progression for ${currentCrop.toUpperCase()} (${district})`;
+            }
+
+            multiMonthChartInstance = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [
+                        {
+                            type: 'bar',
+                            label: 'Monthly Rainfall (mm)',
+                            data: rainData,
+                            backgroundColor: 'rgba(59, 130, 246, 0.75)',
+                            borderColor: '#2563eb',
+                            borderWidth: 1.5,
+                            borderRadius: 8,
+                            yAxisID: 'y'
+                        },
+                        {
+                            type: 'line',
+                            label: 'Mean Temperature (°C)',
+                            data: tempData,
+                            borderColor: '#f59e0b',
+                            backgroundColor: 'transparent',
+                            borderWidth: 3,
+                            tension: 0.35,
+                            pointBackgroundColor: '#d97706',
+                            pointRadius: 4,
+                            yAxisID: 'y1'
+                        },
+                        {
+                            type: 'line',
+                            label: 'Relative Humidity (%)',
+                            data: humData,
+                            borderColor: '#0d9488',
+                            borderDash: [4, 4],
+                            backgroundColor: 'transparent',
+                            borderWidth: 2,
+                            tension: 0.35,
+                            pointBackgroundColor: '#0f766e',
+                            pointRadius: 3,
+                            yAxisID: 'y1'
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    plugins: {
+                        legend: { position: 'top', labels: { boxWidth: 12, font: { weight: 'bold', size: 11 } } },
+                        tooltip: {
+                            callbacks: {
+                                label: (ctx) => ` ${ctx.dataset.label}: ${ctx.parsed.y} ${ctx.dataset.type === 'bar' ? 'mm' : (ctx.dataset.label.includes('Temp') ? '°C' : '%')}`
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            beginAtZero: true,
+                            title: { display: true, text: 'Rainfall Volume (mm)', font: { size: 11, weight: 'bold' } },
+                            grid: { color: 'rgba(226, 232, 240, 0.6)' }
+                        },
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            min: 0,
+                            max: 100,
+                            grid: { drawOnChartArea: false },
+                            title: { display: true, text: 'Temperature (°C) & Humidity (%)', font: { size: 11, weight: 'bold' } }
+                        },
+                        x: {
+                            grid: { display: false }
+                        }
+                    }
+                }
+            });
+        }
+
+        async function openPreviousReportModal() {
+            const modal = document.getElementById('previous-reports-modal');
+            const listEl = document.getElementById('previous-reports-list');
+            if (modal) modal.classList.remove('hidden');
+
+            try {
+                const res = await RecommendationAPI.getAll();
+                if (res.success && res.recommendations && res.recommendations.length > 0) {
+                    listEl.innerHTML = res.recommendations.map(r => {
+                        const cropName = r.recommended_crop || 'Rice';
+                        const farmName = r.farm_name || 'Primary Farm';
+                        const recDate = r.created_at ? new Date(r.created_at).toLocaleDateString('en-IN') : 'Recent';
+                        const durMonths = cropName.toLowerCase().includes('banana') ? 11 : (cropName.toLowerCase().includes('cotton') ? 5 : 4);
+
+                        return `
+                          <div onclick="applyReportRecommendation('${cropName}', ${durMonths}, ${r.farm_id || 'null'})" class="p-3 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 cursor-pointer transition flex items-center justify-between">
+                            <div>
+                              <div class="flex items-center space-x-2">
+                                <span class="font-extrabold text-slate-800 text-sm capitalize">${cropName}</span>
+                                <span class="text-[10px] font-bold bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full">${durMonths} Months Cycle</span>
+                              </div>
+                              <p class="text-[11px] text-slate-400 mt-0.5">${farmName} • Analysis from ${recDate}</p>
+                            </div>
+                            <span class="text-xs font-bold text-emerald-700 bg-white px-2.5 py-1 rounded-xl border border-slate-200 shadow-2xs">
+                              Select <i class="fas fa-chevron-right ml-1"></i>
+                            </span>
+                          </div>`;
+                    }).join('');
+                } else {
+                    listEl.innerHTML = `<div class="text-center py-6 text-slate-400 text-xs">No past AI recommendations found. <a href="recommendation.html" class="text-emerald-600 font-bold underline">Run AI Analysis</a></div>`;
+                }
+            } catch (e) {
+                listEl.innerHTML = `<div class="text-center py-6 text-rose-500 text-xs">Could not load past reports.</div>`;
+            }
+        }
+
+        function closePreviousReportModal() {
+            const modal = document.getElementById('previous-reports-modal');
+            if (modal) modal.classList.add('hidden');
+        }
+
+        function applyReportRecommendation(cropName, durationMonths, farmId) {
+            closePreviousReportModal();
+
+            // Set crop select
+            const cropSel = document.getElementById('mm-crop-select');
+            if (cropSel) {
+                const normCrop = cropName.toLowerCase().trim();
+                let matched = false;
+                for (let i = 0; i < cropSel.options.length; i++) {
+                    if (cropSel.options[i].value.toLowerCase().includes(normCrop) || normCrop.includes(cropSel.options[i].value.toLowerCase())) {
+                        cropSel.selectedIndex = i;
+                        matched = true;
+                        break;
+                    }
+                }
+                if (!matched) {
+                    const opt = document.createElement('option');
+                    opt.value = normCrop;
+                    opt.textContent = `${cropName} - ${durationMonths} Months`;
+                    cropSel.appendChild(opt);
+                    cropSel.value = normCrop;
+                }
+            }
+
+            // Set farm if available
+            if (farmId) {
+                const farmSel = document.getElementById('user-farm-select');
+                if (farmSel) {
+                    farmSel.value = farmId;
+                    onUserFarmSelected();
+                }
+            }
+
+            // Set duration months
+            selectDurationMonths(durationMonths);
+        }
+
+        function exportWeatherReport() {
+            if (!lastMMResponse) {
+                alert('Please wait for the weather analysis to load before exporting.');
+                return;
+            }
+
+            const r = lastMMResponse;
+            const printWin = window.open('', '_blank');
+            if (!printWin) return;
+
+            const html = `
+              <!DOCTYPE html>
+              <html>
+              <head>
+                <title>CropAI Farm Weather & Seasonal Advisory Report</title>
+                <style>
+                  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; padding: 28px; color: #1e293b; }
+                  h1 { color: #047857; margin-bottom: 4px; }
+                  .meta { font-size: 13px; color: #64748b; margin-bottom: 20px; }
+                  .grid { display: flex; gap: 16px; margin-bottom: 24px; }
+                  .card { flex: 1; border: 1px solid #e2e8f0; padding: 14px; border-radius: 12px; background: #f8fafc; }
+                  .card-title { font-size: 11px; font-weight: bold; color: #64748b; text-transform: uppercase; }
+                  .card-val { font-size: 20px; font-weight: 800; color: #0f172a; margin-top: 4px; }
+                  table { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; }
+                  th, td { border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; }
+                  th { background: #f1f5f9; font-weight: 700; color: #475569; }
+                  .tag { background: #dcfce7; color: #15803d; padding: 2px 8px; border-radius: 6px; font-weight: bold; font-size: 11px; }
+                </style>
+              </head>
+              <body>
+                <h1>🌾 CropAI Farm Weather &amp; Seasonal Advisory Report</h1>
+                <div class="meta">
+                  <strong>Location:</strong> ${r.query.district}, ${r.query.state} | 
+                  <strong>Agro-Climatic Zone:</strong> ${r.climate_zone} | 
+                  <strong>Crop:</strong> ${r.query.crop} | 
+                  <strong>Cycle:</strong> ${r.summary.total_months} Months | 
+                  <strong>Generated:</strong> ${new Date().toLocaleDateString('en-IN', { day:'2-digit', month:'short', year:'numeric' })}
+                </div>
+
+                <div class="grid">
+                  <div class="card">
+                    <div class="card-title">Total Cumulative Rain</div>
+                    <div class="card-val">${r.summary.total_rainfall_mm} mm</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">Mean Seasonal Temp</div>
+                    <div class="card-val">${r.summary.mean_temperature_c}°C</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">Water Deficit</div>
+                    <div class="card-val">${r.summary.water_balance_deficit_mm} mm</div>
+                  </div>
+                  <div class="card">
+                    <div class="card-title">Farm Water Harvested</div>
+                    <div class="card-val">${Number(r.summary.farm_rainwater_harvest_m3).toLocaleString('en-IN')} m³</div>
+                  </div>
+                </div>
+
+                <h3>Stage-by-Stage Agronomic Weather Advisory (${r.summary.total_months} Months)</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Month &amp; Stage</th>
+                      <th>Temp Range</th>
+                      <th>Rainfall (mm)</th>
+                      <th>Humidity</th>
+                      <th>Soil Moisture Need</th>
+                      <th>Agronomic Climate Advisory</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${r.monthly_breakdown.map(m => `
+                      <tr>
+                        <td><strong>${m.short_label}</strong><br><span style="color:#059669;font-size:11px;">${m.stage_name}</span></td>
+                        <td>${m.min_temp}° - ${m.max_temp}°C (Avg ${m.avg_temp}°C)</td>
+                        <td><strong>${m.rainfall_mm} mm</strong> (~${m.rainy_days} rainy days)</td>
+                        <td>${m.humidity_pct}%</td>
+                        <td>${m.soil_moisture}</td>
+                        <td>${m.advisory}</td>
+                      </tr>`).join('')}
+                  </tbody>
+                </table>
+
+                <div style="margin-top: 30px; font-size: 11px; color: #94a3b8; text-align: center;">
+                  CropAI Real-Time Agriculture Intelligence System • Verified against Agro-Climatic Guidelines &amp; IMD Data
+                </div>
+                ` + '\x3Cscript>window.onload = function() { window.print(); };\x3C/script>' + `
+              </body>
+              </html>
+            `;
+
+            printWin.document.open();
+            printWin.document.write(html);
+            printWin.document.close();
+        }
+
+        function detectGPSLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    (pos) => {
+                        const lat = pos.coords.latitude;
+                        const lon = pos.coords.longitude;
+                        activeQuery = { lat, lon, location: null };
+                        loadWeatherPageData(lat, lon, null);
+                    },
+                    (err) => {
+                        console.warn('Geolocation unavailable/denied, using default district:', err.message);
+                        loadWeatherPageData(null, null, 'Guntur');
+                    },
+                    { timeout: 8000 }
+                );
+            } else {
+                loadWeatherPageData(null, null, 'Guntur');
+            }
+        }
+
+        async function searchLocationWeather() {
+            const locInput = document.getElementById('weather-location-input');
+            const loc = locInput ? locInput.value.trim() : 'Guntur';
+            if (!loc) return;
+
+            activeQuery = { lat: null, lon: null, location: loc };
+
+            const btn = document.getElementById('btn-search-weather');
+            if (btn) btn.innerHTML = '<i class="fas fa-spinner fa-spin mr-1.5"></i> Searching...';
+
+            await loadWeatherPageData(null, null, loc);
+
+            if (btn) btn.innerHTML = '<i class="fas fa-search mr-1.5"></i> Search';
+        }
+
+        async function loadWeatherPageData(lat = null, lon = null, location = 'Guntur', isSilentRefresh = false) {
+            const cardsBox = document.getElementById('weather-cards');
+            const tagEl = document.getElementById('forecast-location-tag');
+
+            if (!isSilentRefresh) {
+                cardsBox.innerHTML = `
+                  <div class="col-span-4 bg-white p-8 rounded-2xl border border-slate-200 flex items-center justify-center space-x-3">
+                    <i class="fas fa-spinner fa-spin text-blue-500 text-xl"></i>
+                    <span class="text-sm text-slate-500 font-semibold">Fetching real-time weather for <strong>${location || 'GPS Location'}</strong>...</span>
+                  </div>`;
+            }
+
+            try {
+                const [wRes, fRes] = await Promise.all([
+                    WeatherAPI.getCurrent(lat, lon, location),
+                    WeatherAPI.getForecast(lat, lon, location)
+                ]);
+
+                if (!wRes.success || !wRes.weather) {
+                    const errMsg = wRes.message || 'Weather data unavailable for this location.';
+                    cardsBox.innerHTML = `
+                      <div class="col-span-4 bg-red-50 border border-red-200 p-6 rounded-2xl flex flex-col items-center justify-center space-y-3">
+                        <i class="fas fa-triangle-exclamation text-red-400 text-2xl"></i>
+                        <p class="text-sm font-bold text-red-700">${errMsg}</p>
+                        <p class="text-xs text-slate-400">Try searching for a city or district (e.g. Guntur, Hyderabad, Vijayawada)</p>
+                        <button onclick="loadWeatherPageData(null,null,'${location || 'Guntur'}')" class="mt-1 px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-bold">
+                          <i class="fas fa-rotate-right mr-1"></i> Retry
+                        </button>
+                      </div>`;
+                    renderWeatherCharts(null);
+                    renderUpcoming5DayRail(null);
+                    return;
+                }
+
+                const weather = wRes.weather;
+                if (tagEl) tagEl.textContent = weather.city || location || 'GPS Location';
+                if (location && document.getElementById('weather-location-input')) {
+                    document.getElementById('weather-location-input').value = weather.city || location;
+                }
+
+                const now = new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
+
+                cardsBox.innerHTML = `
+                  <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-extrabold uppercase text-slate-400">Current Temp</span>
+                      <div class="w-9 h-9 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center font-bold">
+                        <i class="fas fa-temperature-high"></i>
+                      </div>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mt-2">${parseFloat(weather.temperature).toFixed(1)}°C</h3>
+                    <p class="text-[11px] text-slate-400 font-semibold mt-1">Feels like ${parseFloat(weather.feels_like || weather.temperature).toFixed(1)}°C</p>
+                  </div>
+
+                  <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-extrabold uppercase text-slate-400">Humidity</span>
+                      <div class="w-9 h-9 bg-teal-50 text-teal-600 rounded-xl flex items-center justify-center font-bold">
+                        <i class="fas fa-droplet"></i>
+                      </div>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mt-2">${weather.humidity}%</h3>
+                    <p class="text-[11px] text-slate-400 font-semibold mt-1">Relative level</p>
+                  </div>
+
+                  <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-extrabold uppercase text-slate-400">Precipitation</span>
+                      <div class="w-9 h-9 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center font-bold">
+                        <i class="fas fa-cloud-showers-heavy"></i>
+                      </div>
+                    </div>
+                    <h3 class="text-3xl font-extrabold text-slate-900 mt-2">${weather.rainfall} mm</h3>
+                    <p class="text-[11px] text-slate-400 font-semibold mt-1">Current rate</p>
+                  </div>
+
+                  <div class="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between">
+                      <span class="text-xs font-extrabold uppercase text-slate-400">Location &amp; Sky</span>
+                      <div class="flex items-center space-x-1">
+                        <span class="text-[9px] font-extrabold bg-green-100 text-green-700 px-1.5 py-0.5 rounded-full border border-green-200 animate-pulse">&#9679; LIVE</span>
+                        <div class="w-9 h-9 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center font-bold">
+                          <i class="fas fa-sun"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <h3 class="text-lg font-extrabold text-slate-900 mt-2 capitalize truncate">${weather.city || location || 'GPS Location'}</h3>
+                    <p class="text-[11px] text-emerald-600 font-bold mt-0.5 capitalize">${weather.description}</p>
+                    <p class="text-[10px] text-slate-400 mt-1">Updated ${now}</p>
+                  </div>`;
+
+                // Render Chart.js graphs
+                renderWeatherCharts(fRes.success && fRes.forecast ? fRes.forecast : null);
+
+                // Render Upcoming 5-Day Rail
+                renderUpcoming5DayRail(fRes.success && fRes.dailyForecast ? fRes.dailyForecast : null);
+
+            } catch (e) {
+                cardsBox.innerHTML = `
+                  <div class="col-span-4 bg-red-50 border border-red-200 p-6 rounded-2xl flex flex-col items-center justify-center space-y-2">
+                    <i class="fas fa-wifi text-red-400 text-2xl"></i>
+                    <p class="text-sm font-bold text-red-700">Network error - could not reach weather service.</p>
+                    <p class="text-xs text-slate-400">Make sure the backend server is running on port 5000.</p>
+                    <button onclick="loadWeatherPageData(null,null,'${location || 'Guntur'}')" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-bold">
+                      <i class="fas fa-rotate-right mr-1"></i> Retry
+                    </button>
+                  </div>`;
+            }
+        }
+
+        function getWeatherIconClass(desc) {
+            desc = (desc || '').toLowerCase();
+            if (desc.includes('rain') || desc.includes('drizzle')) return 'fa-cloud-showers-heavy text-blue-500';
+            if (desc.includes('thunder')) return 'fa-cloud-bolt text-purple-500';
+            if (desc.includes('cloud')) return 'fa-cloud-sun text-amber-500';
+            if (desc.includes('snow')) return 'fa-snowflake text-sky-400';
+            return 'fa-sun text-amber-500';
+        }
+
+        function renderUpcoming5DayRail(dailyForecast) {
+            const rail = document.getElementById('upcoming-5day-rail');
+            if (!rail) return;
+
+            if (!dailyForecast || dailyForecast.length === 0) {
+                rail.innerHTML = `<div class="col-span-full text-center py-6 text-slate-400 text-xs">Upcoming forecast unavailable.</div>`;
+                return;
+            }
+
+            rail.innerHTML = dailyForecast.map((day, idx) => {
+                const iconClass = getWeatherIconClass(day.description);
+                const hasRain = day.total_rainfall > 0;
+                const rainBg = hasRain ? 'bg-blue-50 border-blue-200 text-blue-700' : 'bg-slate-50 border-slate-100 text-slate-500';
+
+                return `
+                  <div class="p-4 bg-slate-50/80 hover:bg-white rounded-2xl border border-slate-200/80 shadow-sm transition space-y-3 flex flex-col justify-between">
+                    <div>
+                      <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-extrabold text-slate-900">${day.day_name}</span>
+                        <span class="text-[10px] font-bold text-slate-400">${idx === 0 ? 'Today' : `Day ${idx + 1}`}</span>
+                      </div>
+                      <div class="flex items-center space-x-2 my-2">
+                        <div class="w-8 h-8 rounded-xl bg-white flex items-center justify-center shadow-xs border border-slate-100">
+                          <i class="fas ${iconClass} text-sm"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-700 capitalize truncate">${day.description}</span>
+                      </div>
+                    </div>
+
+                    <div class="space-y-2 border-t border-slate-200/60 pt-2.5">
+                      <div class="flex justify-between items-center text-xs">
+                        <span class="text-slate-400 font-medium">Temp Range</span>
+                        <span class="font-extrabold text-slate-800">${Math.round(day.min_temp)}° - ${Math.round(day.max_temp)}°C</span>
+                      </div>
+                      <div class="flex justify-between items-center text-xs">
+                        <span class="text-slate-400 font-medium">Avg Humidity</span>
+                        <span class="font-extrabold text-teal-700">${day.avg_humidity}%</span>
+                      </div>
+                      <div class="flex justify-between items-center text-xs px-2.5 py-1 rounded-xl border ${rainBg}">
+                        <span class="font-bold text-[11px]"><i class="fas fa-droplet mr-1"></i>Rainfall</span>
+                        <span class="font-extrabold text-[11px]">${day.total_rainfall} mm</span>
+                      </div>
+                    </div>
+                  </div>`;
+            }).join('');
+        }
+
+        function renderWeatherCharts(forecastData) {
+            let labels = ['06:00', '09:00', '12:00', '15:00', '18:00', '21:00', '00:00', '03:00'];
+            let temps  = [24, 27, 31, 33, 30, 27, 25, 24];
+            let hums   = [78, 65, 52, 48, 58, 68, 75, 80];
+            let rains  = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+            let rainProbs = [0, 0, 0, 0, 0, 0, 0, 0];
+
+            if (forecastData && forecastData.length >= 1) {
+                labels = forecastData.map(f => f.datetime ? f.datetime.split(' ')[1].slice(0,5) : 'Time');
+                temps  = forecastData.map(f => parseFloat(f.temperature) || 0);
+                hums   = forecastData.map(f => parseFloat(f.humidity) || 0);
+                rains  = forecastData.map(f => parseFloat(f.rainfall) || 0);
+                rainProbs = forecastData.map(f => parseFloat(f.rain_prob) || 0);
+            }
+
+            const totalRain = rains.reduce((a, b) => a + b, 0);
+            const badge = document.getElementById('rain-condition-badge');
+            if (badge) {
+                if (totalRain > 0) {
+                    badge.className = 'text-xs font-bold bg-blue-50 text-blue-700 px-3 py-1 rounded-xl border border-blue-200';
+                    badge.innerHTML = `<i class="fas fa-cloud-showers-heavy text-blue-600 mr-1"></i> Rain Expected (${totalRain.toFixed(1)} mm)`;
+                } else {
+                    badge.className = 'text-xs font-bold bg-emerald-50 text-emerald-700 px-3 py-1 rounded-xl border border-emerald-200';
+                    badge.innerHTML = `<i class="fas fa-sun text-amber-500 mr-1"></i> Clear &amp; Dry (0 mm)`;
+                }
+            }
+
+            if (chart1Instance) chart1Instance.destroy();
+            if (chart2Instance) chart2Instance.destroy();
+
+            // Temp & Humidity Chart with dual axes
+            const ctx1 = document.getElementById('tempHumidityChart')?.getContext('2d');
+            if (ctx1) {
+                chart1Instance = new Chart(ctx1, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            { 
+                                label: 'Temperature (°C)', 
+                                data: temps, 
+                                borderColor: '#f59e0b', 
+                                backgroundColor: 'rgba(245, 158, 11, 0.1)', 
+                                fill: true, 
+                                tension: 0.4,
+                                yAxisID: 'y'
+                            },
+                            { 
+                                label: 'Humidity (%)', 
+                                data: hums, 
+                                borderColor: '#14b8a6', 
+                                backgroundColor: 'transparent', 
+                                borderDash: [4,4], 
+                                tension: 0.4,
+                                yAxisID: 'y1'
+                            }
+                        ]
+                    },
+                    options: { 
+                        responsive: true, 
+                        maintainAspectRatio: false,
+                        interaction: { mode: 'index', intersect: false },
+                        scales: {
+                            y: {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                title: { display: true, text: 'Temp (°C)', font: { size: 10, weight: 'bold' } }
+                            },
+                            y1: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                min: 0,
+                                max: 100,
+                                grid: { drawOnChartArea: false },
+                                title: { display: true, text: 'Humidity (%)', font: { size: 10, weight: 'bold' } }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Rainfall & Precipitation Probability Chart
+            const ctx2 = document.getElementById('rainfallChart')?.getContext('2d');
+            if (ctx2) {
+                const maxRain = Math.max(...rains, 0);
+                chart2Instance = new Chart(ctx2, {
+                    type: 'bar',
+                    data: {
+                        labels: labels,
+                        datasets: [
+                            { 
+                                type: 'bar',
+                                label: 'Rainfall (mm)', 
+                                data: rains, 
+                                backgroundColor: 'rgba(59, 130, 246, 0.75)', 
+                                borderColor: '#2563eb',
+                                borderWidth: 1,
+                                borderRadius: 6,
+                                yAxisID: 'y'
+                            },
+                            {
+                                type: 'line',
+                                label: 'Precipitation Chance (%)',
+                                data: rainProbs,
+                                borderColor: '#8b5cf6',
+                                backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                                fill: true,
+                                tension: 0.35,
+                                pointRadius: 3,
+                                pointBackgroundColor: '#8b5cf6',
+                                yAxisID: 'y1'
+                            }
+                        ]
+                    },
+                    options: { 
+                        responsive: true, 
+                        maintainAspectRatio: false,
+                        interaction: { mode: 'index', intersect: false },
+                        scales: {
+                            y: {
+                                type: 'linear',
+                                display: true,
+                                position: 'left',
+                                min: 0,
+                                suggestedMax: maxRain > 1 ? maxRain + 1 : 2,
+                                title: { display: true, text: 'Rainfall (mm)', font: { size: 10, weight: 'bold' } }
+                            },
+                            y1: {
+                                type: 'linear',
+                                display: true,
+                                position: 'right',
+                                min: 0,
+                                max: 100,
+                                grid: { drawOnChartArea: false },
+                                title: { display: true, text: 'Precipitation Chance (%)', font: { size: 10, weight: 'bold' } }
+                            }
+                        },
+                        plugins: {
+                            tooltip: {
+                                callbacks: {
+                                    afterBody: function(context) {
+                                        if (totalRain === 0) {
+                                            return '\nℹ️ Clear & Dry: No rainfall expected';
+                                        }
+                                        return '';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>

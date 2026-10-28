@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Admin Console Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+    
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm p-4 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="../index.html" class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-md shadow-emerald-600/20">
+                    <i class="fas fa-shield-halved text-lg"></i>
+                </div>
+                <div>
+                    <span class="font-extrabold text-xl text-slate-900 tracking-tight block">CropAI</span>
+                    <span class="text-[10px] font-extrabold text-emerald-600 uppercase tracking-widest block">Admin Console</span>
+                </div>
+            </a>
+            <a href="../login.html" class="text-emerald-700 font-extrabold text-xs hover:underline flex items-center">
+                <i class="fas fa-user mr-1.5"></i> Farmer Login
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="flex-grow flex items-center justify-center p-4">
+        <div class="bg-white w-full max-w-md rounded-3xl border border-slate-200/80 shadow-xl overflow-hidden">
+            <div class="bg-gradient-to-br from-emerald-700 to-emerald-900 p-8 text-center text-white relative">
+                <div class="w-14 h-14 bg-white/10 text-white rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-inner">
+                    <i class="fas fa-user-shield text-2xl"></i>
+                </div>
+                <h2 class="text-2xl font-extrabold">Administrator Sign In</h2>
+                <p class="text-xs text-emerald-100 mt-1 font-medium">Authorized system management & ML telemetry access</p>
+            </div>
+            
+            <div class="p-8 space-y-5">
+                <!-- Alert -->
+                <div id="admin-error-msg" class="hidden bg-red-50 text-red-600 p-3.5 rounded-xl text-xs flex items-center border border-red-100">
+                    <i class="fas fa-exclamation-circle mr-2 text-sm"></i>
+                    <span id="admin-error-text">Invalid administrator credentials.</span>
+                </div>
+
+                <form id="admin-login-form" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Admin Email Address</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                <i class="fas fa-envelope text-sm"></i>
+                            </div>
+                            <input type="email" id="admin-email" required class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl pl-10 pr-4 py-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition" placeholder="admin@cropai.com">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 mb-1">Security Password</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                                <i class="fas fa-lock text-sm"></i>
+                            </div>
+                            <input type="password" id="admin-password" required class="w-full bg-slate-50 border border-slate-200 text-slate-800 text-xs rounded-xl pl-10 pr-4 py-3 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition" placeholder="••••••••">
+                        </div>
+                    </div>
+
+                    <button type="submit" id="admin-btn" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold py-3 px-4 rounded-xl transition flex justify-center items-center shadow-md shadow-emerald-600/20 text-xs uppercase tracking-wider">
+                        <span>Authenticate Admin</span>
+                        <i id="admin-spinner" class="fas fa-spinner fa-spin ml-2 hidden"></i>
+                    </button>
+                </form>
+
+                <div class="border-t border-slate-100 pt-5 text-center">
+                    <button type="button" onclick="quickDemoAdmin()" class="w-full py-2.5 bg-purple-50 hover:bg-purple-100 text-purple-700 font-extrabold text-xs rounded-xl border border-purple-200 transition flex items-center justify-center">
+                        <i class="fas fa-bolt mr-2 text-purple-600"></i> Quick Demo Admin Auto-Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="p-6 text-center text-xs text-slate-400">
+        CropAI Admin Console &copy; 2026. All rights reserved.
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('demo') === 'true') {
+                quickDemoAdmin();
+            }
+
+            const form = document.getElementById('admin-login-form');
+            form.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const email = document.getElementById('admin-email').value.trim();
+                const password = document.getElementById('admin-password').value;
+                loginAdmin(email, password);
+            });
+        });
+
+        async function loginAdmin(email, password) {
+            const btn = document.getElementById('admin-btn');
+            const spinner = document.getElementById('admin-spinner');
+            const errorBox = document.getElementById('admin-error-msg');
+            const errorText = document.getElementById('admin-error-text');
+
+            errorBox.classList.add('hidden');
+            btn.disabled = true;
+            spinner.classList.remove('hidden');
+
+            try {
+                const res = await fetch('http://localhost:5000/api/auth/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                }).then(r => r.json());
+
+                btn.disabled = false;
+                spinner.classList.add('hidden');
+
+                if (res.success && res.token) {
+                    localStorage.setItem('token', res.token);
+                    localStorage.setItem('user', JSON.stringify(res.user));
+                    window.location.href = 'dashboard.html';
+                } else {
+                    errorText.textContent = res.message || 'Invalid admin credentials.';
+                    errorBox.classList.remove('hidden');
+                }
+            } catch (e) {
+                btn.disabled = false;
+                spinner.classList.add('hidden');
+                errorText.textContent = 'Server connection error.';
+                errorBox.classList.remove('hidden');
+            }
+        }
+
+        function quickDemoAdmin() {
+            document.getElementById('admin-email').value = 'admin@cropai.com';
+            document.getElementById('admin-password').value = 'Admin@123';
+            loginAdmin('admin@cropai.com', 'Admin@123');
+        }
+    </script>
+</body>
+</html>

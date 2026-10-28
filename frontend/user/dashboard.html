@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropAI | Smart Farming Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 9999px; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- ═══════════════════════════════════════════════════════
+         MOBILE TOP HEADER (visible only on < lg screens)
+    ═══════════════════════════════════════════════════════ -->
+    <div class="lg:hidden fixed top-0 left-0 right-0 h-16 bg-white border-b border-slate-200 z-30 flex items-center justify-between px-4 shadow-sm">
+        <div class="flex items-center space-x-2">
+            <div class="w-9 h-9 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-xl flex items-center justify-center text-white">
+                <i class="fas fa-leaf text-base"></i>
+            </div>
+            <div>
+                <span class="font-extrabold text-lg text-slate-900 leading-none block">CropAI</span>
+                <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Smart Farming</span>
+            </div>
+        </div>
+        <button id="mobile-menu-btn" class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700">
+            <i class="fas fa-bars text-lg"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Backdrop -->
+    <div id="mobile-backdrop" class="hidden fixed inset-0 bg-slate-900/50 z-40 lg:hidden"></div>
+
+    <div class="flex min-h-screen">
+
+        <!-- ═══════════════════════════════════════════════════════
+             SIDEBAR — Static HTML, always present on desktop
+        ═══════════════════════════════════════════════════════ -->
+        <aside id="sidebar"
+               class="fixed top-0 left-0 h-full w-72 bg-white border-r border-slate-200 flex flex-col z-50
+                      -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out shadow-xl lg:shadow-none">
+
+            <!-- Brand -->
+            <div class="h-20 flex items-center px-6 border-b border-slate-100 justify-between flex-shrink-0">
+                <a href="dashboard.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-emerald-200">
+                        <i class="fas fa-leaf text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="font-extrabold text-xl text-slate-900 leading-tight block">CropAI</span>
+                        <span class="text-[10px] font-bold text-emerald-600 uppercase tracking-wider block">Smart Farming Intelligence</span>
+                    </div>
+                </a>
+                <button id="sidebar-close-btn" class="lg:hidden text-slate-400 hover:text-slate-600 p-1">
+                    <i class="fas fa-xmark text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Nav Scroll Area -->
+            <div class="flex-1 overflow-y-auto custom-scrollbar px-4 py-5 space-y-5">
+
+                <!-- MAIN -->
+                <div>
+                    <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-3 mb-1">Main</p>
+                    <div class="space-y-0.5">
+                        <a href="dashboard.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-bold text-emerald-800 bg-emerald-50 border-r-4 border-emerald-600 transition-all">
+                            <i class="fas fa-table-columns w-5 mr-3 text-center text-emerald-600"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- FARMING -->
+                <div>
+                    <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-3 mb-1">Farming</p>
+                    <div class="space-y-0.5">
+                        <a href="farm.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-seedling w-5 mr-3 text-center text-slate-400"></i>
+                            <span>My Farms</span>
+                        </a>
+                        <a href="recommendation.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-wand-magic-sparkles w-5 mr-3 text-center text-slate-400"></i>
+                            <span>New AI Analysis</span>
+                        </a>
+                        <a href="history.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-clock-rotate-left w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Analysis History</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- INTELLIGENCE -->
+                <div>
+                    <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-3 mb-1">Intelligence</p>
+                    <div class="space-y-0.5">
+                        <a href="weather.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-cloud-sun-rain w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Weather</span>
+                        </a>
+                        <a href="market.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-chart-line w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Market Intelligence</span>
+                        </a>
+                        <a href="insights.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-lightbulb w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Crop Insights</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- REPORTS -->
+                <div>
+                    <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-3 mb-1">Reports</p>
+                    <div class="space-y-0.5">
+                        <a href="reports.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-file-contract w-5 mr-3 text-center text-slate-400"></i>
+                            <span>My Reports</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ACCOUNT -->
+                <div>
+                    <p class="text-[10px] font-extrabold text-slate-400 uppercase tracking-widest px-3 mb-1">Account</p>
+                    <div class="space-y-0.5">
+                        <a href="profile.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-user-gear w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Profile</span>
+                        </a>
+                        <a href="settings.html"
+                           class="flex items-center px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-600 hover:bg-slate-50 hover:text-slate-900 transition-all">
+                            <i class="fas fa-sliders w-5 mr-3 text-center text-slate-400"></i>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom: Logout -->
+            <div class="p-4 border-t border-slate-100 bg-slate-50/60 flex-shrink-0">
+                <!-- Logout -->
+                <button id="nav-logout-btn"
+                        class="w-full flex items-center justify-between px-3.5 py-2.5 text-xs font-bold text-rose-600 hover:bg-rose-50 rounded-xl transition">
+                    <span class="flex items-center">
+                        <i class="fas fa-arrow-right-from-bracket w-5 mr-2 text-center"></i> Logout
+                    </span>
+                    <i class="fas fa-chevron-right text-rose-300 text-[10px]"></i>
+                </button>
+            </div>
+        </aside>
+
+        <!-- ═══════════════════════════════════════════════════════
+             MAIN CONTENT — offset right of sidebar on desktop
+        ═══════════════════════════════════════════════════════ -->
+        <main class="flex-1 lg:pl-72 pt-16 lg:pt-0 overflow-y-auto min-h-screen bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+                <!-- TOP HEADER -->
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div>
+                        <div class="flex items-center space-x-2 text-xs font-bold text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full w-max mb-2 border border-emerald-200 shadow-sm">
+                            <span class="relative flex h-2 w-2">
+                              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                            </span>
+                            <span>Live Farm Intelligence Active</span>
+                        </div>
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight" id="user-greeting">
+                            Welcome back!
+                        </h1>
+                        <p class="text-slate-500 text-sm mt-1">Here is the latest overview of your farming intelligence.</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <a href="farm.html" class="px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded-xl text-sm font-bold transition flex items-center shadow-sm">
+                            <i class="fas fa-plus text-emerald-600 mr-2"></i> Add Farm
+                        </a>
+                        <a href="recommendation.html" class="px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-sm font-extrabold shadow-md shadow-emerald-200 transition flex items-center">
+                            <i class="fas fa-seedling mr-2"></i> New AI Analysis
+                        </a>
+                    </div>
+                </div>
+
+                <!-- STATISTICS CARDS -->
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Registered Farms</span>
+                            <div class="w-10 h-10 bg-emerald-50 text-emerald-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mt-3" id="stat-farms">-</h3>
+                        <p class="text-[11px] text-slate-400 font-semibold mt-1" id="stat-farms-sub">Active field plots</p>
+                    </div>
+
+                    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">AI Recommendations</span>
+                            <div class="w-10 h-10 bg-blue-50 text-blue-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-wand-magic-sparkles"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mt-3" id="stat-recs">-</h3>
+                        <p class="text-[11px] text-slate-400 font-semibold mt-1" id="stat-recs-sub">Generated analyses</p>
+                    </div>
+
+                    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Saved Reports</span>
+                            <div class="w-10 h-10 bg-purple-50 text-purple-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-file-contract"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-3xl font-extrabold text-slate-900 mt-3" id="stat-reports">-</h3>
+                        <p class="text-[11px] text-slate-400 font-semibold mt-1">Exportable PDFs</p>
+                    </div>
+
+                    <div class="bg-white p-5 sm:p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                        <div class="flex items-center justify-between">
+                            <span class="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Last Analysis</span>
+                            <div class="w-10 h-10 bg-amber-50 text-amber-700 rounded-xl flex items-center justify-center">
+                                <i class="fas fa-clock-rotate-left"></i>
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-slate-900 mt-4 truncate" id="stat-last-date">Not available</h3>
+                        <p class="text-[11px] text-slate-400 font-semibold mt-1">Latest execution</p>
+                    </div>
+                </div>
+
+                <!-- FARM OVERVIEW + QUICK ACTIONS -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                    <div class="lg:col-span-2 bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-tractor"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-extrabold text-slate-900">Farm Overview</h3>
+                                    <p class="text-xs text-slate-400">Key metrics across your cultivated holdings</p>
+                                </div>
+                            </div>
+                            <a href="farm.html" class="text-xs font-bold text-emerald-700 hover:text-emerald-800">Manage Farms <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <span class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Total Farms</span>
+                                <p class="text-xl font-extrabold text-slate-900 mt-1" id="ov-total-farms">0</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <span class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Total Area</span>
+                                <p class="text-xl font-extrabold text-slate-900 mt-1" id="ov-total-area">0 Acres</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <span class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Main Crop</span>
+                                <p class="text-base font-extrabold text-slate-900 mt-1 truncate" id="ov-main-crop">Not available</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 rounded-2xl border border-slate-100">
+                                <span class="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Current Season</span>
+                                <p class="text-base font-extrabold text-emerald-700 mt-1" id="ov-season">Kharif</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <h3 class="text-lg font-extrabold text-slate-900 mb-1">Quick Actions</h3>
+                        <p class="text-xs text-slate-400 mb-5">Frequent platform tasks</p>
+                        <div class="grid grid-cols-2 gap-3">
+                            <a href="farm.html" class="p-3.5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-800 text-slate-700 rounded-2xl border border-slate-100 transition flex flex-col items-center text-center group">
+                                <i class="fas fa-plus text-emerald-600 text-lg mb-1.5 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-xs font-bold">Add Farm</span>
+                            </a>
+                            <a href="recommendation.html" class="p-3.5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-800 text-slate-700 rounded-2xl border border-slate-100 transition flex flex-col items-center text-center group">
+                                <i class="fas fa-seedling text-emerald-600 text-lg mb-1.5 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-xs font-bold">AI Analysis</span>
+                            </a>
+                            <a href="reports.html" class="p-3.5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-800 text-slate-700 rounded-2xl border border-slate-100 transition flex flex-col items-center text-center group">
+                                <i class="fas fa-file-contract text-emerald-600 text-lg mb-1.5 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-xs font-bold">View Reports</span>
+                            </a>
+                            <a href="market.html" class="p-3.5 bg-slate-50 hover:bg-emerald-50 hover:text-emerald-800 text-slate-700 rounded-2xl border border-slate-100 transition flex flex-col items-center text-center group">
+                                <i class="fas fa-chart-line text-emerald-600 text-lg mb-1.5 group-hover:scale-110 transition-transform"></i>
+                                <span class="text-xs font-bold">Market Prices</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEATHER & MARKET SNAPSHOTS -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+                    <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 bg-blue-100 text-blue-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-cloud-sun-rain"></i>
+                                </div>
+                                <h3 class="text-lg font-extrabold text-slate-900">Weather Intelligence</h3>
+                            </div>
+                            <div class="flex items-center space-x-1.5">
+                                <div class="relative flex items-center">
+                                    <input type="text" id="dash-weather-input" placeholder="City/District" value="Guntur"
+                                           onkeypress="if(event.key === 'Enter') searchDashWeather()"
+                                           class="px-2.5 py-1.5 bg-slate-100 border border-slate-300 rounded-xl text-xs font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-500 w-28 sm:w-36">
+                                </div>
+                                <button type="button" id="btn-dash-search-weather" onclick="searchDashWeather()" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-xs font-bold transition flex items-center shadow-sm">
+                                    <i class="fas fa-search mr-1"></i> Search
+                                </button>
+                                <a href="weather.html" class="px-2.5 py-1.5 bg-blue-50 text-blue-700 hover:bg-blue-100 rounded-xl text-xs font-bold transition hidden sm:inline-flex">
+                                    Details <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="dash-weather-box" class="space-y-4">
+                            <div class="text-center py-6 text-slate-400 text-xs">
+                                <i class="fas fa-spinner fa-spin mr-1"></i> Loading weather intelligence...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 sm:p-7 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <div class="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-9 h-9 bg-emerald-100 text-emerald-700 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3 class="text-lg font-extrabold text-slate-900">Market Intelligence</h3>
+                            </div>
+                            <a href="market.html" class="px-3 py-1.5 bg-emerald-50 text-emerald-700 hover:bg-emerald-100 rounded-xl text-xs font-bold transition">
+                                View Market <i class="fas fa-arrow-right ml-1"></i>
+                            </a>
+                        </div>
+                        <div id="dash-market-box" class="space-y-4">
+                            <div class="text-center py-6 text-slate-400 text-xs">
+                                <i class="fas fa-spinner fa-spin mr-1"></i> Loading mandi market prices...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LATEST AI RECOMMENDATION -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-700 text-white rounded-2xl flex items-center justify-center shadow-md shadow-emerald-200">
+                                <i class="fas fa-robot text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-extrabold text-slate-900">Latest AI Recommendation</h3>
+                                <p class="text-xs text-slate-400">Most recent output from Ensemble ML model</p>
+                            </div>
+                        </div>
+                        <a href="recommendation.html" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-extrabold rounded-xl shadow-sm transition">
+                            <i class="fas fa-play mr-1"></i> Run New Analysis
+                        </a>
+                    </div>
+                    <div id="latest-rec-box">
+                        <div class="text-center py-10 text-slate-400 text-sm">
+                            <i class="fas fa-spinner fa-spin mr-2"></i> Fetching latest AI recommendation...
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RECENT ANALYSES TABLE -->
+                <div class="bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/80 shadow-sm">
+                    <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
+                        <div>
+                            <h3 class="text-xl font-extrabold text-slate-900">Recent Analyses</h3>
+                            <p class="text-xs text-slate-400 mt-0.5">Historical execution logs across your holdings</p>
+                        </div>
+                        <a href="history.html" class="px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold rounded-xl transition">
+                            View All <i class="fas fa-arrow-right ml-1"></i>
+                        </a>
+                    </div>
+                    <div class="overflow-x-auto rounded-2xl border border-slate-200/80">
+                        <table class="w-full text-left text-sm">
+                            <thead class="bg-slate-100/80 text-slate-500 font-extrabold uppercase text-[11px] tracking-wider">
+                                <tr>
+                                    <th class="px-4 py-3.5">Farm</th>
+                                    <th class="px-4 py-3.5">Recommended Crop</th>
+                                    <th class="px-4 py-3.5">Prediction Score</th>
+                                    <th class="px-4 py-3.5">Analysis Date</th>
+                                    <th class="px-4 py-3.5 text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="recent-analyses-tbody" class="divide-y divide-slate-100 bg-white">
+                                <tr>
+                                    <td colspan="5" class="px-4 py-8 text-center text-slate-400 text-xs">
+                                        <i class="fas fa-spinner fa-spin mr-1"></i> Loading analyses...
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../js/api.js"></script>
+    <script src="../js/nav.js"></script>
+    <script src="../js/dashboard.js"></script>
+    <script>
+        // Mobile sidebar toggle (no nav.js needed — sidebar is static HTML)
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebarCloseBtn = document.getElementById('sidebar-close-btn');
+        const sidebar = document.getElementById('sidebar');
+        const mobileBackdrop = document.getElementById('mobile-backdrop');
+
+        function openSidebar() {
+            sidebar.classList.remove('-translate-x-full');
+            mobileBackdrop.classList.remove('hidden');
+        }
+        function closeSidebar() {
+            sidebar.classList.add('-translate-x-full');
+            mobileBackdrop.classList.add('hidden');
+        }
+
+        if (mobileMenuBtn) mobileMenuBtn.addEventListener('click', openSidebar);
+        if (sidebarCloseBtn) sidebarCloseBtn.addEventListener('click', closeSidebar);
+        if (mobileBackdrop) mobileBackdrop.addEventListener('click', closeSidebar);
+
+        // Logout
+        const logoutBtn = document.getElementById('nav-logout-btn');
+        if (logoutBtn) {
+            logoutBtn.addEventListener('click', () => {
+                if (confirm('Are you sure you want to log out?')) {
+                    AuthAPI.logout();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
