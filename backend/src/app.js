@@ -54,6 +54,45 @@ app.get('/api/health', (req, res) => {
   res.json({ success: true, message: 'CropAI API is running', timestamp: new Date() });
 });
 
+// ── Serve Frontend static assets & web pages (Production & Serverless Support)
+const fs = require('fs');
+const frontendPath = fs.existsSync(path.resolve(process.cwd(), 'frontend'))
+  ? path.resolve(process.cwd(), 'frontend')
+  : path.resolve(__dirname, '..', '..', 'frontend');
+
+app.use(express.static(frontendPath));
+
+// Web page routing & clean URLs
+app.get('/', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'index.html'));
+});
+
+app.get('/login', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'login.html'));
+});
+
+app.get('/register', (req, res) => {
+  res.sendFile(path.join(frontendPath, 'register.html'));
+});
+
+app.get('/user/:page', (req, res, next) => {
+  const page = req.params.page.endsWith('.html') ? req.params.page : `${req.params.page}.html`;
+  const file = path.join(frontendPath, 'user', page);
+  if (fs.existsSync(file)) {
+    return res.sendFile(file);
+  }
+  next();
+});
+
+app.get('/admin/:page', (req, res, next) => {
+  const page = req.params.page.endsWith('.html') ? req.params.page : `${req.params.page}.html`;
+  const file = path.join(frontendPath, 'admin', page);
+  if (fs.existsSync(file)) {
+    return res.sendFile(file);
+  }
+  next();
+});
+
 // ── 404
 app.use((req, res) => {
   res.status(404).json({ success: false, message: 'Route not found' });
