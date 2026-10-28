@@ -1,0 +1,10 @@
+# Ignore Python ML Service from Vercel serverless builds
+# The ML service is a standalone FastAPI service with 300MB+ C-libraries (xgboost, scipy, llvmlite)
+# which exceeds Vercel's 250MB serverless limit. The Node.js API uses its built-in engine.
+ml-service/
+data/
+docs/
+backend/node_modules/
+*.log
+.git
+.github
